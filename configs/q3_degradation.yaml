@@ -1,0 +1,16 @@
+# Q3: graceful degradation under assumption violations.
+experiment: q3
+# datasets (by base.datasets key) span image-shape/support violations:
+datasets: [square_val_images, val_images, val_images_circle, val_images_diag_padded]
+denoiser:
+  name: restormer
+  sigma: 15
+groups: [fourier_rotation, rotation]   # exact vs lossy/discrete cv2 rotation
+averagings: [2, 4, 8, 16]              # coarse -> fine discrete orbit
+noise_masks: [circle]                  # add 'none' to compare full-frame noise
+noise_sigma: 15.0
+num_noise: 4
+se_mask: content
+upsample: 1.0
+max_images: null
+seed: 0

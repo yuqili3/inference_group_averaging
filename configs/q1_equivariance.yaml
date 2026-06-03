@@ -1,0 +1,18 @@
+# Q1: how non-equivariant are common denoisers? (rel. equivariance error)
+experiment: q1
+dataset: val_images_circle
+denoiser:
+  name: restormer
+  sigma: 15
+group:
+  name: fourier_rotation
+  averaging: 8
+  expand: true
+upsample: 1.0
+noise_sigma: 15.0
+num_noise: 4
+noise_mask: none
+se_mask: content
+clean_mode: false               # set true to isolate interpolation error (sigma~0)
+max_images: null
+seed: 0

@@ -1,0 +1,17 @@
+# Tiny config for a fast end-to-end sanity run (a couple images, small |G|,
+# classical denoiser so no GPU/weights needed).
+experiment: q2
+dataset: val_images_circle
+denoiser:
+  name: wavelet
+group:
+  name: fourier_rotation
+  averaging: 4
+  expand: true
+upsample: 1.0
+noise_sigma: 15.0
+num_noise: 2
+noise_mask: circle
+se_mask: circle
+max_images: 2
+seed: 0

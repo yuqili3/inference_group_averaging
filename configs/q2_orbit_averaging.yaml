@@ -1,0 +1,17 @@
+# Q2: orbit averaging improvement + SE_avg = E_g SE(T_g x) - e1 identity check.
+experiment: q2
+dataset: val_images_circle      # key into base.datasets
+denoiser:
+  name: restormer
+  sigma: 15                     # selects gaussian_gray_denoising_sigma15.pth
+group:
+  name: fourier_rotation        # exact FFT rotation (clean test of the identity)
+  averaging: 16                 # |G|
+  expand: true
+upsample: 1.0
+noise_sigma: 15.0
+num_noise: 8
+noise_mask: circle
+se_mask: circle
+max_images: null                # null = all images
+seed: 0

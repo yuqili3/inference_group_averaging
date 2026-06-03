@@ -1,0 +1,16 @@
+# Shared paths and assets. Weights/datasets are REFERENCED from the existing
+# equivariant_PGD repo (not copied). Edit ref_root if you move the assets.
+ref_root: ~/Documents/equivariant_PGD
+
+restormer_weights_dir: ${ref_root}/Restormer/Denoising/pretrained_models
+
+datasets:
+  val_images:          ${ref_root}/Restormer/Denoising/Datasets/val_images          # natural, rectangular
+  val_images_circle:   ${ref_root}/Restormer/Denoising/Datasets/val_images_circle    # circular support
+  val_images_diag_padded: ${ref_root}/Restormer/Denoising/Datasets/val_images_diag_padded
+  square_val_images:   ${ref_root}/Restormer/Denoising/Datasets/square_val_images     # square, full support
+  skimage128:          ${ref_root}/skimage-images-128
+  skimage512:          ${ref_root}/skimage-images-512
+
+device: cuda:1          # GPU 1 is free on this box; set to cpu if no GPU
+save_dir: results

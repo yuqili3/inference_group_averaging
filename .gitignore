@@ -3,3 +3,17 @@ __pycache__/
 .DS_Store
 .venv/
 .env
+
+# build / packaging
+*.egg-info/
+build/
+dist/
+
+# experiment outputs (regenerate via scripts/)
+results/
+!results/.gitkeep
+*.png
+!docs/**/*.png
+
+# notebook checkpoints
+.ipynb_checkpoints/

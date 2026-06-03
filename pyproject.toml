@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "groupavg"
+version = "0.1.0"
+description = "Orbit averaging for (non-)equivariant image denoisers — paper reference code"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy",
+    "scipy",
+    "opencv-python",
+    "scikit-image",
+    "pandas",
+    "matplotlib",
+    "pyyaml",
+    "tqdm",
+    "PyWavelets",
+    "einops",
+]
+
+[project.optional-dependencies]
+restormer = ["torch>=1.8"]
+bm3d = ["bm3d"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
