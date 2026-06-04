@@ -6,11 +6,11 @@ denoiser:
   sigma: 15                     # selects gaussian_gray_denoising_sigma15.pth
 group:
   name: fourier_rotation        # exact FFT rotation (clean test of the identity)
-  averaging: 16                 # |G|
+  averagings: [8, 16, 32]       # |G| values to sweep
   expand: true
 upsample: 1.0
 noise_sigma: 15.0
-num_noise: 8
+num_noise: 2
 noise_mask: circle
 se_mask: circle
 max_images: null                # null = all images

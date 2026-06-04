@@ -80,15 +80,14 @@ def run(
                 y = clean + noise
 
             D_y = denoise_one(y, denoiser, noise_sigma)
-            D_y = np.clip(D_y, 0, 1)
             denom = max(l2sq(D_y, mask=x_mask), 1e-12)
 
             ys = scale_group.forward(y)[0]
             ty = group.forward(ys)
             r_list = []
             for gi, tg_y in enumerate(ty):
-                z = scale_group.invert(0, group.invert(gi, np.clip(denoise_one(tg_y, denoiser, noise_sigma), 0, 1)))
-                z = np.clip(z, 0, 1).astype(np.float32)
+                z = scale_group.invert(0, group.invert(gi, denoise_one(tg_y, denoiser, noise_sigma)))
+                z = z.astype(np.float32)
                 rg = z - D_y
                 r_list.append(rg)
                 rel = l2sq(rg, mask=x_mask) / denom

@@ -30,7 +30,7 @@ def run(
     averaging=16,
     upsample=1.0,
     noise_sigma=15.0,
-    num_noise=8,
+    num_noise=2,
     noise_mask="circle",
     se_mask="circle",
     seed=0,
@@ -84,7 +84,7 @@ def run(
             hx_list = rotation_group.forward(clean_up)
             hxn_list = rotation_group.forward(noisy_up)
 
-            z_list, SE_h_raw_list, SE_h_pp_list = [], [], []
+            z_list, SE_h_raw_list, SE_h_pp_list, angle_rows = [], [], [], []
             for hi, (hx, hxn) in enumerate(zip(hx_list, hxn_list)):
                 D_hxn = denoise_one(hxn, denoiser, noise_sigma)
                 if clip_denoised:
@@ -95,6 +95,16 @@ def run(
                 SE_h_raw = l2sq(D_hxn, hx, mask=hx_mask)
                 SE_h_raw_list.append(SE_h_raw)
                 SE_h_pp_list.append(SE_h_raw / hx_num_pixels)
+                angle_rows.append({
+                    "file": file_name,
+                    "noise_id": r,
+                    "rotation_index": hi,
+                    "rotation_angle_deg": rotation_group.ops[hi],
+                    "SE_hx_raw": SE_h_raw,
+                    "SE_hx": SE_h_raw / hx_num_pixels,
+                    "SE_hx_psnr": se_to_psnr(SE_h_raw / hx_num_pixels),
+                    "hx_num_pixels": hx_num_pixels,
+                })
 
                 z_h = scale_group.invert(0, rotation_group.invert(hi, D_hxn))
                 if clip_denoised:
@@ -114,16 +124,17 @@ def run(
 
             EhSE_noise_raw.append(EhSE_raw_r)
             SEavg_noise_raw.append(SEavg_raw_r)
-            detail_rows.append({
-                "file": file_name, "noise_id": r,
-                "EhSE_hx_raw_this_noise": EhSE_raw_r,
-                "SEavg_raw_this_noise": SEavg_raw_r,
-                "EhSE_hx_this_noise": EhSE_raw_r / x_num_pixels,
-                "SEavg_this_noise": SEavg_raw_r / x_num_pixels,
-                "EhSE_hx_psnr_this_noise": se_to_psnr(EhSE_raw_r / x_num_pixels),
-                "SEavg_psnr_this_noise": se_to_psnr(SEavg_raw_r / x_num_pixels),
-                "x_num_pixels": x_num_pixels,
-            })
+            for angle_row in angle_rows:
+                angle_row.update({
+                    "EhSE_hx_raw_this_noise": EhSE_raw_r,
+                    "SEavg_raw_this_noise": SEavg_raw_r,
+                    "EhSE_hx_this_noise": EhSE_raw_r / x_num_pixels,
+                    "SEavg_this_noise": SEavg_raw_r / x_num_pixels,
+                    "EhSE_hx_psnr_this_noise": se_to_psnr(EhSE_raw_r / x_num_pixels),
+                    "SEavg_psnr_this_noise": se_to_psnr(SEavg_raw_r / x_num_pixels),
+                    "x_num_pixels": x_num_pixels,
+                })
+            detail_rows.extend(angle_rows)
 
         # ---- per-image aggregation (raw, then per-pixel) ----
         EhSE_hx_raw = float(np.mean(EhSE_noise_raw))

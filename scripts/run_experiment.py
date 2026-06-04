@@ -39,22 +39,24 @@ def main():
 
     if kind == "q2":
         g = exp["group"]
-        out = q2_orbit_averaging.run(
-            dataset_dir=dataset_path(base, exp["dataset"]),
-            denoiser=denoiser, denoiser_name=dname,
-            group_name=g["name"], averaging=g["averaging"], expand=g.get("expand", True),
-            upsample=exp.get("upsample", 1.0), noise_sigma=exp.get("noise_sigma", 15.0),
-            num_noise=exp.get("num_noise", 8), noise_mask=exp.get("noise_mask", "circle"),
-            se_mask=exp.get("se_mask", "circle"), max_images=max_images,
-            seed=exp.get("seed", 0), save_dir=save_dir,
-        )
-        print("\n=== Q2 summary ===")
-        for k, v in out["summary"].items():
-            print(f"  {k}: {v:.6f}")
-        s = out["summary"]
-        print(f"\n  PSNR improvement (averaged - direct): "
-              f"{s['E_x_SEavg_x_psnr'] - s['E_x_EhSE_hx_psnr']:+.3f} dB")
-        print(f"  identity check  E[EhSE-SEavg]={s['E_x_EhSE_minus_SEavg']:.6f}  vs  E[e1]={s['E_x_e1']:.6f}")
+        averagings = g["averagings"] if "averagings" in g else [g["averaging"]]
+        for averaging in averagings:
+            out = q2_orbit_averaging.run(
+                dataset_dir=dataset_path(base, exp["dataset"]),
+                denoiser=denoiser, denoiser_name=dname,
+                group_name=g["name"], averaging=averaging, expand=g.get("expand", True),
+                upsample=exp.get("upsample", 1.0), noise_sigma=exp.get("noise_sigma", 15.0),
+                num_noise=exp.get("num_noise", 2), noise_mask=exp.get("noise_mask", "circle"),
+                se_mask=exp.get("se_mask", "circle"), max_images=max_images,
+                seed=exp.get("seed", 0), save_dir=save_dir,
+            )
+            print(f"\n=== Q2 summary | G={averaging} ===")
+            for k, v in out["summary"].items():
+                print(f"  {k}: {v:.6f}")
+            s = out["summary"]
+            print(f"\n  PSNR improvement (averaged - direct): "
+                  f"{s['E_x_SEavg_x_psnr'] - s['E_x_EhSE_hx_psnr']:+.3f} dB")
+            print(f"  identity check  E[EhSE-SEavg]={s['E_x_EhSE_minus_SEavg']:.6f}  vs  E[e1]={s['E_x_e1']:.6f}")
 
     elif kind == "q1":
         g = exp["group"]
