@@ -1,0 +1,11 @@
+sigma,dataset,model,group,averaging,num_noise,noise_mask,se_mask,max_images,mean_rel_err,mean_max_elem_rel_err,mean_e1,save_dir
+15.0,val_images,restormer,fourier_rotation,64,4,none,none,10,0.006380616808997335,0.007605233552854506,0.00010122967333273446,results/q1_equivariance_grid/sigma15/val_images/restormer
+15.0,val_images_circle,restormer,fourier_rotation,64,4,circle,circle,10,0.0018169408112693407,0.0022378962562430047,0.00010015117451569761,results/q1_equivariance_grid/sigma15/val_images_circle/restormer
+15.0,val_images,restormer-rotated-noise-retrained,fourier_rotation,64,4,none,none,10,0.003839170079942001,0.008312437645902665,0.0003510867327136313,results/q1_equivariance_grid/sigma15/val_images/restormer-rotated-noise-retrained
+15.0,val_images_circle,restormer-rotated-noise-retrained,fourier_rotation,64,4,circle,circle,10,0.0035219029180351942,0.007373549992866939,0.0003875790638608284,results/q1_equivariance_grid/sigma15/val_images_circle/restormer-rotated-noise-retrained
+15.0,val_images,wavelet,fourier_rotation,64,4,none,none,10,0.02056813082991528,0.02306353046208473,0.0010887133672218391,results/q1_equivariance_grid/sigma15/val_images/wavelet
+15.0,val_images_circle,wavelet,fourier_rotation,64,4,circle,circle,10,0.020444578371516774,0.022608843909740627,0.001353633211093823,results/q1_equivariance_grid/sigma15/val_images_circle/wavelet
+15.0,val_images,tv,fourier_rotation,64,4,none,none,10,0.0009743265890514105,0.0011752539558028152,4.0863786190963424e-05,results/q1_equivariance_grid/sigma15/val_images/tv
+15.0,val_images_circle,tv,fourier_rotation,64,4,circle,circle,10,0.0005162241952257053,0.0007476362757357009,4.649287786821575e-05,results/q1_equivariance_grid/sigma15/val_images_circle/tv
+15.0,val_images,nlm,fourier_rotation,64,4,none,none,10,0.0010205754630986529,0.0013342557630069492,7.593349576583757e-05,results/q1_equivariance_grid/sigma15/val_images/nlm
+15.0,val_images_circle,nlm,fourier_rotation,64,4,circle,circle,10,0.0009198412903767885,0.001272771275670003,8.646649363137657e-05,results/q1_equivariance_grid/sigma15/val_images_circle/nlm

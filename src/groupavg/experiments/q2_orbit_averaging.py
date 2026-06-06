@@ -90,7 +90,7 @@ def run(
                 if clip_denoised:
                     D_hxn = np.clip(D_hxn, 0, 1)
 
-                hx_mask = build_mask(hx, clean_ref=clean_up, mask_mode=se_mask)
+                hx_mask = build_mask(hx, clean_ref=hx, mask_mode=se_mask)
                 hx_num_pixels = count_pixels(hx_mask, hx)
                 SE_h_raw = l2sq(D_hxn, hx, mask=hx_mask)
                 SE_h_raw_list.append(SE_h_raw)
