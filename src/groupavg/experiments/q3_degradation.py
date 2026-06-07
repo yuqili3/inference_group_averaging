@@ -70,6 +70,7 @@ def run(
                     realized = s["E_x_EhSE_minus_SEavg"]
                     predicted = s["E_x_e1"]
                     grid.append({
+                        "denoiser": denoiser_name,
                         "dataset": ds_label, "group": group_name, "averaging": K,
                         "noise_mask": nmask, "noise_sigma": noise_sigma,
                         "EhSE_psnr": s["E_x_EhSE_hx_psnr"],

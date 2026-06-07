@@ -107,6 +107,8 @@ def main():
                 print(f"[Q3 grid] FAILED: {type(exc).__name__}: {exc}")
                 raise
         df = df.copy()
+        if "denoiser" not in df.columns:
+            df.insert(0, "denoiser", "restormer")
         df["sigma"] = sigma
         rows.extend(df.to_dict("records"))
         pd.DataFrame(rows).to_csv(summary_path, index=False)

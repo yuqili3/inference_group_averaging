@@ -89,6 +89,7 @@ def main():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--include-retrained-all-sigmas", action="store_true")
     ap.add_argument("--include-bm3d-all-sigmas", action="store_true")
+    ap.add_argument("--skip-bm3d", action="store_true")
     ap.add_argument("--no-skip-complete", action="store_true")
     args = ap.parse_args()
 
@@ -104,6 +105,9 @@ def main():
 
     for sigma in args.sigmas:
         for model_label in MODELS:
+            if model_label == "bm3d" and args.skip_bm3d:
+                print(f"\n[Q1 grid] skip model={model_label} sigma={sigma}: skipped by request")
+                continue
             if (
                 model_label == "restormer-rotated-noise-retrained"
                 and sigma != 15.0
