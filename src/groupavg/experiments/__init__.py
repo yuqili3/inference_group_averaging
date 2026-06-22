@@ -1,6 +1,7 @@
 from . import (
     downstream_effect,
     figure5_angle_psnr,
+    q1_cardinal_equivariance,
     q1_equivariance,
     q2_orbit_averaging,
     q3_degradation,
@@ -10,6 +11,7 @@ from . import (
 __all__ = [
     "downstream_effect",
     "figure5_angle_psnr",
+    "q1_cardinal_equivariance",
     "q1_equivariance",
     "q2_orbit_averaging",
     "q3_degradation",
