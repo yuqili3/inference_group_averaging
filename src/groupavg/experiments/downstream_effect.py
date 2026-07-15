@@ -124,27 +124,32 @@ def _make_denoise_fn(
     raise ValueError(f"Unknown denoiser mode: {mode!r}")
 
 
-def _pnp_hqs(y, problem, denoise_fn, num_iter=8, rho=0.8):
+def _pnp_hqs(y, problem, denoise_fn, num_iter=8, rho=0.8, callback=None):
     x = np.asarray(y, dtype=np.float32).copy()
     z = x.copy()
-    for _ in range(num_iter):
+    for k in range(num_iter):
         x = problem.prox_data(y, z, rho=rho)
         x = np.clip(x, 0.0, 1.0)
         z = denoise_fn(x)
+        if callback is not None:
+            callback(k, np.clip(z, 0.0, 1.0).astype(np.float32))
     return np.clip(z, 0.0, 1.0).astype(np.float32)
 
 
-def _red_gd(y, problem, denoise_fn, num_iter=20, step=0.5, lam=0.15):
+def _red_gd(y, problem, denoise_fn, num_iter=20, step=0.5, lam=0.15, callback=None):
     x = np.asarray(y, dtype=np.float32).copy()
-    for _ in range(num_iter):
+    for k in range(num_iter):
         data_grad = problem.AT(problem.A(x) - y)
         prior_grad = x - denoise_fn(x)
         x = x - float(step) * (data_grad + float(lam) * prior_grad)
         x = np.clip(x, 0.0, 1.0)
+        if callback is not None:
+            callback(k, x.astype(np.float32))
     return x.astype(np.float32)
 
 
-def _diffusion_style(y, problem, denoise_fn, num_iter=20, data_step=0.4, prior_step=0.25):
+def _diffusion_style(y, problem, denoise_fn, num_iter=20, data_step=0.4, prior_step=0.25,
+                     callback=None):
     """A lightweight denoising-score style restoration loop.
 
     This is not a full DDPM sampler. It isolates the downstream effect of using
@@ -152,19 +157,23 @@ def _diffusion_style(y, problem, denoise_fn, num_iter=20, data_step=0.4, prior_s
     (D(x)-x) with a data-consistency gradient.
     """
     x = np.asarray(y, dtype=np.float32).copy()
-    for _ in range(num_iter):
+    for k in range(num_iter):
         score_drift = denoise_fn(x) - x
         data_grad = problem.AT(problem.A(x) - y)
         x = x + float(prior_step) * score_drift - float(data_step) * data_grad
         x = np.clip(x, 0.0, 1.0)
+        if callback is not None:
+            callback(k, x.astype(np.float32))
     return x.astype(np.float32)
 
 
-def _restore(algorithm, y, problem, denoise_fn, num_iter, rho, step, lam, data_step, prior_step):
+def _restore(algorithm, y, problem, denoise_fn, num_iter, rho, step, lam, data_step,
+             prior_step, callback=None):
     if algorithm == "pnp_hqs":
-        return _pnp_hqs(y, problem, denoise_fn, num_iter=num_iter, rho=rho)
+        return _pnp_hqs(y, problem, denoise_fn, num_iter=num_iter, rho=rho, callback=callback)
     if algorithm == "red_gd":
-        return _red_gd(y, problem, denoise_fn, num_iter=num_iter, step=step, lam=lam)
+        return _red_gd(y, problem, denoise_fn, num_iter=num_iter, step=step, lam=lam,
+                       callback=callback)
     if algorithm == "diffusion_style":
         return _diffusion_style(
             y,
@@ -173,8 +182,76 @@ def _restore(algorithm, y, problem, denoise_fn, num_iter, rho, step, lam, data_s
             num_iter=num_iter,
             data_step=data_step,
             prior_step=prior_step,
+            callback=callback,
         )
     raise ValueError(f"Unknown downstream algorithm: {algorithm!r}")
+
+
+def run_single_with_trajectory(
+    clean,
+    problem,
+    denoise_fn,
+    algorithm="pnp_hqs",
+    num_iter=12,
+    rho=0.8,
+    step=0.5,
+    lam=0.15,
+    data_step=0.4,
+    prior_step=0.25,
+    measurement_sigma=2.0,
+    seed=0,
+    se_mask="content",
+):
+    """Run one solver on one clean image, recording every iterate and its metrics.
+
+    Unlike :func:`run` (which aggregates a grid), this is a single-image probe for
+    visualization: it returns the degraded measurement, the final reconstruction,
+    and the full per-iterate trajectory with SE/PSNR vs. the clean image, all on a
+    common content mask.
+    """
+    clean = np.asarray(clean, dtype=np.float32)
+    mask = build_mask(clean, clean_ref=clean, mask_mode=se_mask)
+    pixels = count_pixels(mask, clean)
+
+    rng = np.random.default_rng(seed)
+    y = problem.A(clean)
+    if measurement_sigma and measurement_sigma > 0:
+        y = y + rng.normal(0.0, measurement_sigma / 255.0, size=y.shape).astype(np.float32)
+    y = np.clip(y, 0.0, 1.0)
+
+    trajectory = []
+
+    def _record(k, xk):
+        se = l2sq(xk, clean, mask=mask) / pixels
+        trajectory.append({
+            "iter": int(k),
+            "image": np.asarray(xk, dtype=np.float32).copy(),
+            "se": float(se),
+            "psnr": float(se_to_psnr(se)),
+        })
+
+    final = _restore(
+        algorithm, y, problem, denoise_fn,
+        num_iter=num_iter, rho=rho, step=step, lam=lam,
+        data_step=data_step, prior_step=prior_step, callback=_record,
+    )
+
+    degraded_se = l2sq(y, clean, mask=mask) / pixels
+    final_se = l2sq(final, clean, mask=mask) / pixels
+    return {
+        "clean": clean,
+        "degraded": np.asarray(y, dtype=np.float32),
+        "final": np.asarray(final, dtype=np.float32),
+        "mask": mask,
+        "pixels": pixels,
+        "degraded_se": float(degraded_se),
+        "degraded_psnr": float(se_to_psnr(degraded_se)),
+        "final_se": float(final_se),
+        "final_psnr": float(se_to_psnr(final_se)),
+        "trajectory": trajectory,
+        "algorithm": algorithm,
+        "num_iter": int(num_iter),
+    }
 
 
 def _rotate_pair(clean, angle_deg, group_name, expand):
