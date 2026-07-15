@@ -103,6 +103,62 @@ reference (`EquivariantDenoiser` == our `orbit_average`).
   equivariance PSNR vs rotation angle). Reads
   `results/downstream_effect_grid/downstream_effect_grid_summary.csv`.
   Validated against a schema-correct synthetic CSV; PNG only, dpi=400.
+- **Per-image visualization:**
+  `downstream_effect.run_single_with_trajectory` captures every solver iterate +
+  PSNR/MSE (the three solvers now take an optional `callback`; numerics
+  unchanged). `scripts/make_downstream_visualization.py` renders one row per
+  denoiser mode — Clean | Degraded | intermediate iterates | Final, each
+  annotated with PSNR/MSE — so you can *watch* how `D_G` changes the trajectory.
+  Plotting is numpy+matplotlib only (validated on synthetic data); the run side
+  needs the box.
+
+### Efficiency: stochastic (mini-batch) group averaging (planned)
+**Problem.** Full orbit averaging `D_G(x) = (1/|G|) Σ_g T_g^{-1} D(T_g x)` costs
+`|G|` denoiser evaluations per call. Inside a `K`-iteration PnP/RED loop that is
+`K·|G|` denoiser calls vs `K` for vanilla (e.g. |G|=8 → 8× cost), and the denoiser
+(Restormer) dominates runtime.
+
+**Idea (SGD-style / Monte-Carlo group averaging).** At each solver iteration `t`,
+average over only a small random subset `S_t ⊂ G`, `|S_t| = m` (m = 1 or 2),
+instead of the full group:
+`D_{S_t}(x) = (1/m) Σ_{g∈S_t} T_g^{-1} D(T_g x)`, `S_t ~ Uniform(G)`, resampled
+each step. Denoiser cost drops from `K·|G|` to `K·m` (m=1 → same cost as vanilla).
+
+**Why it should work.**
+- The PnP/RED iteration already averages across steps; injecting a fresh random
+  group element per step is SGD over the group — the running iterate sees the whole
+  orbit over `K` steps, so the *effective* prior approaches the equivariant one
+  without paying |G|× per step.
+- Mirrors deepinv's `symmetrize(n_trans=1)` during iteration, more at final eval
+  (their equivariant-splitting demo: 1 transform at train, several at eval).
+- The m-sample estimator's variance is governed by the orbit variance — the same
+  quantity as our non-equivariance diagnostic `e1` — so we can *predict* the `m`
+  needed for a target accuracy, tying efficiency back to the paper's diagnostic
+  (thesis future-work already flags MC group averaging with convergence set by the
+  `e1` variance term).
+
+**Variants to evaluate.**
+1. i.i.d. random subset of size `m` per step (m=1,2), resampled each iteration.
+2. Deterministic cyclic schedule: step through `g_1,…,g_{|G|}` across iterations
+   (covers the group in `|G|` steps; lower variance than i.i.d.).
+3. Anneal: small `m` early, then a full-group polish in the last 1–2 iterations to
+   cut final-estimate variance.
+4. Antithetic / stratified angle sampling to reduce variance at fixed `m`.
+
+**Experiment.** Cost–accuracy tradeoff: reconstruction PSNR and downstream
+equivariance vs *total denoiser calls*, for `m ∈ {1,2,4,|G|}` and the schedules
+above; show m=1–2 recovers most of the full-group gain at a fraction of the cost.
+Check whether `e1` predicts the `m` needed (variance vs `m`).
+
+**Implementation hooks (minimal).**
+- `pipeline.orbit_average`: add optional `n_sample` / `rng` (+ `schedule`) → a
+  *stochastic* orbit average over `m` sampled group elements instead of the full
+  group.
+- `downstream_effect._make_denoise_fn`: new `mode="group_avg_stochastic"` whose
+  closure holds an `rng` and samples `m` angles per call (the solver `callback`
+  loop already drives per-iteration denoiser calls).
+- Add `(m, schedule)` axes to the downstream grid; the visualization script can
+  render the stochastic trajectory alongside vanilla / full `D_G`.
 
 ### NEXT (resume here)
 1. **Run the downstream grid** on the GPU box (start small):
@@ -111,9 +167,14 @@ reference (`EquivariantDenoiser` == our `orbit_average`).
    `  --sigmas 15 --problems blur inpaint --algorithms pnp_hqs red_gd --max-images 10`
 2. Render the headline: `python scripts/make_downstream_effect_figure.py`
    (`--denoiser restormer --sigma 15 --out figures/downstream_effect.png`).
-3. Sanity-check the two claims hold (PSNR gain > 0; equivariance residual PSNR
-   higher for `D_G`), then scale the grid to all sigmas/models.
-4. Optional: install `bm3d`; re-download valid DnCNN weights + implement
+3. **Per-image visualization** on the box:
+   `python scripts/make_downstream_visualization.py --denoiser restormer --problem inpaint --num-iter 12 --snapshots 3`.
+4. **Implement + evaluate stochastic (mini-batch) group averaging** (section
+   above): add `n_sample` to `orbit_average` + a `group_avg_stochastic` mode; run
+   the cost–accuracy sweep `m ∈ {1,2,4,|G|}`.
+5. Sanity-check the two claims (PSNR gain > 0; equivariance residual PSNR higher
+   for `D_G`), then scale the grid to all sigmas/models.
+6. Optional: install `bm3d`; re-download valid DnCNN weights + implement
    `denoisers/stubs.py:DnCNN`; add a results notebook under `notebooks/`.
 
 ## deepinv reference: transforms & rotation precision (2026-07-14)
