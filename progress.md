@@ -1,7 +1,7 @@
 # Project progress — orbit averaging for denoisers
 
 > Resume file. Read this first each session to pick up where we left off.
-> Last updated: 2026-06-03.
+> Last updated: 2026-07-14.
 
 ## Goal
 Build a paper-grade reference repo (`inference_group_averaging`) for **line B** of
@@ -71,20 +71,68 @@ SEavg uses the clean target `x`, so the bias-variance identity isn't being close
 the same way. This is exactly the Q2 "is the gain predicted by the identity?"
 question — decide the canonical `e1`/SE definitions before scaling up.
 
-## NEXT (resume here)
-1. **Run the full headline Q2** (~23 min, all 10 images):
-   `~/anaconda3/envs/restormer37/bin/python scripts/run_experiment.py --config configs/q2_orbit_averaging.yaml`
-   - Compare summary CSV to the original
-     `equivariant_PGD/Restormer/Denoising/group_avg_improvement_folder-val_images_circle_sigma-15_denoiser-restormer_G-16_summary.csv`
-     to confirm the port matches.
-   - Resolve the identity-gap question above first if we want the e1 column to be
-     meaningful.
-2. Run **Q1** (`configs/q1_equivariance.yaml`) and **Q3**
-   (`configs/q3_degradation.yaml`) on real data; render figures
-   (`scripts/make_figures.py`).
-3. Add a results-visualization notebook under `notebooks/` (currently empty).
-4. Optional: install `bm3d`; later re-download valid DnCNN weights + implement
-   `denoisers/stubs.py:DnCNN`.
+## Status (2026-07-14)
+- **Q1 / Q2 / Q3: complete** — experiments run on real data, results committed
+  under `results/`, and figure scripts landed in `scripts/make_*.py`
+  (PR #1, branch `add-figure-scripts`: identity, protocols, psnr-vs-angle,
+  q1-rho, rho-normalized, rotation-operator-quality).
+- **Current frontier: downstream use of the orbit-averaged denoiser inside
+  inverse-problem solvers** (see next section).
+
+## Downstream: orbit-averaged denoiser in PnP / RED (current frontier)
+Goal: show that replacing a denoiser `D` by its orbit-averaged `D_G` *inside a
+solver* both (i) improves reconstruction PSNR and (ii) makes the reconstruction
+more equivariant. Scope locked in: **inner-denoiser averaging only**, **minimal
+solver loops in-repo (no deepinv dependency)** — deepinv used only as a design
+reference (`EquivariantDenoiser` == our `orbit_average`).
+
+- **Built & wired, NOT yet run.** `src/groupavg/experiments/downstream_effect.py`
+  implements minimal `pnp_hqs` (HQS), `red_gd` (RED), and `diffusion_style` loops
+  with `Blur` (FFT Wiener prox) / `Inpaint` (masked prox) physics.
+  `_make_denoise_fn(mode="group_avg")` wraps the denoiser with
+  `pipeline.orbit_average` (= inference-time group averaging). Records
+  reconstruction PSNR (`base_psnr`) and a downstream **equivariance residual**
+  (`downstream_equivariance_psnr`) for vanilla vs group_avg.
+- **Runner:** `scripts/run_downstream_effect_grid.py` — grid over models
+  {restormer, restormer-aug, wavelet, tv, nlm} x sigma {15,25,50} x
+  {pnp_hqs, red_gd, diffusion_style} x {blur, inpaint} x angles 0-180.
+  Hard-requires CUDA + Restormer weights (`/data2/yuqi/...`) + `val_images` →
+  run on the **GPU box**, not the Mac checkout.
+- **Figure:** `scripts/make_downstream_effect_figure.py` — two-panel headline
+  (left: reconstruction-PSNR gain, vanilla vs `D_G`; right: downstream
+  equivariance PSNR vs rotation angle). Reads
+  `results/downstream_effect_grid/downstream_effect_grid_summary.csv`.
+  Validated against a schema-correct synthetic CSV; PNG only, dpi=400.
+
+### NEXT (resume here)
+1. **Run the downstream grid** on the GPU box (start small):
+   `~/anaconda3/envs/restormer37/bin/python scripts/run_downstream_effect_grid.py \`
+   `  --device cuda:1 --dataset val_images --models wavelet tv restormer \`
+   `  --sigmas 15 --problems blur inpaint --algorithms pnp_hqs red_gd --max-images 10`
+2. Render the headline: `python scripts/make_downstream_effect_figure.py`
+   (`--denoiser restormer --sigma 15 --out figures/downstream_effect.png`).
+3. Sanity-check the two claims hold (PSNR gain > 0; equivariance residual PSNR
+   higher for `D_G`), then scale the grid to all sigmas/models.
+4. Optional: install `bm3d`; re-download valid DnCNN weights + implement
+   `denoisers/stubs.py:DnCNN`; add a results notebook under `notebooks/`.
+
+## deepinv reference: transforms & rotation precision (2026-07-14)
+Checked deepinv's `transform` API as a design reference for the downstream work
+(we do NOT depend on it; in-repo minimal solvers only).
+- `Transform.symmetrize(f, average=True)` == our `orbit_average` (Reynolds
+  averaging: `forward -> f -> inverse`, averaged over `n_trans`). `inverse()`
+  reuses the sampled params and negates them (rotate by `-theta`), so it is an
+  *algorithmic* inverse (apply `T` with `-theta`), not a numerical reconstruction.
+- `Rotate` uses torchvision `functional.rotate` (default interpolation NEAREST;
+  bilinear optional). **Exact only for 90-degree multiples** (pixel permutations,
+  C4/D4). For arbitrary continuous angles it interpolates + zero-pads + crops, so
+  `T_g^{-1} T_g x != x` — i.e. the Q3 approximate-action regime.
+- Precision tier matches our `rotation_operator_quality` benchmark: deepinv
+  `Rotate` (bilinear) ~40 dB round-trip vs our default `fourier_rotation`
+  (FFT 3-shear) ~65 dB.
+- **Decision:** keep `fourier_rotation` for continuous-angle orbit averaging (so
+  the `e1` identity stays clean); deepinv would be exact-equivalent only if the
+  group is restricted to C4/D4 (`multiples=90` + `Reflect`).
 
 ## Notes / gotchas
 - `noise_sigma` is on the **0–255** scale everywhere (applied as sigma/255).
