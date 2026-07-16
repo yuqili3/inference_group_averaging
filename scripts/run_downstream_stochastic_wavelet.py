@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """Compare fixed vs stochastic group averaging inside PnP/RED iterations.
 
-Initial scope is wavelet denoising. The stochastic modes sample m angles from a
-fixed G=16 angle grid at every denoiser call, then average only those sampled
+Initial scope is classical denoising. The stochastic modes sample m angles from
+a fixed G=16 angle grid at every denoiser call, then average only those sampled
 orbit estimates. Each setting is run on both the original upright image and a
 45-degree rotated image padded to the larger rotation canvas. This isolates the
 cost/accuracy tradeoff against full G=16 averaging inside downstream solvers.
@@ -34,6 +34,47 @@ MODES = [
     ("G2_random", 2, "random"),
     ("G1_random", 1, "random"),
 ]
+
+
+def _result_paths(save_dir, denoiser_name):
+    stem = f"downstream_stochastic_{denoiser_name}"
+    return {
+        "detail": save_dir / f"{stem}_detail.csv",
+        "final": save_dir / f"{stem}_final.csv",
+        "summary": save_dir / f"{stem}_summary.csv",
+    }
+
+
+def _write_tables(save_dir, denoiser_name, detail_rows, final_rows):
+    paths = _result_paths(save_dir, denoiser_name)
+    detail = pd.DataFrame(detail_rows)
+    final = pd.DataFrame(final_rows)
+    if final.empty:
+        summary = pd.DataFrame()
+    else:
+        summary = (
+            final.groupby(
+                ["dataset", "input_pose", "input_angle_deg", "problem", "algorithm",
+                 "denoiser", "denoiser_sigma", "mode", "sampling", "base_group_size",
+                 "sample_size", "group_expand", "num_iter"],
+                as_index=False,
+            )
+            .agg(
+                mean_final_se=("final_se", "mean"),
+                mean_final_psnr=("final_psnr", "mean"),
+                mean_degraded_se=("degraded_se", "mean"),
+                mean_degraded_psnr=("degraded_psnr", "mean"),
+                total_group_evals=("total_group_evals", "first"),
+                n=("file", "size"),
+            )
+        )
+        summary["final_psnr_from_mean_se"] = summary["mean_final_se"].map(se_to_psnr)
+        summary["degraded_psnr_from_mean_se"] = summary["mean_degraded_se"].map(se_to_psnr)
+
+    detail.to_csv(paths["detail"], index=False)
+    final.to_csv(paths["final"], index=False)
+    summary.to_csv(paths["summary"], index=False)
+    return paths
 
 
 def _write_gray(path, img):
@@ -162,8 +203,9 @@ def _snapshot_iters(num_iter, requested):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", default=os.path.join(os.path.dirname(__file__), "..", "configs", "base.yaml"))
-    ap.add_argument("--save-dir", default="results/downstream_stochastic_wavelet")
+    ap.add_argument("--save-dir", default=None)
     ap.add_argument("--dataset", default="val_images")
+    ap.add_argument("--denoiser", default="wavelet", choices=["wavelet", "tv"])
     ap.add_argument("--sigma", type=float, default=15.0)
     ap.add_argument("--problems", nargs="+", default=["blur", "inpaint"], choices=["blur", "inpaint"])
     ap.add_argument("--algorithms", nargs="+", default=["pnp_hqs", "red_gd"], choices=["pnp_hqs", "red_gd"])
@@ -184,11 +226,11 @@ def main():
 
     base = load_config(args.base)
     files = list_images(dataset_path(base, args.dataset))[:args.max_images]
-    save_dir = Path(args.save_dir)
+    save_dir = Path(args.save_dir or f"results/downstream_stochastic_{args.denoiser}")
     save_dir.mkdir(parents=True, exist_ok=True)
     image_dir = save_dir / "intermediate_images"
 
-    denoiser = make_denoiser("wavelet")
+    denoiser = make_denoiser(args.denoiser)
     base_angles = np.arange(args.group_size, dtype=np.float32) * (360.0 / float(args.group_size))
     snapshots = _snapshot_iters(args.num_iter, args.snapshot_iters)
 
@@ -212,6 +254,7 @@ def main():
                 problem = de._make_problem(problem_name, clean.shape, seed=problem_seed)
                 for algorithm in args.algorithms:
                     for mode_name, sample_size, sampling in MODES:
+                        group_expand = input_pose != "rot45_padded"
                         run_seed = (
                             args.seed + image_index * 1000003 + sample_size * 1009 +
                             len(mode_name) + int(round(input_angle)) * 997
@@ -219,11 +262,12 @@ def main():
                         sampler = OrbitSampler(
                             denoiser, args.sigma, args.group_name, base_angles,
                             mode_name, sample_size, sampling, seed=run_seed,
+                            expand=group_expand,
                         )
                         print(
-                            f"[stochastic-wavelet] image={file_name} input={input_pose} "
+                            f"[stochastic-{args.denoiser}] image={file_name} input={input_pose} "
                             f"shape={clean.shape} problem={problem_name} algorithm={algorithm} "
-                            f"mode={mode_name} num_iter={args.num_iter}"
+                            f"mode={mode_name} group_expand={group_expand} num_iter={args.num_iter}"
                         )
                         res = _run_one(
                             clean, problem, sampler, algorithm,
@@ -251,10 +295,11 @@ def main():
                                 "input_width": clean.shape[1],
                                 "problem": problem_name,
                                 "algorithm": algorithm,
-                                "denoiser": "wavelet",
+                                "denoiser": args.denoiser,
                                 "denoiser_sigma": args.sigma,
                                 "mode": mode_name,
                                 "sampling": sampling,
+                                "group_expand": group_expand,
                                 "base_group_size": args.group_size,
                                 "sample_size": sample_size,
                                 "iteration": k + 1,
@@ -284,10 +329,11 @@ def main():
                             "input_width": clean.shape[1],
                             "problem": problem_name,
                             "algorithm": algorithm,
-                            "denoiser": "wavelet",
+                            "denoiser": args.denoiser,
                             "denoiser_sigma": args.sigma,
                             "mode": mode_name,
                             "sampling": sampling,
+                            "group_expand": group_expand,
                             "base_group_size": args.group_size,
                             "sample_size": sample_size,
                             "num_iter": args.num_iter,
@@ -298,31 +344,11 @@ def main():
                             "total_denoiser_calls": args.num_iter,
                             "total_group_evals": args.num_iter * sample_size,
                         })
+                        paths = _write_tables(save_dir, args.denoiser, detail_rows, final_rows)
+                        print(f"checkpoint wrote {paths['summary']}")
 
-    detail = pd.DataFrame(detail_rows)
-    final = pd.DataFrame(final_rows)
-    summary = (
-        final.groupby(
-            ["dataset", "input_pose", "input_angle_deg", "problem", "algorithm", "denoiser", "denoiser_sigma",
-             "mode", "sampling", "base_group_size", "sample_size", "num_iter"],
-            as_index=False,
-        )
-        .agg(
-            mean_final_se=("final_se", "mean"),
-            mean_final_psnr=("final_psnr", "mean"),
-            mean_degraded_se=("degraded_se", "mean"),
-            mean_degraded_psnr=("degraded_psnr", "mean"),
-            total_group_evals=("total_group_evals", "first"),
-            n=("file", "size"),
-        )
-    )
-    summary["final_psnr_from_mean_se"] = summary["mean_final_se"].map(se_to_psnr)
-    summary["degraded_psnr_from_mean_se"] = summary["mean_degraded_se"].map(se_to_psnr)
-
-    detail.to_csv(save_dir / "downstream_stochastic_wavelet_detail.csv", index=False)
-    final.to_csv(save_dir / "downstream_stochastic_wavelet_final.csv", index=False)
-    summary.to_csv(save_dir / "downstream_stochastic_wavelet_summary.csv", index=False)
-    print(f"wrote {save_dir / 'downstream_stochastic_wavelet_summary.csv'}")
+    paths = _write_tables(save_dir, args.denoiser, detail_rows, final_rows)
+    print(f"wrote {paths['summary']}")
 
 
 if __name__ == "__main__":
