@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Run vanilla classical denoiser baselines for downstream stochastic results."""
+"""Run vanilla denoiser baselines for downstream stochastic results."""
 import argparse
 import os
 import sys
@@ -10,7 +10,7 @@ import pandas as pd
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from groupavg.config import load_config, dataset_path  # noqa: E402
+from groupavg.config import load_config, dataset_path, restormer_weights  # noqa: E402
 from groupavg.data import list_images, load_image  # noqa: E402
 from groupavg.denoisers import make_denoiser  # noqa: E402
 from groupavg.experiments import downstream_effect as de  # noqa: E402
@@ -18,6 +18,30 @@ from groupavg.masks import build_mask, count_pixels  # noqa: E402
 from groupavg.metrics import l2sq, se_to_psnr  # noqa: E402
 from groupavg.pipeline import denoise_one  # noqa: E402
 from groupavg.registry import make_group  # noqa: E402
+
+RESTORMER_AUG_WEIGHTS = (
+    "/data2/yuqi/Restormer/experiments/"
+    "GaussianGrayDenoising_x_Rn_RestormerSigma15/models/net_g_148000.pth"
+)
+
+
+def _tag(denoiser_name, sigma):
+    return f"{denoiser_name}_sigma{int(float(sigma))}".replace("-", "_")
+
+
+def _make_model(label, base, device, sigma):
+    if label == "restormer":
+        weights = restormer_weights(base, sigma=sigma, color=False)
+        if not os.path.exists(weights):
+            raise FileNotFoundError(weights)
+        return make_denoiser("restormer", weights=weights, color=False, device=device)
+    if label == "restormer-aug":
+        if float(sigma) != 15.0:
+            raise ValueError("restormer-aug is only configured for sigma=15")
+        if not os.path.exists(RESTORMER_AUG_WEIGHTS):
+            raise FileNotFoundError(RESTORMER_AUG_WEIGHTS)
+        return make_denoiser("restormer", weights=RESTORMER_AUG_WEIGHTS, color=False, device=device)
+    return make_denoiser(label)
 
 
 def _input_variants(clean, group_name):
@@ -59,9 +83,11 @@ def _run_one(clean, problem, denoise_fn, algorithm, num_iter, measurement_sigma,
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", default=os.path.join(os.path.dirname(__file__), "..", "configs", "base.yaml"))
-    ap.add_argument("--save-dir", default="results/downstream_vanilla_classical")
+    ap.add_argument("--save-dir", default=None)
     ap.add_argument("--dataset", default="val_images")
-    ap.add_argument("--denoisers", nargs="+", default=["wavelet", "tv"], choices=["wavelet", "tv"])
+    ap.add_argument("--denoisers", nargs="+", default=["wavelet", "tv"],
+                    choices=["wavelet", "tv", "restormer", "restormer-aug"])
+    ap.add_argument("--device", default=None)
     ap.add_argument("--sigma", type=float, default=15.0)
     ap.add_argument("--problems", nargs="+", default=["blur", "inpaint"], choices=["blur", "inpaint"])
     ap.add_argument("--algorithms", nargs="+", default=["pnp_hqs", "red_gd"], choices=["pnp_hqs", "red_gd"])
@@ -79,12 +105,13 @@ def main():
 
     base = load_config(args.base)
     files = list_images(dataset_path(base, args.dataset))[:args.max_images]
-    save_dir = Path(args.save_dir)
+    device = args.device or base.get("device", "cuda:0")
+    save_dir = Path(args.save_dir or f"results/downstream_vanilla_sigma{int(float(args.sigma))}")
     save_dir.mkdir(parents=True, exist_ok=True)
 
     rows = []
     for denoiser_name in args.denoisers:
-        denoiser = make_denoiser(denoiser_name)
+        denoiser = _make_model(denoiser_name, base, device, args.sigma)
 
         def denoise_fn(x):
             return np.clip(denoise_one(x, denoiser, args.sigma), 0.0, 1.0)
@@ -157,9 +184,10 @@ def main():
     )
     summary["final_psnr_from_mean_se"] = summary["mean_final_se"].map(se_to_psnr)
     summary["degraded_psnr_from_mean_se"] = summary["mean_degraded_se"].map(se_to_psnr)
-    final.to_csv(save_dir / "downstream_vanilla_classical_final.csv", index=False)
-    summary.to_csv(save_dir / "downstream_vanilla_classical_summary.csv", index=False)
-    print(f"wrote {save_dir / 'downstream_vanilla_classical_summary.csv'}")
+    tag = "_".join(_tag(d, args.sigma) for d in args.denoisers)
+    final.to_csv(save_dir / f"downstream_vanilla_{tag}_final.csv", index=False)
+    summary.to_csv(save_dir / f"downstream_vanilla_{tag}_summary.csv", index=False)
+    print(f"wrote {save_dir / f'downstream_vanilla_{tag}_summary.csv'}")
 
 
 if __name__ == "__main__":

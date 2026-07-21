@@ -18,7 +18,7 @@ import pandas as pd
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from groupavg.config import load_config, dataset_path  # noqa: E402
+from groupavg.config import load_config, dataset_path, restormer_weights  # noqa: E402
 from groupavg.data import list_images, load_image  # noqa: E402
 from groupavg.denoisers import make_denoiser  # noqa: E402
 from groupavg.experiments import downstream_effect as de  # noqa: E402
@@ -35,9 +35,33 @@ MODES = [
     ("G1_random", 1, "random"),
 ]
 
+RESTORMER_AUG_WEIGHTS = (
+    "/data2/yuqi/Restormer/experiments/"
+    "GaussianGrayDenoising_x_Rn_RestormerSigma15/models/net_g_148000.pth"
+)
 
-def _result_paths(save_dir, denoiser_name):
-    stem = f"downstream_stochastic_{denoiser_name}"
+
+def _tag(denoiser_name, sigma):
+    return f"{denoiser_name}_sigma{int(float(sigma))}".replace("-", "_")
+
+
+def _make_model(label, base, device, sigma):
+    if label == "restormer":
+        weights = restormer_weights(base, sigma=sigma, color=False)
+        if not os.path.exists(weights):
+            raise FileNotFoundError(weights)
+        return make_denoiser("restormer", weights=weights, color=False, device=device)
+    if label == "restormer-aug":
+        if float(sigma) != 15.0:
+            raise ValueError("restormer-aug is only configured for sigma=15")
+        if not os.path.exists(RESTORMER_AUG_WEIGHTS):
+            raise FileNotFoundError(RESTORMER_AUG_WEIGHTS)
+        return make_denoiser("restormer", weights=RESTORMER_AUG_WEIGHTS, color=False, device=device)
+    return make_denoiser(label)
+
+
+def _result_paths(save_dir, denoiser_name, sigma):
+    stem = f"downstream_stochastic_{_tag(denoiser_name, sigma)}"
     return {
         "detail": save_dir / f"{stem}_detail.csv",
         "final": save_dir / f"{stem}_final.csv",
@@ -45,8 +69,8 @@ def _result_paths(save_dir, denoiser_name):
     }
 
 
-def _write_tables(save_dir, denoiser_name, detail_rows, final_rows):
-    paths = _result_paths(save_dir, denoiser_name)
+def _write_tables(save_dir, denoiser_name, sigma, detail_rows, final_rows):
+    paths = _result_paths(save_dir, denoiser_name, sigma)
     detail = pd.DataFrame(detail_rows)
     final = pd.DataFrame(final_rows)
     if final.empty:
@@ -205,7 +229,9 @@ def main():
     ap.add_argument("--base", default=os.path.join(os.path.dirname(__file__), "..", "configs", "base.yaml"))
     ap.add_argument("--save-dir", default=None)
     ap.add_argument("--dataset", default="val_images")
-    ap.add_argument("--denoiser", default="wavelet", choices=["wavelet", "tv"])
+    ap.add_argument("--denoiser", default="wavelet",
+                    choices=["wavelet", "tv", "restormer", "restormer-aug"])
+    ap.add_argument("--device", default=None)
     ap.add_argument("--sigma", type=float, default=15.0)
     ap.add_argument("--problems", nargs="+", default=["blur", "inpaint"], choices=["blur", "inpaint"])
     ap.add_argument("--algorithms", nargs="+", default=["pnp_hqs", "red_gd"], choices=["pnp_hqs", "red_gd"])
@@ -226,11 +252,12 @@ def main():
 
     base = load_config(args.base)
     files = list_images(dataset_path(base, args.dataset))[:args.max_images]
-    save_dir = Path(args.save_dir or f"results/downstream_stochastic_{args.denoiser}")
+    save_dir = Path(args.save_dir or f"results/downstream_stochastic_{_tag(args.denoiser, args.sigma)}")
     save_dir.mkdir(parents=True, exist_ok=True)
     image_dir = save_dir / "intermediate_images"
 
-    denoiser = make_denoiser(args.denoiser)
+    device = args.device or base.get("device", "cuda:0")
+    denoiser = _make_model(args.denoiser, base, device, args.sigma)
     base_angles = np.arange(args.group_size, dtype=np.float32) * (360.0 / float(args.group_size))
     snapshots = _snapshot_iters(args.num_iter, args.snapshot_iters)
 
@@ -344,10 +371,10 @@ def main():
                             "total_denoiser_calls": args.num_iter,
                             "total_group_evals": args.num_iter * sample_size,
                         })
-                        paths = _write_tables(save_dir, args.denoiser, detail_rows, final_rows)
+                        paths = _write_tables(save_dir, args.denoiser, args.sigma, detail_rows, final_rows)
                         print(f"checkpoint wrote {paths['summary']}")
 
-    paths = _write_tables(save_dir, args.denoiser, detail_rows, final_rows)
+    paths = _write_tables(save_dir, args.denoiser, args.sigma, detail_rows, final_rows)
     print(f"wrote {paths['summary']}")
 
 
