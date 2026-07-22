@@ -252,7 +252,7 @@ def main():
 
     base = load_config(args.base)
     files = list_images(dataset_path(base, args.dataset))[:args.max_images]
-    save_dir = Path(args.save_dir or f"results/downstream_stochastic_{_tag(args.denoiser, args.sigma)}")
+    save_dir = Path(args.save_dir or f"results/downstream/stochastic/{_tag(args.denoiser, args.sigma)}")
     save_dir.mkdir(parents=True, exist_ok=True)
     image_dir = save_dir / "intermediate_images"
 

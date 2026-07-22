@@ -106,7 +106,7 @@ def main():
     base = load_config(args.base)
     files = list_images(dataset_path(base, args.dataset))[:args.max_images]
     device = args.device or base.get("device", "cuda:0")
-    save_dir = Path(args.save_dir or f"results/downstream_vanilla_sigma{int(float(args.sigma))}")
+    save_dir = Path(args.save_dir or f"results/downstream/vanilla/sigma{int(float(args.sigma))}")
     save_dir.mkdir(parents=True, exist_ok=True)
 
     rows = []

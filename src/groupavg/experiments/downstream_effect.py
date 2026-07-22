@@ -125,8 +125,8 @@ def _make_denoise_fn(
 
 
 def _pnp_hqs(y, problem, denoise_fn, num_iter=8, rho=0.8, callback=None):
-    x = np.asarray(y, dtype=np.float32).copy()
-    z = x.copy()
+    x0 = problem.AT(y)
+    z = np.clip(np.asarray(x0, dtype=np.float32), 0.0, 1.0)
     for k in range(num_iter):
         x = problem.prox_data(y, z, rho=rho)
         x = np.clip(x, 0.0, 1.0)
@@ -136,12 +136,37 @@ def _pnp_hqs(y, problem, denoise_fn, num_iter=8, rho=0.8, callback=None):
     return np.clip(z, 0.0, 1.0).astype(np.float32)
 
 
-def _red_gd(y, problem, denoise_fn, num_iter=20, step=0.5, lam=0.15, callback=None):
+def _red_gd(
+    y,
+    problem,
+    denoise_fn,
+    num_iter=20,
+    step=0.5,
+    lam=0.15,
+    red_input_sigma=None,
+    callback=None,
+):
+    """Steepest-descent RED update.
+
+    If ``red_input_sigma`` is provided, use the Google RED parameterization:
+    grad f = A^T(Ax-y) / input_sigma^2 and, when ``step`` is None, the default
+    steepest-descent step mu = 2 / (1/input_sigma^2 + lambda). The sigma value
+    is on the 0-255 image scale, matching the original RED Matlab code.
+    """
     x = np.asarray(y, dtype=np.float32).copy()
+    if red_input_sigma is not None:
+        sigma2 = float(red_input_sigma) ** 2
+        if sigma2 <= 0:
+            raise ValueError("red_input_sigma must be positive.")
+        data_scale = 1.0 / sigma2
+        step_value = 2.0 / (data_scale + float(lam)) if step is None else float(step)
+    else:
+        data_scale = 1.0
+        step_value = float(step)
     for k in range(num_iter):
-        data_grad = problem.AT(problem.A(x) - y)
+        data_grad = data_scale * problem.AT(problem.A(x) - y)
         prior_grad = x - denoise_fn(x)
-        x = x - float(step) * (data_grad + float(lam) * prior_grad)
+        x = x - step_value * (data_grad + float(lam) * prior_grad)
         x = np.clip(x, 0.0, 1.0)
         if callback is not None:
             callback(k, x.astype(np.float32))
@@ -168,12 +193,12 @@ def _diffusion_style(y, problem, denoise_fn, num_iter=20, data_step=0.4, prior_s
 
 
 def _restore(algorithm, y, problem, denoise_fn, num_iter, rho, step, lam, data_step,
-             prior_step, callback=None):
+             prior_step, red_input_sigma=None, callback=None):
     if algorithm == "pnp_hqs":
         return _pnp_hqs(y, problem, denoise_fn, num_iter=num_iter, rho=rho, callback=callback)
     if algorithm == "red_gd":
         return _red_gd(y, problem, denoise_fn, num_iter=num_iter, step=step, lam=lam,
-                       callback=callback)
+                       red_input_sigma=red_input_sigma, callback=callback)
     if algorithm == "diffusion_style":
         return _diffusion_style(
             y,

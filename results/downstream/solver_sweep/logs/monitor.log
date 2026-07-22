@@ -1,0 +1,2653 @@
+Tue 21 Jul 2026 09:05:01 AM UTC
+--- gpu ---
+Tue Jul 21 09:05:01 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   80C    P2             269W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    352057      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    352057      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 87 / 1840 4.7% nan 0
+restormer 9 / 240 3.8% nan 0
+--- finish ---
+[finish] waiting for aligned parameter sweeps
+[wait] classical: 73/1840
+[wait] restormer: 7/240
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- classical ---
+ rho=0.8 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed5p0
+ rho=0.8 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed5p0
+ rho=0.8 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed5p0
+ rho=0.8 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed5p0
+ rho=0.8 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed5p0
+ rho=0.8 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed5p0
+ rho=0.8 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed5p0
+ rho=0.8 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed7p5
+ rho=0.4 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+
+--- restormer ---
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+
+
+
+
+Tue 21 Jul 2026 09:35:02 AM UTC
+--- gpu ---
+Tue Jul 21 09:35:02 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 56%   80C    P2             269W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    352057      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    352057      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1047 / 1840 56.9% nan 0
+restormer 125 / 240 52.1% nan 0
+--- finish ---
+[finish] waiting for aligned parameter sweeps
+[wait] classical: 73/1840
+[wait] restormer: 7/240
+[wait] classical: 253/1840
+[wait] restormer: 25/240
+[wait] classical: 607/1840
+[wait] restormer: 45/240
+[wait] classical: 805/1840
+[wait] restormer: 63/240
+[wait] classical: 952/1840
+[wait] restormer: 83/240
+[wait] classical: 999/1840
+[wait] restormer: 103/240
+[wait] classical: 1045/1840
+[wait] restormer: 123/240
+
+
+
+
+
+
+
+
+
+--- classical ---
+0.8 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed7p5 rho=
+0.8 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed7p5 rho=
+0.8 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed7p5 rho=
+0.8 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed7p5 rho=
+0.8 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed7p5 rho=
+0.8 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed7p5 rho=
+0.8 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed7p5 rho=
+0.8 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+
+--- restormer ---
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=rot45_padded mode=vanil
+la
+
+Tue 21 Jul 2026 10:05:04 AM UTC
+--- gpu ---
+Tue Jul 21 10:05:04 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 56%   79C    P2             267W / 300W |   9128MiB / 49140MiB |     82%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    352057      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    352057      C   ...aconda3/envs/restormer37/bin/python     3994MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1363 / 1840 74.1% nan 0
+restormer 239 / 240 99.6% nan 0
+--- finish ---
+[finish] waiting for aligned parameter sweeps
+[wait] classical: 73/1840
+[wait] restormer: 7/240
+[wait] classical: 253/1840
+[wait] restormer: 25/240
+[wait] classical: 607/1840
+[wait] restormer: 45/240
+[wait] classical: 805/1840
+[wait] restormer: 63/240
+[wait] classical: 952/1840
+[wait] restormer: 83/240
+[wait] classical: 999/1840
+[wait] restormer: 103/240
+[wait] classical: 1045/1840
+[wait] restormer: 123/240
+[wait] classical: 1089/1840
+[wait] restormer: 141/240
+[wait] classical: 1137/1840
+[wait] restormer: 159/240
+[wait] classical: 1183/1840
+[wait] restormer: 178/240
+[wait] classical: 1237/1840
+[wait] restormer: 197/240
+[wait] classical: 1299/1840
+[wait] restormer: 217/240
+[wait] classical: 1359/1840
+[wait] restormer: 237/240
+
+--- classical ---
+rho=0.8 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.8 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed15p0
+rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed15p0
+rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed15p0
+rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed15p0
+rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+
+--- restormer ---
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test005.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test007.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test009.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test010.png input=rot45_padded mode=va
+nilla
+
+Tue 21 Jul 2026 10:35:05 AM UTC
+--- gpu ---
+Tue Jul 21 10:35:05 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              19W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1645 / 1840 89.4% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[wait] restormer: 63/240
+[wait] classical: 952/1840
+[wait] restormer: 83/240
+[wait] classical: 999/1840
+[wait] restormer: 103/240
+[wait] classical: 1045/1840
+[wait] restormer: 123/240
+[wait] classical: 1089/1840
+[wait] restormer: 141/240
+[wait] classical: 1137/1840
+[wait] restormer: 159/240
+[wait] classical: 1183/1840
+[wait] restormer: 178/240
+[wait] classical: 1237/1840
+[wait] restormer: 197/240
+[wait] classical: 1299/1840
+[wait] restormer: 217/240
+[wait] classical: 1359/1840
+[wait] restormer: 237/240
+[wait] classical: 1419/1840
+[wait] restormer: 240/240
+[wait] classical: 1479/1840
+[wait] restormer: 240/240
+[wait] classical: 1519/1840
+[wait] restormer: 240/240
+[wait] classical: 1559/1840
+[wait] restormer: 240/240
+[wait] classical: 1602/1840
+[wait] restormer: 240/240
+[wait] classical: 1643/1840
+[wait] restormer: 240/240
+
+--- classical ---
+.8 step=3.92157 lam=0.01 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.92157 lam=0.01 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.84615 lam=0.02 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.84615 lam=0.02 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed5p0 rho=0
+.8 step=3.84615 lam=0.02 image=test003.png input=rot45_padded mode=vanilla
+
+--- restormer ---
+Tue 21 Jul 2026 11:05:06 AM UTC
+--- gpu ---
+Tue Jul 21 11:05:06 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   27C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   78C    P2             257W / 300W |   6252MiB / 49140MiB |     30%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python     6238MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+    26.741148      14.159309       0.00 20
+       tv inpaint    red_gd fixed3p25  0.8 3.846154         1.414214   0.020
+    16.463451       3.881612       0.00 20
+  wavelet    blur   pnp_hqs  fixed3p0  0.4 0.500000         0.000000   0.150
+    28.413035       1.977264       0.00 20
+  wavelet    blur    red_gd fixed3p25  0.8 3.960396         1.414214   0.005
+    30.127109       3.691337       0.00 20
+  wavelet inpaint   pnp_hqs fixed15p0  0.4 0.500000         0.000000   0.150
+    21.743065       9.161227       0.00 20
+  wavelet inpaint    red_gd  fixed5p0  0.8 3.846154         1.414214   0.020
+    12.645423       0.063585       0.00 20
+[finish] running selected vanilla+G16 experiments
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/restormer/blur/pnp_hqs --denoisers restormer --problems blur --algorithms p
+np_hqs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-coun
+t 1 --measurement-sigma 1.4142135623730951 --pnp-restormer-rhos 0.2
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 11:35:07 AM UTC
+--- gpu ---
+Tue Jul 21 11:35:07 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   79C    P2             265W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 12:05:08 PM UTC
+--- gpu ---
+Tue Jul 21 12:05:09 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   79C    P2             266W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixe
+d
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 12:35:10 PM UTC
+--- gpu ---
+Tue Jul 21 12:35:10 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   80C    P2             254W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_fixe
+d
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 01:05:11 PM UTC
+--- gpu ---
+Tue Jul 21 13:05:11 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 54%   75C    P2             160W / 300W |  13692MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    364269      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 01:35:12 PM UTC
+--- gpu ---
+Tue Jul 21 13:35:12 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   78C    P2             267W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=G16_fixe
+d
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed1
+5p0 rho=0.2 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fixe
+d
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/restormer/blur/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/restormer/blur/red_gd --denoisers restormer --problems blur --algorithms re
+d_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count
+1 --measurement-sigma 1.4142135623730951 --red-lambdas 0.005 --red-input-sigma 1
+.4142135623730951
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 02:05:13 PM UTC
+--- gpu ---
+Tue Jul 21 14:05:13 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   78C    P2             264W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/restormer/blur/red_gd --denoisers restormer --problems blur --algorithms re
+d_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count
+1 --measurement-sigma 1.4142135623730951 --red-lambdas 0.005 --red-input-sigma 1
+.4142135623730951
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test001.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 02:35:14 PM UTC
+--- gpu ---
+Tue Jul 21 14:35:14 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   27C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   77C    P2             252W / 300W |   6252MiB / 49140MiB |     28%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python     6238MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test003.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=rot45_padded mode=G16_f
+ixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 03:05:15 PM UTC
+--- gpu ---
+Tue Jul 21 15:05:16 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               7W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   78C    P2             148W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test004.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test005.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test005.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=rot45_padded mode=G16_f
+ixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 03:35:17 PM UTC
+--- gpu ---
+Tue Jul 21 15:35:17 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 54%   75C    P2             150W / 300W |  13692MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+p0 rho=0.8 step=3.9604 lam=0.005 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test005.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test005.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test006.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test007.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test007.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test008.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 04:05:18 PM UTC
+--- gpu ---
+Tue Jul 21 16:05:18 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   79C    P2             264W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    383475      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+p0 rho=0.8 step=3.9604 lam=0.005 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test007.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test007.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test008.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test008.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test009.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test009.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test010.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 04:35:19 PM UTC
+--- gpu ---
+Tue Jul 21 16:35:19 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   78C    P2             273W / 300W |   8452MiB / 49140MiB |     96%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python     8438MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+p0 rho=0.8 step=3.9604 lam=0.005 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test010.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15
+p0 rho=0.8 step=3.9604 lam=0.005 image=test010.png input=rot45_padded mode=G16_f
+ixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/restormer/blur/red_gd/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/restormer/inpaint/pnp_hqs --denoisers restormer --problems inpaint --algori
+thms pnp_hqs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-imag
+e-count 1 --measurement-sigma 1.4142135623730951 --pnp-restormer-rhos 0.8
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 05:05:20 PM UTC
+--- gpu ---
+Tue Jul 21 17:05:20 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   27C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   76C    P2             272W / 300W |  12718MiB / 49140MiB |     97%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python    12704MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+e-count 1 --measurement-sigma 1.4142135623730951 --pnp-restormer-rhos 0.8
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_f
+ixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 05:35:22 PM UTC
+--- gpu ---
+Tue Jul 21 17:35:22 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               7W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   78C    P2             273W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_f
+ixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 06:05:23 PM UTC
+--- gpu ---
+Tue Jul 21 18:05:23 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   78C    P2             252W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 06:35:24 PM UTC
+--- gpu ---
+Tue Jul 21 18:35:24 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   76C    P2             259W / 300W |  13692MiB / 49140MiB |     52%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    402830      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 07:05:25 PM UTC
+--- gpu ---
+Tue Jul 21 19:05:25 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   78C    P2             255W / 300W |   6252MiB / 49140MiB |     31%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python     6238MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fix
+ed15p0 rho=0.8 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_f
+ixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/restormer/inpaint/pnp_hqs/downstream_solver_sweep_summary.cs
+v
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/restormer/inpaint/red_gd --denoisers restormer --problems inpaint --algorit
+hms red_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-
+count 1 --measurement-sigma 1.4142135623730951 --red-lambdas 0.02 --red-input-si
+gma 1.4142135623730951
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=G16_fix
+ed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 07:35:26 PM UTC
+--- gpu ---
+Tue Jul 21 19:35:27 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   27C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 52%   79C    P2             268W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+weep/selected_final/restormer/inpaint/pnp_hqs/downstream_solver_sweep_summary.cs
+v
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/restormer/inpaint/red_gd --denoisers restormer --problems inpaint --algorit
+hms red_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-
+count 1 --measurement-sigma 1.4142135623730951 --red-lambdas 0.02 --red-input-si
+gma 1.4142135623730951
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=G1
+6_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 08:05:28 PM UTC
+--- gpu ---
+Tue Jul 21 20:05:28 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   78C    P2             140W / 300W |  13692MiB / 49140MiB |     70%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test003.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test003.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test003.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test004.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test004.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test004.png input=rot45_padded mode=G1
+6_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 08:35:29 PM UTC
+--- gpu ---
+Tue Jul 21 20:35:29 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   79C    P2             274W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test004.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test004.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test004.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test005.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test005.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test005.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=rot45_padded mode=G1
+6_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 09:05:30 PM UTC
+--- gpu ---
+Tue Jul 21 21:05:30 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   77C    P2             249W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test005.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test006.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test007.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test007.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test007.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=upright mode=G16_fix
+ed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 09:35:31 PM UTC
+--- gpu ---
+Tue Jul 21 21:35:32 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   28C    P8               8W / 300W |    672MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 53%   79C    P2             267W / 300W |  13692MiB / 49140MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python      658MiB |
+|    1   N/A  N/A    421966      C   ...aconda3/envs/restormer37/bin/python    13678MiB |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test007.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test008.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test009.png input=upright mode=G16_fix
+ed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test009.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test009.png input=rot45_padded mode=G1
+6_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test010.png input=upright mode=G16_fix
+ed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 10:05:33 PM UTC
+--- gpu ---
+Tue Jul 21 22:05:33 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   30C    P8               8W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   30C    P8              20W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test010.png input=rot45_padded mode=va
+nilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixe
+d15p0 rho=0.8 step=3.84615 lam=0.02 image=test010.png input=rot45_padded mode=G1
+6_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/restormer/inpaint/red_gd/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/tv/blur/pnp_hqs --denoisers tv --problems blur --algorithms pnp_hqs --modes
+ vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurem
+ent-sigma 1.4142135623730951 --pnp-classical-schedules 10.0 --pnp-classical-rhos
+ 0.4
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 10:35:34 PM UTC
+--- gpu ---
+Tue Jul 21 22:35:34 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              19W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 11:05:35 PM UTC
+--- gpu ---
+Tue Jul 21 23:05:35 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              20W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho
+=0.4 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/tv/blur/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/tv/blur/red_gd --denoisers tv --problems blur --algorithms red_gd --modes v
+anilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measuremen
+t-sigma 1.4142135623730951 --red-classical-schedules 3.25 --red-lambdas 0.005 --
+red-input-sigma 1.4142135623730951
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test001.png input=rot45_padded mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Tue 21 Jul 2026 11:35:37 PM UTC
+--- gpu ---
+Tue Jul 21 23:35:37 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              20W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test005.png input=rot45_padded mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 12:05:38 AM UTC
+--- gpu ---
+Wed Jul 22 00:05:38 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              19W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+0.8 step=3.9604 lam=0.005 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=blur algorithm=red_gd schedule=fixed3p25 rho=
+0.8 step=3.9604 lam=0.005 image=test010.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 12:35:39 AM UTC
+--- gpu ---
+Wed Jul 22 00:35:39 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              20W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+-modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --me
+asurement-sigma 1.4142135623730951 --pnp-classical-schedules 10.0 --pnp-classica
+l-rhos 0.4
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 01:05:41 AM UTC
+--- gpu ---
+Wed Jul 22 01:05:41 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              20W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+rho=0.4 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=pnp_hqs schedule=fixed10p0
+rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 01:35:42 AM UTC
+--- gpu ---
+Wed Jul 22 01:35:42 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              19W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+ho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test004.png input=rot45_padded mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 02:05:43 AM UTC
+--- gpu ---
+Wed Jul 22 02:05:43 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              19W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=tv problem=inpaint algorithm=red_gd schedule=fixed3p25 r
+ho=0.8 step=3.84615 lam=0.02 image=test010.png input=rot45_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/tv/inpaint/red_gd/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/wavelet/blur/pnp_hqs --denoisers wavelet --problems blur --algorithms pnp_h
+qs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1
+--measurement-sigma 1.4142135623730951 --pnp-classical-schedules 3.0 --pnp-class
+ical-rhos 0.4
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 02:35:45 AM UTC
+--- gpu ---
+Wed Jul 22 02:35:45 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               8W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              20W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed3p0
+ rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/wavelet/blur/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/wavelet/blur/red_gd --denoisers wavelet --problems blur --algorithms red_gd
+ --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --
+measurement-sigma 1.4142135623730951 --red-classical-schedules 3.25 --red-lambda
+s 0.005 --red-input-sigma 1.4142135623730951
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test001.png input=rot45_padded mode=G16_fix
+ed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test002.png input=rot45_padded mode=G16_fix
+ed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 03:05:46 AM UTC
+--- gpu ---
+Wed Jul 22 03:05:46 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               8W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              19W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+ rho=0.8 step=3.9604 lam=0.005 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed3p25
+ rho=0.8 step=3.9604 lam=0.005 image=test010.png input=rot45_padded mode=G16_fix
+ed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/wavelet/blur/red_gd/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/wavelet/inpaint/pnp_hqs --denoisers wavelet --problems inpaint --algorithms
+ pnp_hqs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-co
+unt 1 --measurement-sigma 1.4142135623730951 --pnp-classical-schedules 15.0 --pn
+p-classical-rhos 0.4
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fix
+ed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=fixed
+15p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fix
+ed
+
+--- classical ---
+--- restormer ---
+Wed 22 Jul 2026 03:35:47 AM UTC
+--- gpu ---
+Wed Jul 22 03:35:47 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A6000               On  | 00000000:31:00.0 Off |                  Off |
+| 30%   29C    P8               7W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  | 00000000:4B:00.0 Off |                  Off |
+| 30%   29C    P8              19W / 300W |      8MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+--- counts ---
+classical 1840 / 1840 100.0% nan 0
+restormer 240 / 240 100.0% nan 0
+--- finish ---
+15p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fix
+ed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_s
+weep/selected_final/wavelet/inpaint/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/infer
+ence_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuq
+i/Documents/inference_group_averaging/results/downstream/solver_sweep/selected_f
+inal/wavelet/inpaint/red_gd --denoisers wavelet --problems inpaint --algorithms
+red_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-coun
+t 1 --measurement-sigma 1.4142135623730951 --red-classical-schedules 5.0 --red-l
+ambdas 0.02 --red-input-sigma 1.4142135623730951
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test001.png input=rot45_padded mode=G16_f
+ixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=vanil
+la
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed5
+p0 rho=0.8 step=3.84615 lam=0.02 image=test002.png input=rot45_padded mode=G16_f
+ixed
+
+--- classical ---
+--- restormer ---
