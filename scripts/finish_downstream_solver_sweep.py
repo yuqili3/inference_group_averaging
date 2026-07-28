@@ -19,9 +19,9 @@ import pandas as pd
 REPO = Path(__file__).resolve().parents[1]
 PYTHON = Path.home() / "anaconda3/envs/restormer37/bin/python"
 SWEEP_SCRIPT = REPO / "scripts/run_downstream_solver_sweep.py"
-BASE = REPO / "results/downstream/solver_sweep"
+BASE = REPO / "results/downstream/solver_sweep_unclipped_masked"
 SWEEPS = {
-    "classical": (BASE / "parameter_sweep_classical", 1840),
+    "classical": (BASE / "parameter_sweep_wavelet", 920),
     "restormer": (BASE / "parameter_sweep_restormer", 240),
 }
 FINAL_DIR = BASE / "selected_final"
@@ -179,9 +179,10 @@ def push_results():
         "scripts/run_downstream_stochastic_wavelet.py",
         "scripts/run_downstream_vanilla_classical.py",
         "src/groupavg/experiments/downstream_effect.py",
+        "src/groupavg/metrics.py",
     ]
     _run(add_cmd)
-    _run(["git", "add", "-f", "results/README.md", "results/downstream/solver_sweep"])
+    _run(["git", "add", "-f", "results/README.md", "results/downstream/solver_sweep_unclipped_masked"])
     status = subprocess.run(
         ["git", "status", "--short"],
         cwd=REPO,

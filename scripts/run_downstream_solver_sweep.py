@@ -21,7 +21,7 @@ from groupavg.data import list_images, load_image  # noqa: E402
 from groupavg.denoisers import make_denoiser  # noqa: E402
 from groupavg.experiments import downstream_effect as de  # noqa: E402
 from groupavg.masks import build_mask, count_pixels  # noqa: E402
-from groupavg.metrics import l2sq, se_to_psnr  # noqa: E402
+from groupavg.metrics import l2sq, masked_ssim, se_to_psnr  # noqa: E402
 from groupavg.pipeline import denoise_one  # noqa: E402
 from groupavg.registry import make_group  # noqa: E402
 
@@ -54,9 +54,11 @@ def _make_model(label, base, device, sigma):
 def _input_variants(clean, group_name):
     clean = np.asarray(clean, dtype=np.float32)
     rot_group = make_group(group_name, K=1, angles=[45.0], expand=True)
+    clean_mask = np.ones_like(clean, dtype=np.float32)
+    rot_mask = (rot_group.forward(clean_mask)[0] > 0.5).astype(np.float32)
     return [
-        ("upright", 0.0, clean),
-        ("rot45_padded", 45.0, rot_group.forward(clean)[0].astype(np.float32)),
+        ("upright", 0.0, clean, clean_mask),
+        ("rot45_padded", 45.0, rot_group.forward(clean)[0].astype(np.float32), rot_mask),
     ]
 
 
@@ -93,7 +95,7 @@ def _parse_schedule(text):
 
 class ScheduledDenoiser:
     def __init__(self, denoiser, mode, denoiser_name, train_sigma, schedule,
-                 group_name, group_size, group_expand, num_iter, clip=True):
+                 group_name, group_size, group_expand, num_iter, clip=False):
         self.denoiser = denoiser
         self.mode = mode
         self.denoiser_name = denoiser_name
@@ -134,8 +136,6 @@ class ScheduledDenoiser:
             transformed = self.group.forward(x)
             for idx, tg_x in enumerate(transformed):
                 d = denoise_one(tg_x, self.denoiser, sigma)
-                if self.clip:
-                    d = np.clip(d, 0.0, 1.0)
                 estimates.append(self.group.invert(idx, d).astype(np.float32))
             out = np.mean(np.stack(estimates, axis=0), axis=0).astype(np.float32)
             self.last_angles = [float(a) for a in self.angles]
@@ -152,17 +152,16 @@ def _red_step_value(step, lam, red_input_sigma):
     return 2.0 / (data_scale + float(lam))
 
 
-def _run_one(clean, problem, denoise_fn, algorithm, num_iter, measurement_sigma,
+def _run_one(clean, eval_mask, problem, denoise_fn, algorithm, num_iter, measurement_sigma,
              seed, rho, step, lam, red_input_sigma):
     clean = np.asarray(clean, dtype=np.float32)
-    mask = build_mask(clean, clean_ref=clean, mask_mode="content")
+    mask = np.asarray(eval_mask, dtype=np.float32)
     pixels = count_pixels(mask, clean)
 
     rng = np.random.default_rng(seed)
     y = problem.A(clean)
     if measurement_sigma and measurement_sigma > 0:
         y = y + rng.normal(0.0, measurement_sigma / 255.0, size=y.shape).astype(np.float32)
-    y = np.clip(y, 0.0, 1.0)
 
     trajectory = []
 
@@ -173,6 +172,7 @@ def _run_one(clean, problem, denoise_fn, algorithm, num_iter, measurement_sigma,
             "image": np.asarray(xk, dtype=np.float32).copy(),
             "se": float(se),
             "psnr": float(se_to_psnr(se)),
+            "ssim": masked_ssim(xk, clean, mask=mask),
             "effective_denoiser_sigma": float(denoise_fn.last_effective_sigma),
             "sampled_angles": ";".join(
                 str(a) if isinstance(a, str) else f"{a:.6g}"
@@ -193,8 +193,10 @@ def _run_one(clean, problem, denoise_fn, algorithm, num_iter, measurement_sigma,
         "final": final,
         "degraded_se": float(degraded_se),
         "degraded_psnr": float(se_to_psnr(degraded_se)),
+        "degraded_ssim": masked_ssim(y, clean, mask=mask),
         "final_se": float(final_se),
         "final_psnr": float(se_to_psnr(final_se)),
+        "final_ssim": masked_ssim(final, clean, mask=mask),
         "trajectory": trajectory,
     }
 
@@ -214,10 +216,13 @@ def _write_tables(save_dir, detail_rows, final_rows):
         .agg(
             mean_final_psnr=("final_psnr", "mean"),
             mean_degraded_psnr=("degraded_psnr", "mean"),
+            mean_final_ssim=("final_ssim", "mean"),
+            mean_degraded_ssim=("degraded_ssim", "mean"),
             mean_final_se=("final_se", "mean"),
             mean_degraded_se=("degraded_se", "mean"),
             fail_rate=("beats_degraded", lambda s: 1.0 - float(np.mean(s))),
             mean_gap_psnr=("gap_psnr", "mean"),
+            mean_gap_ssim=("gap_ssim", "mean"),
             n=("file", "size"),
         )
     )
@@ -299,7 +304,7 @@ def main():
                                     file_name = os.path.basename(path)
                                     stem = Path(file_name).stem
                                     source_clean = load_image(path)
-                                    for input_pose, input_angle, clean in _input_variants(source_clean, args.group_name):
+                                    for input_pose, input_angle, clean, eval_mask in _input_variants(source_clean, args.group_name):
                                         if input_pose not in args.input_poses:
                                             continue
                                         problem_seed = args.seed + image_index * 1000003
@@ -319,7 +324,7 @@ def main():
                                                 f"step={step_value:.6g} lam={lam} image={file_name} input={input_pose} mode={mode}"
                                             )
                                             res = _run_one(
-                                                clean, problem, runner, algorithm,
+                                                clean, eval_mask, problem, runner, algorithm,
                                                 num_iter=args.num_iter,
                                                 measurement_sigma=args.measurement_sigma,
                                                 seed=args.seed + image_index * 1000003 + 17 + int(round(input_angle)) * 997,
@@ -343,6 +348,8 @@ def main():
                                                 "input_angle_deg": input_angle,
                                                 "input_height": clean.shape[0],
                                                 "input_width": clean.shape[1],
+                                                "eval_mask_pixels": count_pixels(eval_mask, clean),
+                                                "eval_mask_fraction": float(np.mean(eval_mask)),
                                                 "problem": problem_name,
                                                 "algorithm": algorithm,
                                                 "denoiser": denoiser_name,
@@ -358,6 +365,7 @@ def main():
                                                 "num_iter": args.num_iter,
                                                 "degraded_se": res["degraded_se"],
                                                 "degraded_psnr": res["degraded_psnr"],
+                                                "degraded_ssim": res["degraded_ssim"],
                                             }
                                             for item in res["trajectory"]:
                                                 row = dict(common)
@@ -365,6 +373,7 @@ def main():
                                                     "iteration": item["iteration"],
                                                     "se": item["se"],
                                                     "psnr": item["psnr"],
+                                                    "ssim": item["ssim"],
                                                     "effective_denoiser_sigma": item["effective_denoiser_sigma"],
                                                     "sampled_angles": item["sampled_angles"],
                                                 })
@@ -376,7 +385,9 @@ def main():
                                             final.update({
                                                 "final_se": res["final_se"],
                                                 "final_psnr": res["final_psnr"],
+                                                "final_ssim": res["final_ssim"],
                                                 "gap_psnr": res["final_psnr"] - res["degraded_psnr"],
+                                                "gap_ssim": res["final_ssim"] - res["degraded_ssim"],
                                                 "beats_degraded": res["final_psnr"] > res["degraded_psnr"],
                                                 "total_denoiser_calls": args.num_iter,
                                                 "total_group_evals": args.num_iter * (args.group_size if mode == "G16_fixed" else 1),

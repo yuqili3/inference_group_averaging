@@ -45,6 +45,30 @@ def se_to_psnr(mse_per_pixel, peak=1.0, eps=1e-12):
     return float(10.0 * np.log10((peak ** 2) / mse))
 
 
+def masked_ssim(a, b, mask=None, data_range=1.0):
+    """Mean SSIM on an optional binary support mask.
+
+    The SSIM map is computed with a fixed data range of 1.0, matching the PSNR
+    convention used throughout these experiments. If a mask is provided, only
+    pixels inside the mask contribute to the returned mean.
+    """
+    from skimage.metrics import structural_similarity
+
+    a = np.asarray(a, dtype=np.float32)
+    b = np.asarray(b, dtype=np.float32)
+    _, ssim_map = structural_similarity(
+        a,
+        b,
+        data_range=float(data_range),
+        full=True,
+    )
+    if mask is None:
+        return float(np.mean(ssim_map))
+    m = np.asarray(mask, dtype=np.float32)
+    denom = max(float(np.sum(m)), 1.0)
+    return float(np.sum(ssim_map * m) / denom)
+
+
 def orbit_variance_e1(e_list, mask=None):
     """e1 = E_g ||e_g||^2 - ||E_g e_g||^2  (raw, masked).
 

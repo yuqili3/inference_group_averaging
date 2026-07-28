@@ -20,7 +20,7 @@ import pandas as pd
 
 from ..data import list_images, load_image
 from ..masks import build_mask, count_pixels
-from ..metrics import l2sq, se_to_psnr
+from ..metrics import l2sq, masked_ssim, se_to_psnr
 from ..pipeline import denoise_one, orbit_average
 from ..registry import make_group
 
@@ -105,7 +105,7 @@ def _make_denoise_fn(
     group_name="fourier_rotation",
     group_size=8,
     expand=True,
-    clip=True,
+    clip=False,
 ):
     if mode == "vanilla":
         def _fn(x):
@@ -126,14 +126,13 @@ def _make_denoise_fn(
 
 def _pnp_hqs(y, problem, denoise_fn, num_iter=8, rho=0.8, callback=None):
     x0 = problem.AT(y)
-    z = np.clip(np.asarray(x0, dtype=np.float32), 0.0, 1.0)
+    z = np.asarray(x0, dtype=np.float32)
     for k in range(num_iter):
         x = problem.prox_data(y, z, rho=rho)
-        x = np.clip(x, 0.0, 1.0)
         z = denoise_fn(x)
         if callback is not None:
-            callback(k, np.clip(z, 0.0, 1.0).astype(np.float32))
-    return np.clip(z, 0.0, 1.0).astype(np.float32)
+            callback(k, z.astype(np.float32))
+    return z.astype(np.float32)
 
 
 def _red_gd(
@@ -167,7 +166,6 @@ def _red_gd(
         data_grad = data_scale * problem.AT(problem.A(x) - y)
         prior_grad = x - denoise_fn(x)
         x = x - step_value * (data_grad + float(lam) * prior_grad)
-        x = np.clip(x, 0.0, 1.0)
         if callback is not None:
             callback(k, x.astype(np.float32))
     return x.astype(np.float32)
@@ -186,7 +184,6 @@ def _diffusion_style(y, problem, denoise_fn, num_iter=20, data_step=0.4, prior_s
         score_drift = denoise_fn(x) - x
         data_grad = problem.AT(problem.A(x) - y)
         x = x + float(prior_step) * score_drift - float(data_step) * data_grad
-        x = np.clip(x, 0.0, 1.0)
         if callback is not None:
             callback(k, x.astype(np.float32))
     return x.astype(np.float32)
@@ -242,7 +239,6 @@ def run_single_with_trajectory(
     y = problem.A(clean)
     if measurement_sigma and measurement_sigma > 0:
         y = y + rng.normal(0.0, measurement_sigma / 255.0, size=y.shape).astype(np.float32)
-    y = np.clip(y, 0.0, 1.0)
 
     trajectory = []
 
@@ -253,6 +249,7 @@ def run_single_with_trajectory(
             "image": np.asarray(xk, dtype=np.float32).copy(),
             "se": float(se),
             "psnr": float(se_to_psnr(se)),
+            "ssim": masked_ssim(xk, clean, mask=mask),
         })
 
     final = _restore(
@@ -271,8 +268,10 @@ def run_single_with_trajectory(
         "pixels": pixels,
         "degraded_se": float(degraded_se),
         "degraded_psnr": float(se_to_psnr(degraded_se)),
+        "degraded_ssim": masked_ssim(y, clean, mask=mask),
         "final_se": float(final_se),
         "final_psnr": float(se_to_psnr(final_se)),
+        "final_ssim": masked_ssim(final, clean, mask=mask),
         "trajectory": trajectory,
         "algorithm": algorithm,
         "num_iter": int(num_iter),
@@ -341,7 +340,6 @@ def run(
             y = problem.A(clean)
             if measurement_sigma and measurement_sigma > 0:
                 y = y + rng.normal(0.0, measurement_sigma / 255.0, size=y.shape).astype(np.float32)
-            y = np.clip(y, 0.0, 1.0)
 
             for mode in denoiser_modes:
                 denoise_fn = _make_denoise_fn(
@@ -371,6 +369,7 @@ def run(
                         prior_step=prior_step,
                     )
                     base_se = l2sq(base_rec, clean, mask=base_mask) / base_pixels
+                    base_ssim = masked_ssim(base_rec, clean, mask=base_mask)
 
                     for angle_deg in angles_deg:
                         inv_group, clean_rot = _rotate_pair(clean, angle_deg, group_name, expand)
@@ -390,7 +389,6 @@ def run(
                             y_rot = y_rot + rot_rng.normal(
                                 0.0, measurement_sigma / 255.0, size=y_rot.shape
                             ).astype(np.float32)
-                        y_rot = np.clip(y_rot, 0.0, 1.0)
 
                         rot_rec = _restore(
                             algorithm,
@@ -405,6 +403,7 @@ def run(
                             prior_step=prior_step,
                         )
                         rot_se = l2sq(rot_rec, clean_rot, mask=rot_mask) / rot_pixels
+                        rot_ssim = masked_ssim(rot_rec, clean_rot, mask=rot_mask)
                         aligned = inv_group.invert(0, rot_rec)
                         downstream_residual = l2sq(aligned, base_rec, mask=base_mask) / base_pixels
 
@@ -422,8 +421,10 @@ def run(
                             "angle_deg": float(angle_deg),
                             "base_se": base_se,
                             "base_psnr": se_to_psnr(base_se),
+                            "base_ssim": base_ssim,
                             "rotated_se": rot_se,
                             "rotated_psnr": se_to_psnr(rot_se),
+                            "rotated_ssim": rot_ssim,
                             "downstream_equivariance_mse": downstream_residual,
                             "downstream_equivariance_psnr": se_to_psnr(downstream_residual),
                             "num_iter": num_iter,
@@ -454,8 +455,10 @@ def run(
         .agg(
             mean_base_se=("base_se", "mean"),
             mean_base_psnr=("base_psnr", "mean"),
+            mean_base_ssim=("base_ssim", "mean"),
             mean_rotated_se=("rotated_se", "mean"),
             mean_rotated_psnr=("rotated_psnr", "mean"),
+            mean_rotated_ssim=("rotated_ssim", "mean"),
             mean_downstream_equivariance_mse=("downstream_equivariance_mse", "mean"),
             mean_downstream_equivariance_psnr=("downstream_equivariance_psnr", "mean"),
             n=("file", "size"),
