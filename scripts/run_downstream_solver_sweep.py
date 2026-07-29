@@ -51,10 +51,10 @@ def _make_model(label, base, device, sigma):
     return make_denoiser(label)
 
 
-def _input_variants(clean, group_name):
+def _input_variants(clean, group_name, eval_mask_mode, input_rotate_expand=True):
     clean = np.asarray(clean, dtype=np.float32)
-    rot_group = make_group(group_name, K=1, angles=[45.0], expand=True)
-    clean_mask = np.ones_like(clean, dtype=np.float32)
+    rot_group = make_group(group_name, K=1, angles=[45.0], expand=input_rotate_expand)
+    clean_mask = build_mask(clean, clean_ref=clean, mask_mode=eval_mask_mode)
     rot_mask = (rot_group.forward(clean_mask)[0] > 0.5).astype(np.float32)
     return [
         ("upright", 0.0, clean, clean_mask),
@@ -207,7 +207,8 @@ def _write_tables(save_dir, detail_rows, final_rows):
     summary = (
         final.groupby(
             [
-                "dataset", "input_pose", "problem", "algorithm", "denoiser",
+                "dataset", "eval_mask", "input_pose", "input_rotate_expand",
+                "problem", "algorithm", "denoiser",
                 "train_sigma", "schedule", "rho", "step", "red_input_sigma",
                 "lambda", "mode", "base_group_size", "num_iter",
             ],
@@ -238,6 +239,9 @@ def main():
     ap.add_argument("--base", default=os.path.join(os.path.dirname(__file__), "..", "configs", "base.yaml"))
     ap.add_argument("--save-dir", default="results/downstream/solver_sweep")
     ap.add_argument("--dataset", default="val_images")
+    ap.add_argument("--eval-mask", default="none",
+                    choices=["none", "content", "rectangle", "circle", "square"],
+                    help="Mask used for PSNR/SSIM. Use circle for val_images_circle.")
     ap.add_argument("--denoisers", nargs="+", default=["wavelet", "tv", "restormer"])
     ap.add_argument("--device", default=None)
     ap.add_argument("--train-sigma", type=float, default=15.0)
@@ -254,6 +258,8 @@ def main():
     ap.add_argument("--modes", nargs="+", default=["vanilla", "G16_fixed"], choices=["vanilla", "G16_fixed"])
     ap.add_argument("--input-poses", nargs="+", default=["upright", "rot45_padded"],
                     choices=["upright", "rot45_padded"])
+    ap.add_argument("--no-input-rotate-expand", action="store_true",
+                    help="Rotate the 45-degree input on the original canvas.")
     ap.add_argument("--max-images", type=int, default=10)
     ap.add_argument("--num-iter", type=int, default=20)
     ap.add_argument("--group-name", default="fourier_rotation")
@@ -304,7 +310,12 @@ def main():
                                     file_name = os.path.basename(path)
                                     stem = Path(file_name).stem
                                     source_clean = load_image(path)
-                                    for input_pose, input_angle, clean, eval_mask in _input_variants(source_clean, args.group_name):
+                                    for input_pose, input_angle, clean, eval_mask in _input_variants(
+                                        source_clean,
+                                        args.group_name,
+                                        args.eval_mask,
+                                        input_rotate_expand=not args.no_input_rotate_expand,
+                                    ):
                                         if input_pose not in args.input_poses:
                                             continue
                                         problem_seed = args.seed + image_index * 1000003
@@ -342,10 +353,12 @@ def main():
 
                                             common = {
                                                 "dataset": args.dataset,
+                                                "eval_mask": args.eval_mask,
                                                 "file": file_name,
                                                 "image_index": image_index,
                                                 "input_pose": input_pose,
                                                 "input_angle_deg": input_angle,
+                                                "input_rotate_expand": not args.no_input_rotate_expand,
                                                 "input_height": clean.shape[0],
                                                 "input_width": clean.shape[1],
                                                 "eval_mask_pixels": count_pixels(eval_mask, clean),

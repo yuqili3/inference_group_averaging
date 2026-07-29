@@ -19,13 +19,22 @@ import pandas as pd
 REPO = Path(__file__).resolve().parents[1]
 PYTHON = Path.home() / "anaconda3/envs/restormer37/bin/python"
 SWEEP_SCRIPT = REPO / "scripts/run_downstream_solver_sweep.py"
-BASE = REPO / "results/downstream/solver_sweep_unclipped_masked"
+BASE = Path(os.environ.get(
+    "DOWNSTREAM_SOLVER_SWEEP_BASE",
+    REPO / "results/downstream/solver_sweep_unclipped_masked",
+))
+if not BASE.is_absolute():
+    BASE = REPO / BASE
 SWEEPS = {
     "classical": (BASE / "parameter_sweep_wavelet", 920),
     "restormer": (BASE / "parameter_sweep_restormer", 240),
 }
 FINAL_DIR = BASE / "selected_final"
 MEASUREMENT_SIGMA = float(np.sqrt(2.0))
+DATASET = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_DATASET", "val_images")
+EVAL_MASK = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EVAL_MASK", "none")
+INPUT_ROTATE_EXPAND = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPUT_ROTATE_EXPAND", "1")
+INPUT_ROTATE_EXPAND = INPUT_ROTATE_EXPAND.lower() not in {"0", "false", "no"}
 
 
 def _run(cmd, **kwargs):
@@ -122,6 +131,10 @@ def run_selected(selected):
             out,
             "--denoisers",
             denoiser,
+            "--dataset",
+            DATASET,
+            "--eval-mask",
+            EVAL_MASK,
             "--problems",
             problem,
             "--algorithms",
@@ -138,6 +151,8 @@ def run_selected(selected):
             "--measurement-sigma",
             MEASUREMENT_SIGMA,
         ]
+        if not INPUT_ROTATE_EXPAND:
+            cmd += ["--no-input-rotate-expand"]
         if algorithm == "pnp_hqs":
             if denoiser in {"wavelet", "tv"}:
                 cmd += ["--pnp-classical-schedules", schedule_arg(row["schedule"])]
@@ -182,7 +197,7 @@ def push_results():
         "src/groupavg/metrics.py",
     ]
     _run(add_cmd)
-    _run(["git", "add", "-f", "results/README.md", "results/downstream/solver_sweep_unclipped_masked"])
+    _run(["git", "add", "-f", "results/README.md", BASE.relative_to(REPO)])
     status = subprocess.run(
         ["git", "status", "--short"],
         cwd=REPO,
