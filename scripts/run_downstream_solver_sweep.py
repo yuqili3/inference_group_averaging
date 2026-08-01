@@ -51,15 +51,28 @@ def _make_model(label, base, device, sigma):
     return make_denoiser(label)
 
 
-def _input_variants(clean, group_name, eval_mask_mode, input_rotate_expand=True):
+def _pad_image(x, pad):
+    if int(pad) <= 0:
+        return np.asarray(x, dtype=np.float32)
+    return np.pad(np.asarray(x, dtype=np.float32), int(pad), mode="constant")
+
+
+def _angle_tag(angle):
+    return _tag(f"{float(angle):g}")
+
+
+def _input_variants(clean, group_name, eval_mask_mode, input_rotate_expand=True,
+                    input_pad=0, rotation_angles=(45.0,)):
     clean = np.asarray(clean, dtype=np.float32)
-    rot_group = make_group(group_name, K=1, angles=[45.0], expand=input_rotate_expand)
-    clean_mask = build_mask(clean, clean_ref=clean, mask_mode=eval_mask_mode)
-    rot_mask = (rot_group.forward(clean_mask)[0] > 0.5).astype(np.float32)
-    return [
-        ("upright", 0.0, clean, clean_mask),
-        ("rot45_padded", 45.0, rot_group.forward(clean)[0].astype(np.float32), rot_mask),
-    ]
+    base_clean = _pad_image(clean, input_pad)
+    base_mask = _pad_image(build_mask(clean, clean_ref=clean, mask_mode=eval_mask_mode), input_pad)
+    variants = [("upright", 0.0, base_clean, base_mask)]
+    for angle in rotation_angles:
+        rot_group = make_group(group_name, K=1, angles=[float(angle)], expand=input_rotate_expand)
+        rot_clean = rot_group.forward(base_clean)[0].astype(np.float32)
+        rot_mask = (rot_group.forward(base_mask)[0] > 0.5).astype(np.float32)
+        variants.append((f"rot{_angle_tag(angle)}_padded", float(angle), rot_clean, rot_mask))
+    return variants
 
 
 def _write_gray(path, img):
@@ -152,8 +165,26 @@ def _red_step_value(step, lam, red_input_sigma):
     return 2.0 / (data_scale + float(lam))
 
 
+def _telea_inpaint_initialization(y, problem):
+    if not hasattr(problem, "mask"):
+        return problem.AT(y)
+    observed = np.asarray(problem.AT(y), dtype=np.float32)
+    missing = (np.asarray(problem.mask) < 0.5).astype(np.uint8)
+    src = (np.clip(observed, 0.0, 1.0) * 255.0 + 0.5).astype(np.uint8)
+    filled = cv2.inpaint(src, missing, 3, cv2.INPAINT_TELEA).astype(np.float32) / 255.0
+    return filled
+
+
+def _initial_estimate(y, problem, init_method):
+    if init_method == "adjoint":
+        return problem.AT(y)
+    if init_method == "telea":
+        return _telea_inpaint_initialization(y, problem)
+    raise ValueError(f"Unknown initialization method: {init_method!r}")
+
+
 def _run_one(clean, eval_mask, problem, denoise_fn, algorithm, num_iter, measurement_sigma,
-             seed, rho, step, lam, red_input_sigma):
+             seed, rho, step, lam, red_input_sigma, init_method):
     clean = np.asarray(clean, dtype=np.float32)
     mask = np.asarray(eval_mask, dtype=np.float32)
     pixels = count_pixels(mask, clean)
@@ -180,11 +211,12 @@ def _run_one(clean, eval_mask, problem, denoise_fn, algorithm, num_iter, measure
             ),
         })
 
+    x0 = _initial_estimate(y, problem, init_method)
     final = de._restore(
         algorithm, y, problem, denoise_fn,
         num_iter=num_iter, rho=rho, step=step, lam=lam,
         data_step=0.4, prior_step=0.25, red_input_sigma=red_input_sigma,
-        callback=_record,
+        x0=x0, callback=_record,
     )
     degraded_se = l2sq(y, clean, mask=mask) / pixels
     final_se = l2sq(final, clean, mask=mask) / pixels
@@ -208,9 +240,9 @@ def _write_tables(save_dir, detail_rows, final_rows):
         final.groupby(
             [
                 "dataset", "eval_mask", "input_pose", "input_rotate_expand",
-                "problem", "algorithm", "denoiser",
+                "input_pad", "problem", "algorithm", "denoiser",
                 "train_sigma", "schedule", "rho", "step", "red_input_sigma",
-                "lambda", "mode", "base_group_size", "num_iter",
+                "lambda", "mode", "base_group_size", "num_iter", "init_method",
             ],
             as_index=False,
         )
@@ -257,11 +289,16 @@ def main():
                     help="RED input noise sigma on the 0-255 scale, matching Google RED.")
     ap.add_argument("--modes", nargs="+", default=["vanilla", "G16_fixed"], choices=["vanilla", "G16_fixed"])
     ap.add_argument("--input-poses", nargs="+", default=["upright", "rot45_padded"],
-                    choices=["upright", "rot45_padded"])
+                    help="Input poses to include, e.g. upright rot30_padded rot45_padded.")
     ap.add_argument("--no-input-rotate-expand", action="store_true",
                     help="Rotate the 45-degree input on the original canvas.")
+    ap.add_argument("--input-pad", type=int, default=0)
+    ap.add_argument("--rotation-angles", type=float, nargs="+", default=[45.0])
+    ap.add_argument("--inpaint-init", default="adjoint", choices=["adjoint", "telea"])
     ap.add_argument("--max-images", type=int, default=10)
     ap.add_argument("--num-iter", type=int, default=20)
+    ap.add_argument("--pnp-num-iter", type=int, default=None)
+    ap.add_argument("--red-num-iter", type=int, default=None)
     ap.add_argument("--group-name", default="fourier_rotation")
     ap.add_argument("--group-size", type=int, default=16)
     ap.add_argument("--measurement-sigma", type=float, default=2 ** 0.5)
@@ -283,6 +320,7 @@ def main():
         denoiser = _make_model(denoiser_name, base, device, args.train_sigma)
         for algorithm in args.algorithms:
             if algorithm == "pnp_hqs":
+                num_iter = args.pnp_num_iter if args.pnp_num_iter is not None else args.num_iter
                 if denoiser_name in {"restormer", "restormer-aug"}:
                     schedules = [{"kind": "fixed", "start": args.train_sigma, "end": args.train_sigma}]
                     rhos = args.pnp_restormer_rhos
@@ -292,6 +330,7 @@ def main():
                 steps = [0.5]
                 lams = [0.15]
             else:
+                num_iter = args.red_num_iter if args.red_num_iter is not None else args.num_iter
                 if denoiser_name in {"restormer", "restormer-aug"}:
                     schedules = [{"kind": "fixed", "start": args.train_sigma, "end": args.train_sigma}]
                 else:
@@ -315,18 +354,20 @@ def main():
                                         args.group_name,
                                         args.eval_mask,
                                         input_rotate_expand=not args.no_input_rotate_expand,
+                                        input_pad=args.input_pad,
+                                        rotation_angles=args.rotation_angles,
                                     ):
                                         if input_pose not in args.input_poses:
                                             continue
                                         problem_seed = args.seed + image_index * 1000003
-                                        if input_pose == "rot45_padded":
-                                            problem_seed += 45000
+                                        if input_pose != "upright":
+                                            problem_seed += int(round(input_angle * 1000.0))
                                         problem = de._make_problem(problem_name, clean.shape, seed=problem_seed)
-                                        group_expand = input_pose != "rot45_padded"
+                                        group_expand = input_pose == "upright"
                                         for mode in args.modes:
                                             runner = ScheduledDenoiser(
                                                 denoiser, mode, denoiser_name, args.train_sigma, schedule,
-                                                args.group_name, args.group_size, group_expand, args.num_iter,
+                                                args.group_name, args.group_size, group_expand, num_iter,
                                             )
                                             step_value = _red_step_value(step, lam, args.red_input_sigma) if algorithm == "red_gd" else float(step)
                                             print(
@@ -336,11 +377,12 @@ def main():
                                             )
                                             res = _run_one(
                                                 clean, eval_mask, problem, runner, algorithm,
-                                                num_iter=args.num_iter,
+                                                num_iter=num_iter,
                                                 measurement_sigma=args.measurement_sigma,
                                                 seed=args.seed + image_index * 1000003 + 17 + int(round(input_angle)) * 997,
                                                 rho=rho, step=step, lam=lam,
                                                 red_input_sigma=args.red_input_sigma,
+                                                init_method=args.inpaint_init if problem_name == "inpaint" else "adjoint",
                                             )
                                             if image_index < args.save_image_count:
                                                 prefix = (
@@ -359,6 +401,7 @@ def main():
                                                 "input_pose": input_pose,
                                                 "input_angle_deg": input_angle,
                                                 "input_rotate_expand": not args.no_input_rotate_expand,
+                                                "input_pad": args.input_pad,
                                                 "input_height": clean.shape[0],
                                                 "input_width": clean.shape[1],
                                                 "eval_mask_pixels": count_pixels(eval_mask, clean),
@@ -375,7 +418,8 @@ def main():
                                                 "mode": mode,
                                                 "group_expand": group_expand,
                                                 "base_group_size": args.group_size if mode == "G16_fixed" else 0,
-                                                "num_iter": args.num_iter,
+                                                "num_iter": num_iter,
+                                                "init_method": args.inpaint_init if problem_name == "inpaint" else "adjoint",
                                                 "degraded_se": res["degraded_se"],
                                                 "degraded_psnr": res["degraded_psnr"],
                                                 "degraded_ssim": res["degraded_ssim"],
@@ -402,8 +446,8 @@ def main():
                                                 "gap_psnr": res["final_psnr"] - res["degraded_psnr"],
                                                 "gap_ssim": res["final_ssim"] - res["degraded_ssim"],
                                                 "beats_degraded": res["final_psnr"] > res["degraded_psnr"],
-                                                "total_denoiser_calls": args.num_iter,
-                                                "total_group_evals": args.num_iter * (args.group_size if mode == "G16_fixed" else 1),
+                                                "total_denoiser_calls": num_iter,
+                                                "total_group_evals": num_iter * (args.group_size if mode == "G16_fixed" else 1),
                                             })
                                             final_rows.append(final)
                                             _write_tables(save_dir, detail_rows, final_rows)

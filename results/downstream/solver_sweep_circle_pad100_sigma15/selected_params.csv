@@ -1,0 +1,9 @@
+denoiser,problem,algorithm,schedule,rho,step,red_input_sigma,lambda,mean_final_psnr,mean_gap_psnr,fail_rate,n
+restormer,blur,pnp_hqs,fixed15p0,1.6,0.5,0.0,0.15,24.24759242292873,3.918490944664785,0.0,40
+restormer,blur,red_gd,fixed15p0,0.8,8.0,15.0,0.02,23.04325747270213,2.7141559944381846,0.0,40
+restormer,inpaint,pnp_hqs,fixed15p0,0.1,0.5,0.0,0.15,27.615006651788036,18.2395936419559,0.0,40
+restormer,inpaint,red_gd,fixed15p0,0.8,4.0,15.0,0.02,25.473218520291624,16.097805510459487,0.0,40
+wavelet,blur,pnp_hqs,fixed10p0,0.4,0.5,0.0,0.15,22.012095435982197,1.6829939577182504,0.0,40
+wavelet,blur,red_gd,fixed10p0,0.8,1.0,15.0,0.02,22.416307124418232,2.0872056461542887,0.0,40
+wavelet,inpaint,pnp_hqs,linear25p0_to_10p0,0.1,0.5,0.0,0.15,23.654500599953888,14.279087590121753,0.0,40
+wavelet,inpaint,red_gd,fixed10p0,0.8,1.0,15.0,0.02,24.580313738561024,15.204900728728887,0.0,40

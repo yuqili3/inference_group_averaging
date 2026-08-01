@@ -1,0 +1,934 @@
+[finish] waiting for aligned parameter sweeps
+[wait] classical: 0/8800
+[wait] restormer: 0/2000
+[wait] classical: 95/8800
+[wait] restormer: 33/2000
+[wait] classical: 239/8800
+[wait] restormer: 66/2000
+[wait] classical: 380/8800
+[wait] restormer: 100/2000
+[wait] classical: 518/8800
+[wait] restormer: 133/2000
+[wait] classical: 654/8800
+[wait] restormer: 166/2000
+[wait] classical: 787/8800
+[wait] restormer: 200/2000
+[wait] classical: 917/8800
+[wait] restormer: 239/2000
+[wait] classical: 1045/8800
+[wait] restormer: 278/2000
+[wait] classical: 1172/8800
+[wait] restormer: 317/2000
+[wait] classical: 1416/8800
+[wait] restormer: 355/2000
+[wait] classical: 1677/8800
+[wait] restormer: 394/2000
+[wait] classical: 1923/8800
+[wait] restormer: 413/2000
+[wait] classical: 2157/8800
+[wait] restormer: 430/2000
+[wait] classical: 2379/8800
+[wait] restormer: 446/2000
+[wait] classical: 2451/8800
+[wait] restormer: 462/2000
+[wait] classical: 2508/8800
+[wait] restormer: 478/2000
+[wait] classical: 2564/8800
+[wait] restormer: 494/2000
+[wait] classical: 2620/8800
+[wait] restormer: 510/2000
+[wait] classical: 2675/8800
+[wait] restormer: 526/2000
+[wait] classical: 2730/8800
+[wait] restormer: 543/2000
+[wait] classical: 2785/8800
+[wait] restormer: 559/2000
+[wait] classical: 2840/8800
+[wait] restormer: 575/2000
+[wait] classical: 2893/8800
+[wait] restormer: 591/2000
+[wait] classical: 2947/8800
+[wait] restormer: 607/2000
+[wait] classical: 3001/8800
+[wait] restormer: 623/2000
+[wait] classical: 3054/8800
+[wait] restormer: 639/2000
+[wait] classical: 3107/8800
+[wait] restormer: 655/2000
+[wait] classical: 3160/8800
+[wait] restormer: 671/2000
+[wait] classical: 3213/8800
+[wait] restormer: 687/2000
+[wait] classical: 3265/8800
+[wait] restormer: 703/2000
+[wait] classical: 3317/8800
+[wait] restormer: 719/2000
+[wait] classical: 3368/8800
+[wait] restormer: 735/2000
+[wait] classical: 3420/8800
+[wait] restormer: 751/2000
+[wait] classical: 3471/8800
+[wait] restormer: 767/2000
+[wait] classical: 3522/8800
+[wait] restormer: 783/2000
+[wait] classical: 3572/8800
+[wait] restormer: 799/2000
+[wait] classical: 3623/8800
+[wait] restormer: 815/2000
+[wait] classical: 3673/8800
+[wait] restormer: 831/2000
+[wait] classical: 3722/8800
+[wait] restormer: 847/2000
+[wait] classical: 3772/8800
+[wait] restormer: 863/2000
+[wait] classical: 3822/8800
+[wait] restormer: 879/2000
+[wait] classical: 3871/8800
+[wait] restormer: 895/2000
+[wait] classical: 3920/8800
+[wait] restormer: 911/2000
+[wait] classical: 3968/8800
+[wait] restormer: 927/2000
+[wait] classical: 4017/8800
+[wait] restormer: 943/2000
+[wait] classical: 4065/8800
+[wait] restormer: 958/2000
+[wait] classical: 4113/8800
+[wait] restormer: 974/2000
+[wait] classical: 4161/8800
+[wait] restormer: 990/2000
+[wait] classical: 4208/8800
+[wait] restormer: 1006/2000
+[wait] classical: 4255/8800
+[wait] restormer: 1022/2000
+[wait] classical: 4302/8800
+[wait] restormer: 1038/2000
+[wait] classical: 4349/8800
+[wait] restormer: 1054/2000
+[wait] classical: 4395/8800
+[wait] restormer: 1069/2000
+[wait] classical: 4441/8800
+[wait] restormer: 1085/2000
+[wait] classical: 4487/8800
+[wait] restormer: 1101/2000
+[wait] classical: 4533/8800
+[wait] restormer: 1117/2000
+[wait] classical: 4578/8800
+[wait] restormer: 1133/2000
+[wait] classical: 4624/8800
+[wait] restormer: 1149/2000
+[wait] classical: 4669/8800
+[wait] restormer: 1164/2000
+[wait] classical: 4714/8800
+[wait] restormer: 1180/2000
+[wait] classical: 4759/8800
+[wait] restormer: 1196/2000
+[wait] classical: 4804/8800
+[wait] restormer: 1214/2000
+[wait] classical: 4848/8800
+[wait] restormer: 1234/2000
+[wait] classical: 4893/8800
+[wait] restormer: 1253/2000
+[wait] classical: 4937/8800
+[wait] restormer: 1272/2000
+[wait] classical: 4981/8800
+[wait] restormer: 1292/2000
+[wait] classical: 5025/8800
+[wait] restormer: 1311/2000
+[wait] classical: 5069/8800
+[wait] restormer: 1330/2000
+[wait] classical: 5113/8800
+[wait] restormer: 1349/2000
+[wait] classical: 5156/8800
+[wait] restormer: 1368/2000
+[wait] classical: 5200/8800
+[wait] restormer: 1388/2000
+[wait] classical: 5243/8800
+[wait] restormer: 1407/2000
+[wait] classical: 5286/8800
+[wait] restormer: 1426/2000
+[wait] classical: 5329/8800
+[wait] restormer: 1445/2000
+[wait] classical: 5371/8800
+[wait] restormer: 1464/2000
+[wait] classical: 5414/8800
+[wait] restormer: 1483/2000
+[wait] classical: 5456/8800
+[wait] restormer: 1502/2000
+[wait] classical: 5499/8800
+[wait] restormer: 1522/2000
+[wait] classical: 5541/8800
+[wait] restormer: 1541/2000
+[wait] classical: 5583/8800
+[wait] restormer: 1560/2000
+[wait] classical: 5649/8800
+[wait] restormer: 1579/2000
+[wait] classical: 5730/8800
+[wait] restormer: 1598/2000
+[wait] classical: 5810/8800
+[wait] restormer: 1617/2000
+[wait] classical: 5890/8800
+[wait] restormer: 1636/2000
+[wait] classical: 5969/8800
+[wait] restormer: 1655/2000
+[wait] classical: 6047/8800
+[wait] restormer: 1674/2000
+[wait] classical: 6123/8800
+[wait] restormer: 1693/2000
+[wait] classical: 6199/8800
+[wait] restormer: 1712/2000
+[wait] classical: 6274/8800
+[wait] restormer: 1731/2000
+[wait] classical: 6349/8800
+[wait] restormer: 1750/2000
+[wait] classical: 6422/8800
+[wait] restormer: 1768/2000
+[wait] classical: 6495/8800
+[wait] restormer: 1787/2000
+[wait] classical: 6567/8800
+[wait] restormer: 1806/2000
+[wait] classical: 6638/8800
+[wait] restormer: 1825/2000
+[wait] classical: 6709/8800
+[wait] restormer: 1844/2000
+[wait] classical: 6778/8800
+[wait] restormer: 1863/2000
+[wait] classical: 6847/8800
+[wait] restormer: 1882/2000
+[wait] classical: 6916/8800
+[wait] restormer: 1901/2000
+[wait] classical: 6984/8800
+[wait] restormer: 1920/2000
+[wait] classical: 7051/8800
+[wait] restormer: 1938/2000
+[wait] classical: 7117/8800
+[wait] restormer: 1957/2000
+[wait] classical: 7183/8800
+[wait] restormer: 1976/2000
+[wait] classical: 7248/8800
+[wait] restormer: 1995/2000
+[wait] classical: 7312/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7376/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7439/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7503/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7566/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7628/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7690/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7752/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7813/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7873/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7933/8800
+[wait] restormer: 2000/2000
+[wait] classical: 7992/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8051/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8109/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8167/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8225/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8282/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8339/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8396/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8452/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8508/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8564/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8619/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8674/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8728/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8782/8800
+[wait] restormer: 2000/2000
+[wait] classical: 8800/8800
+[wait] restormer: 2000/2000
+[finish] selecting parameters
+ denoiser problem algorithm           schedule  rho  step  red_input_sigma  lambda  mean_final_psnr  mean_gap_psnr  fail_rate  n
+restormer    blur   pnp_hqs          fixed15p0  1.6   0.5              0.0    0.15        24.247592       3.918491        0.0 40
+restormer    blur    red_gd          fixed15p0  0.8   8.0             15.0    0.02        23.043257       2.714156        0.0 40
+restormer inpaint   pnp_hqs          fixed15p0  0.1   0.5              0.0    0.15        27.615007      18.239594        0.0 40
+restormer inpaint    red_gd          fixed15p0  0.8   4.0             15.0    0.02        25.473219      16.097806        0.0 40
+  wavelet    blur   pnp_hqs          fixed10p0  0.4   0.5              0.0    0.15        22.012095       1.682994        0.0 40
+  wavelet    blur    red_gd          fixed10p0  0.8   1.0             15.0    0.02        22.416307       2.087206        0.0 40
+  wavelet inpaint   pnp_hqs linear25p0_to_10p0  0.1   0.5              0.0    0.15        23.654501      14.279088        0.0 40
+  wavelet inpaint    red_gd          fixed10p0  0.8   1.0             15.0    0.02        24.580314      15.204901        0.0 40
+[finish] running selected vanilla+G16 experiments
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/blur/pnp_hqs --denoisers restormer --dataset val_images_circle --eval-mask circle --problems blur --algorithms pnp_hqs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --pnp-restormer-rhos 1.6
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/blur/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/blur/red_gd --denoisers restormer --dataset val_images_circle --eval-mask circle --problems blur --algorithms red_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --red-lambdas 0.02 --red-input-sigma 15.0 --red-steps 8.0
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/blur/red_gd/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/inpaint/pnp_hqs --denoisers restormer --dataset val_images_circle --eval-mask circle --problems inpaint --algorithms pnp_hqs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --inpaint-init telea --pnp-restormer-rhos 0.1
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=pnp_hqs schedule=fixed15p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/inpaint/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/inpaint/red_gd --denoisers restormer --dataset val_images_circle --eval-mask circle --problems inpaint --algorithms red_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --inpaint-init telea --red-lambdas 0.02 --red-input-sigma 15.0 --red-steps 4.0
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=inpaint algorithm=red_gd schedule=fixed15p0 rho=0.8 step=4 lam=0.02 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/restormer/inpaint/red_gd/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/blur/pnp_hqs --denoisers wavelet --dataset val_images_circle --eval-mask circle --problems blur --algorithms pnp_hqs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --pnp-classical-schedules 10.0 --pnp-classical-rhos 0.4
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=pnp_hqs schedule=fixed10p0 rho=0.4 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/blur/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/blur/red_gd --denoisers wavelet --dataset val_images_circle --eval-mask circle --problems blur --algorithms red_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --red-classical-schedules 10.0 --red-lambdas 0.02 --red-input-sigma 15.0 --red-steps 1.0
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=blur algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/blur/red_gd/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/inpaint/pnp_hqs --denoisers wavelet --dataset val_images_circle --eval-mask circle --problems inpaint --algorithms pnp_hqs --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --inpaint-init telea --pnp-classical-schedules 25.0->10.0 --pnp-classical-rhos 0.1
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=pnp_hqs schedule=linear25p0_to_10p0 rho=0.1 step=0.5 lam=0.15 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/inpaint/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/inpaint/red_gd --denoisers wavelet --dataset val_images_circle --eval-mask circle --problems inpaint --algorithms red_gd --modes vanilla G16_fixed --max-images 10 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 100 --rotation-angles 30 45 60 --input-poses upright rot30_padded rot45_padded rot60_padded --pnp-num-iter 20 --red-num-iter 40 --no-input-rotate-expand --inpaint-init telea --red-classical-schedules 10.0 --red-lambdas 0.02 --red-input-sigma 15.0 --red-steps 1.0
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test003.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test004.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test005.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test006.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test007.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test008.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test009.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=upright mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=upright mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=wavelet problem=inpaint algorithm=red_gd schedule=fixed10p0 rho=0.8 step=1 lam=0.02 image=test010.png input=rot60_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_circle_pad100_sigma15/selected_final/wavelet/inpaint/red_gd/downstream_solver_sweep_summary.csv
+[finish] aggregating selected final results
+[finish] committing and pushing
++ git add scripts/run_downstream_solver_sweep.py scripts/finish_downstream_solver_sweep.py scripts/run_downstream_stochastic_wavelet.py scripts/run_downstream_vanilla_classical.py src/groupavg/experiments/downstream_effect.py src/groupavg/metrics.py
++ git add -f results/README.md results/downstream/solver_sweep_circle_pad100_sigma15

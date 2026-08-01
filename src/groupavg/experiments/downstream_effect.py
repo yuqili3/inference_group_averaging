@@ -124,8 +124,8 @@ def _make_denoise_fn(
     raise ValueError(f"Unknown denoiser mode: {mode!r}")
 
 
-def _pnp_hqs(y, problem, denoise_fn, num_iter=8, rho=0.8, callback=None):
-    x0 = problem.AT(y)
+def _pnp_hqs(y, problem, denoise_fn, num_iter=8, rho=0.8, x0=None, callback=None):
+    x0 = problem.AT(y) if x0 is None else x0
     z = np.asarray(x0, dtype=np.float32)
     for k in range(num_iter):
         x = problem.prox_data(y, z, rho=rho)
@@ -143,6 +143,7 @@ def _red_gd(
     step=0.5,
     lam=0.15,
     red_input_sigma=None,
+    x0=None,
     callback=None,
 ):
     """Steepest-descent RED update.
@@ -152,7 +153,7 @@ def _red_gd(
     steepest-descent step mu = 2 / (1/input_sigma^2 + lambda). The sigma value
     is on the 0-255 image scale, matching the original RED Matlab code.
     """
-    x = np.asarray(y, dtype=np.float32).copy()
+    x = np.asarray(y if x0 is None else x0, dtype=np.float32).copy()
     if red_input_sigma is not None:
         sigma2 = float(red_input_sigma) ** 2
         if sigma2 <= 0:
@@ -190,12 +191,13 @@ def _diffusion_style(y, problem, denoise_fn, num_iter=20, data_step=0.4, prior_s
 
 
 def _restore(algorithm, y, problem, denoise_fn, num_iter, rho, step, lam, data_step,
-             prior_step, red_input_sigma=None, callback=None):
+             prior_step, red_input_sigma=None, x0=None, callback=None):
     if algorithm == "pnp_hqs":
-        return _pnp_hqs(y, problem, denoise_fn, num_iter=num_iter, rho=rho, callback=callback)
+        return _pnp_hqs(y, problem, denoise_fn, num_iter=num_iter, rho=rho, x0=x0,
+                        callback=callback)
     if algorithm == "red_gd":
         return _red_gd(y, problem, denoise_fn, num_iter=num_iter, step=step, lam=lam,
-                       red_input_sigma=red_input_sigma, callback=callback)
+                       red_input_sigma=red_input_sigma, x0=x0, callback=callback)
     if algorithm == "diffusion_style":
         return _diffusion_style(
             y,

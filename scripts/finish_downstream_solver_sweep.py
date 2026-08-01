@@ -26,15 +26,29 @@ BASE = Path(os.environ.get(
 if not BASE.is_absolute():
     BASE = REPO / BASE
 SWEEPS = {
-    "classical": (BASE / "parameter_sweep_wavelet", 920),
-    "restormer": (BASE / "parameter_sweep_restormer", 240),
+    "classical": (
+        BASE / "parameter_sweep_wavelet",
+        int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EXPECTED_WAVELET", "920")),
+    ),
+    "restormer": (
+        BASE / "parameter_sweep_restormer",
+        int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EXPECTED_RESTORMER", "240")),
+    ),
 }
 FINAL_DIR = BASE / "selected_final"
-MEASUREMENT_SIGMA = float(np.sqrt(2.0))
+MEASUREMENT_SIGMA = float(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_MEASUREMENT_SIGMA", np.sqrt(2.0)))
 DATASET = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_DATASET", "val_images")
 EVAL_MASK = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EVAL_MASK", "none")
 INPUT_ROTATE_EXPAND = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPUT_ROTATE_EXPAND", "1")
 INPUT_ROTATE_EXPAND = INPUT_ROTATE_EXPAND.lower() not in {"0", "false", "no"}
+INPUT_PAD = int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPUT_PAD", "0"))
+ROTATION_ANGLES = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_ROTATION_ANGLES", "45")
+INPUT_POSES = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPUT_POSES", "upright rot45_padded")
+INPAINT_INIT = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPAINT_INIT", "adjoint")
+MAX_IMAGES = int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_MAX_IMAGES", "10"))
+NUM_ITER = int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_NUM_ITER", "20"))
+PNP_NUM_ITER = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_PNP_NUM_ITER")
+RED_NUM_ITER = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_RED_NUM_ITER")
 
 
 def _run(cmd, **kwargs):
@@ -143,16 +157,28 @@ def run_selected(selected):
             "vanilla",
             "G16_fixed",
             "--max-images",
-            "10",
+            MAX_IMAGES,
             "--num-iter",
-            "20",
+            NUM_ITER,
             "--save-image-count",
             "1",
             "--measurement-sigma",
             MEASUREMENT_SIGMA,
+            "--input-pad",
+            INPUT_PAD,
+            "--rotation-angles",
+            *ROTATION_ANGLES.split(),
+            "--input-poses",
+            *INPUT_POSES.split(),
         ]
+        if PNP_NUM_ITER:
+            cmd += ["--pnp-num-iter", PNP_NUM_ITER]
+        if RED_NUM_ITER:
+            cmd += ["--red-num-iter", RED_NUM_ITER]
         if not INPUT_ROTATE_EXPAND:
             cmd += ["--no-input-rotate-expand"]
+        if problem == "inpaint":
+            cmd += ["--inpaint-init", INPAINT_INIT]
         if algorithm == "pnp_hqs":
             if denoiser in {"wavelet", "tv"}:
                 cmd += ["--pnp-classical-schedules", schedule_arg(row["schedule"])]
@@ -164,6 +190,7 @@ def run_selected(selected):
                 cmd += ["--red-classical-schedules", schedule_arg(row["schedule"])]
             cmd += ["--red-lambdas", row["lambda"]]
             cmd += ["--red-input-sigma", row["red_input_sigma"]]
+            cmd += ["--red-steps", row["step"]]
         _run(cmd)
 
 
