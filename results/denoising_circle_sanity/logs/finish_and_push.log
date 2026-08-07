@@ -1,0 +1,9 @@
+[wait] downstream_policy: detail 48/80, summary=False
+[wait] noexpand_policy: detail 80/80, summary=True
+[wait] downstream_policy: detail 64/80, summary=False
+[wait] noexpand_policy: detail 80/80, summary=True
+[wait] downstream_policy: detail 80/80, summary=True
+[wait] noexpand_policy: detail 80/80, summary=True
+wrote /home/yuqi/Documents/inference_group_averaging/results/denoising_circle_sanity/summary.md
++ git add scripts/run_denoising_circle_sanity.py scripts/finish_denoising_circle_sanity.py
++ git add -f results/denoising_circle_sanity
