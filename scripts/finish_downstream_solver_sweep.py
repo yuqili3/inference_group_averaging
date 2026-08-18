@@ -14,6 +14,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from pandas.errors import EmptyDataError
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -25,16 +26,25 @@ BASE = Path(os.environ.get(
 ))
 if not BASE.is_absolute():
     BASE = REPO / BASE
-SWEEPS = {
-    "classical": (
+SWEEPS = [
+    (
+        "wavelet",
         BASE / "parameter_sweep_wavelet",
         int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EXPECTED_WAVELET", "920")),
     ),
-    "restormer": (
+    (
+        "restormer",
         BASE / "parameter_sweep_restormer",
         int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EXPECTED_RESTORMER", "240")),
     ),
-}
+]
+_expected_restormer_aug = int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EXPECTED_RESTORMER_AUG", "0"))
+if _expected_restormer_aug > 0:
+    SWEEPS.append((
+        "restormer-aug",
+        BASE / "parameter_sweep_restormer_aug",
+        _expected_restormer_aug,
+    ))
 FINAL_DIR = BASE / "selected_final"
 MEASUREMENT_SIGMA = float(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_MEASUREMENT_SIGMA", np.sqrt(2.0)))
 DATASET = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_DATASET", "val_images")
@@ -44,6 +54,8 @@ INPUT_ROTATE_EXPAND = INPUT_ROTATE_EXPAND.lower() not in {"0", "false", "no"}
 INPUT_PAD = int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPUT_PAD", "0"))
 ROTATION_ANGLES = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_ROTATION_ANGLES", "45")
 INPUT_POSES = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPUT_POSES", "upright rot45_padded")
+EXCLUDE_UPRIGHT = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_EXCLUDE_UPRIGHT", "0")
+EXCLUDE_UPRIGHT = EXCLUDE_UPRIGHT.lower() in {"1", "true", "yes"}
 INPAINT_INIT = os.environ.get("DOWNSTREAM_SOLVER_SWEEP_INPAINT_INIT", "adjoint")
 MAX_IMAGES = int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_MAX_IMAGES", "10"))
 NUM_ITER = int(os.environ.get("DOWNSTREAM_SOLVER_SWEEP_NUM_ITER", "20"))
@@ -60,7 +72,10 @@ def _read_final(path):
     csv = path / "downstream_solver_sweep_final.csv"
     if not csv.exists():
         return None
-    return pd.read_csv(csv)
+    try:
+        return pd.read_csv(csv)
+    except EmptyDataError:
+        return None
 
 
 def _validate(df, name, expected):
@@ -76,7 +91,7 @@ def _validate(df, name, expected):
 def wait_for_sweeps():
     while True:
         ready = True
-        for name, (path, expected) in SWEEPS.items():
+        for name, path, expected in SWEEPS:
             df = _read_final(path)
             n = 0 if df is None else len(df)
             print(f"[wait] {name}: {n}/{expected}", flush=True)
@@ -89,7 +104,7 @@ def wait_for_sweeps():
         time.sleep(300)
 
     frames = []
-    for name, (path, expected) in SWEEPS.items():
+    for name, path, expected in SWEEPS:
         df = _read_final(path)
         _validate(df, name, expected)
         frames.append(df)
@@ -171,6 +186,8 @@ def run_selected(selected):
             "--input-poses",
             *INPUT_POSES.split(),
         ]
+        if EXCLUDE_UPRIGHT:
+            cmd += ["--exclude-upright"]
         if PNP_NUM_ITER:
             cmd += ["--pnp-num-iter", PNP_NUM_ITER]
         if RED_NUM_ITER:

@@ -1,0 +1,3874 @@
+[finish] waiting for aligned parameter sweeps
+[wait] wavelet: 0/31680
+[wait] restormer: 0/7200
+[wait] restormer-aug: 0/7200
+[wait] wavelet: 74/31680
+[wait] restormer: 13/7200
+[wait] restormer-aug: 13/7200
+[wait] wavelet: 150/31680
+[wait] restormer: 28/7200
+[wait] restormer-aug: 28/7200
+[wait] wavelet: 224/31680
+[wait] restormer: 44/7200
+[wait] restormer-aug: 44/7200
+[wait] wavelet: 299/31680
+[wait] restormer: 60/7200
+[wait] restormer-aug: 60/7200
+[wait] wavelet: 372/31680
+[wait] restormer: 72/7200
+[wait] restormer-aug: 73/7200
+[wait] wavelet: 447/31680
+[wait] restormer: 86/7200
+[wait] restormer-aug: 86/7200
+[wait] wavelet: 522/31680
+[wait] restormer: 101/7200
+[wait] restormer-aug: 101/7200
+[wait] wavelet: 597/31680
+[wait] restormer: 117/7200
+[wait] restormer-aug: 117/7200
+[wait] wavelet: 670/31680
+[wait] restormer: 133/7200
+[wait] restormer-aug: 133/7200
+[wait] wavelet: 742/31680
+[wait] restormer: 146/7200
+[wait] restormer-aug: 147/7200
+[wait] wavelet: 813/31680
+[wait] restormer: 159/7200
+[wait] restormer-aug: 160/7200
+[wait] wavelet: 884/31680
+[wait] restormer: 174/7200
+[wait] restormer-aug: 174/7200
+[wait] wavelet: 952/31680
+[wait] restormer: 190/7200
+[wait] restormer-aug: 190/7200
+[wait] wavelet: 1022/31680
+[wait] restormer: 205/7200
+[wait] restormer-aug: 206/7200
+[wait] wavelet: 1093/31680
+[wait] restormer: 219/7200
+[wait] restormer-aug: 220/7200
+[wait] wavelet: 1164/31680
+[wait] restormer: 232/7200
+[wait] restormer-aug: 234/7200
+[wait] wavelet: 1234/31680
+[wait] restormer: 247/7200
+[wait] restormer-aug: 248/7200
+[wait] wavelet: 1304/31680
+[wait] restormer: 262/7200
+[wait] restormer-aug: 263/7200
+[wait] wavelet: 1374/31680
+[wait] restormer: 278/7200
+[wait] restormer-aug: 279/7200
+[wait] wavelet: 1442/31680
+[wait] restormer: 292/7200
+[wait] restormer-aug: 293/7200
+[wait] wavelet: 1512/31680
+[wait] restormer: 306/7200
+[wait] restormer-aug: 308/7200
+[wait] wavelet: 1580/31680
+[wait] restormer: 320/7200
+[wait] restormer-aug: 321/7200
+[wait] wavelet: 1648/31680
+[wait] restormer: 335/7200
+[wait] restormer-aug: 336/7200
+[wait] wavelet: 1716/31680
+[wait] restormer: 350/7200
+[wait] restormer-aug: 351/7200
+[wait] wavelet: 1780/31680
+[wait] restormer: 365/7200
+[wait] restormer-aug: 366/7200
+[wait] wavelet: 1847/31680
+[wait] restormer: 379/7200
+[wait] restormer-aug: 381/7200
+[wait] wavelet: 1914/31680
+[wait] restormer: 392/7200
+[wait] restormer-aug: 394/7200
+[wait] wavelet: 1976/31680
+[wait] restormer: 407/7200
+[wait] restormer-aug: 409/7200
+[wait] wavelet: 2042/31680
+[wait] restormer: 423/7200
+[wait] restormer-aug: 424/7200
+[wait] wavelet: 2108/31680
+[wait] restormer: 438/7200
+[wait] restormer-aug: 439/7200
+[wait] wavelet: 2171/31680
+[wait] restormer: 453/7200
+[wait] restormer-aug: 454/7200
+[wait] wavelet: 2237/31680
+[wait] restormer: 465/7200
+[wait] restormer-aug: 468/7200
+[wait] wavelet: 2304/31680
+[wait] restormer: 480/7200
+[wait] restormer-aug: 481/7200
+[wait] wavelet: 2369/31680
+[wait] restormer: 496/7200
+[wait] restormer-aug: 497/7200
+[wait] wavelet: 2434/31680
+[wait] restormer: 510/7200
+[wait] restormer-aug: 512/7200
+[wait] wavelet: 2495/31680
+[wait] restormer: 525/7200
+[wait] restormer-aug: 527/7200
+[wait] wavelet: 2561/31680
+[wait] restormer: 538/7200
+[wait] restormer-aug: 541/7200
+[wait] wavelet: 2622/31680
+[wait] restormer: 553/7200
+[wait] restormer-aug: 554/7200
+[wait] wavelet: 2687/31680
+[wait] restormer: 568/7200
+[wait] restormer-aug: 569/7200
+[wait] wavelet: 2747/31680
+[wait] restormer: 583/7200
+[wait] restormer-aug: 584/7200
+[wait] wavelet: 2811/31680
+[wait] restormer: 598/7200
+[wait] restormer-aug: 600/7200
+[wait] wavelet: 2876/31680
+[wait] restormer: 611/7200
+[wait] restormer-aug: 614/7200
+[wait] wavelet: 2939/31680
+[wait] restormer: 625/7200
+[wait] restormer-aug: 627/7200
+[wait] wavelet: 2999/31680
+[wait] restormer: 640/7200
+[wait] restormer-aug: 642/7200
+[wait] wavelet: 3061/31680
+[wait] restormer: 655/7200
+[wait] restormer-aug: 657/7200
+[wait] wavelet: 3121/31680
+[wait] restormer: 671/7200
+[wait] restormer-aug: 672/7200
+[wait] wavelet: 3181/31680
+[wait] restormer: 684/7200
+[wait] restormer-aug: 687/7200
+[wait] wavelet: 3243/31680
+[wait] restormer: 698/7200
+[wait] restormer-aug: 700/7200
+[wait] wavelet: 3306/31680
+[wait] restormer: 713/7200
+[wait] restormer-aug: 715/7200
+[wait] wavelet: 3365/31680
+[wait] restormer: 728/7200
+[wait] restormer-aug: 730/7200
+[wait] wavelet: 3426/31680
+[wait] restormer: 745/7200
+[wait] restormer-aug: 747/7200
+[wait] wavelet: 3484/31680
+[wait] restormer: 762/7200
+[wait] restormer-aug: 764/7200
+[wait] wavelet: 3541/31680
+[wait] restormer: 778/7200
+[wait] restormer-aug: 781/7200
+[wait] wavelet: 3602/31680
+[wait] restormer: 792/7200
+[wait] restormer-aug: 796/7200
+[wait] wavelet: 3663/31680
+[wait] restormer: 807/7200
+[wait] restormer-aug: 812/7200
+[wait] wavelet: 3720/31680
+[wait] restormer: 824/7200
+[wait] restormer-aug: 828/7200
+[wait] wavelet: 3778/31680
+[wait] restormer: 840/7200
+[wait] restormer-aug: 843/7200
+[wait] wavelet: 3838/31680
+[wait] restormer: 857/7200
+[wait] restormer-aug: 860/7200
+[wait] wavelet: 3895/31680
+[wait] restormer: 873/7200
+[wait] restormer-aug: 875/7200
+[wait] wavelet: 3955/31680
+[wait] restormer: 889/7200
+[wait] restormer-aug: 892/7200
+[wait] wavelet: 4012/31680
+[wait] restormer: 906/7200
+[wait] restormer-aug: 909/7200
+[wait] wavelet: 4071/31680
+[wait] restormer: 922/7200
+[wait] restormer-aug: 925/7200
+[wait] wavelet: 4127/31680
+[wait] restormer: 937/7200
+[wait] restormer-aug: 941/7200
+[wait] wavelet: 4183/31680
+[wait] restormer: 952/7200
+[wait] restormer-aug: 957/7200
+[wait] wavelet: 4242/31680
+[wait] restormer: 968/7200
+[wait] restormer-aug: 973/7200
+[wait] wavelet: 4298/31680
+[wait] restormer: 984/7200
+[wait] restormer-aug: 988/7200
+[wait] wavelet: 1539/31680
+[wait] restormer: 1001/7200
+[wait] restormer-aug: 1004/7200
+[wait] wavelet: 4466/31680
+[wait] restormer: 1017/7200
+[wait] restormer-aug: 1019/7200
+[wait] wavelet: 4559/31680
+[wait] restormer: 1034/7200
+[wait] restormer-aug: 1036/7200
+[wait] wavelet: 4652/31680
+[wait] restormer: 1050/7200
+[wait] restormer-aug: 1053/7200
+[wait] wavelet: 4393/31680
+[wait] restormer: 1066/7200
+[wait] restormer-aug: 1070/7200
+[wait] wavelet: 4826/31680
+[wait] restormer: 1080/7200
+[wait] restormer-aug: 1085/7200
+[wait] wavelet: 4917/31680
+[wait] restormer: 1096/7200
+[wait] restormer-aug: 1102/7200
+[wait] wavelet: 5006/31680
+[wait] restormer: 1112/7200
+[wait] restormer-aug: 1118/7200
+[wait] wavelet: 5094/31680
+[wait] restormer: 1128/7200
+[wait] restormer-aug: 1133/7200
+[wait] wavelet: 5182/31680
+[wait] restormer: 1145/7200
+[wait] restormer-aug: 1149/7200
+[wait] wavelet: 5261/31680
+[wait] restormer: 1161/7200
+[wait] restormer-aug: 1164/7200
+[wait] wavelet: 5347/31680
+[wait] restormer: 1177/7200
+[wait] restormer-aug: 1180/7200
+[wait] wavelet: 5431/31680
+[wait] restormer: 1194/7200
+[wait] restormer-aug: 1197/7200
+[wait] wavelet: 5516/31680
+[wait] restormer: 1210/7200
+[wait] restormer-aug: 1214/7200
+[wait] wavelet: 5600/31680
+[wait] restormer: 1224/7200
+[wait] restormer-aug: 1230/7200
+[wait] wavelet: 5682/31680
+[wait] restormer: 1239/7200
+[wait] restormer-aug: 1246/7200
+[wait] wavelet: 5760/31680
+[wait] restormer: 1255/7200
+[wait] restormer-aug: 1262/7200
+[wait] wavelet: 5841/31680
+[wait] restormer: 1272/7200
+[wait] restormer-aug: 1277/7200
+[wait] wavelet: 5923/31680
+[wait] restormer: 1288/7200
+[wait] restormer-aug: 1293/7200
+[wait] wavelet: 6003/31680
+[wait] restormer: 1304/7200
+[wait] restormer-aug: 1308/7200
+[wait] wavelet: 6084/31680
+[wait] restormer: 1321/7200
+[wait] restormer-aug: 1324/7200
+[wait] wavelet: 6164/31680
+[wait] restormer: 1337/7200
+[wait] restormer-aug: 1341/7200
+[wait] wavelet: 6242/31680
+[wait] restormer: 1353/7200
+[wait] restormer-aug: 1358/7200
+[wait] wavelet: 6322/31680
+[wait] restormer: 1368/7200
+[wait] restormer-aug: 1374/7200
+[wait] wavelet: 6399/31680
+[wait] restormer: 1382/7200
+[wait] restormer-aug: 1390/7200
+[wait] wavelet: 6477/31680
+[wait] restormer: 1398/7200
+[wait] restormer-aug: 1406/7200
+[wait] wavelet: 6552/31680
+[wait] restormer: 1415/7200
+[wait] restormer-aug: 1421/7200
+[wait] wavelet: 6624/31680
+[wait] restormer: 1432/7200
+[wait] restormer-aug: 1437/7200
+[wait] wavelet: 6699/31680
+[wait] restormer: 1444/7200
+[wait] restormer-aug: 1446/7200
+[wait] wavelet: 6775/31680
+[wait] restormer: 1450/7200
+[wait] restormer-aug: 1452/7200
+[wait] wavelet: 6849/31680
+[wait] restormer: 1457/7200
+[wait] restormer-aug: 1461/7200
+[wait] wavelet: 6923/31680
+[wait] restormer: 1465/7200
+[wait] restormer-aug: 1467/7200
+[wait] wavelet: 6997/31680
+[wait] restormer: 1470/7200
+[wait] restormer-aug: 1473/7200
+[wait] wavelet: 7071/31680
+[wait] restormer: 1480/7200
+[wait] restormer-aug: 1482/7200
+[wait] wavelet: 7145/31680
+[wait] restormer: 1486/7200
+[wait] restormer-aug: 1488/7200
+[wait] wavelet: 7218/31680
+[wait] restormer: 1492/7200
+[wait] restormer-aug: 1497/7200
+[wait] wavelet: 7290/31680
+[wait] restormer: 1501/7200
+[wait] restormer-aug: 1503/7200
+[wait] wavelet: 7362/31680
+[wait] restormer: 1506/7200
+[wait] restormer-aug: 1509/7200
+[wait] wavelet: 7432/31680
+[wait] restormer: 1515/7200
+[wait] restormer-aug: 1518/7200
+[wait] wavelet: 7503/31680
+[wait] restormer: 1521/7200
+[wait] restormer-aug: 1523/7200
+[wait] wavelet: 7573/31680
+[wait] restormer: 1527/7200
+[wait] restormer-aug: 1532/7200
+[wait] wavelet: 7643/31680
+[wait] restormer: 1537/7200
+[wait] restormer-aug: 1538/7200
+[wait] wavelet: 7712/31680
+[wait] restormer: 1542/7200
+[wait] restormer-aug: 1544/7200
+[wait] wavelet: 7781/31680
+[wait] restormer: 1551/7200
+[wait] restormer-aug: 1554/7200
+[wait] wavelet: 7848/31680
+[wait] restormer: 1557/7200
+[wait] restormer-aug: 1559/7200
+[wait] wavelet: 7920/31680
+[wait] restormer: 1563/7200
+[wait] restormer-aug: 1568/7200
+[wait] wavelet: 7988/31680
+[wait] restormer: 1572/7200
+[wait] restormer-aug: 1574/7200
+[wait] wavelet: 8056/31680
+[wait] restormer: 1578/7200
+[wait] restormer-aug: 1580/7200
+[wait] wavelet: 8123/31680
+[wait] restormer: 1586/7200
+[wait] restormer-aug: 1589/7200
+[wait] wavelet: 8188/31680
+[wait] restormer: 1593/7200
+[wait] restormer-aug: 1595/7200
+[wait] wavelet: 8254/31680
+[wait] restormer: 1598/7200
+[wait] restormer-aug: 1603/7200
+[wait] wavelet: 8320/31680
+[wait] restormer: 1608/7200
+[wait] restormer-aug: 1610/7200
+[wait] wavelet: 8384/31680
+[wait] restormer: 1613/7200
+[wait] restormer-aug: 1616/7200
+[wait] wavelet: 8449/31680
+[wait] restormer: 1622/7200
+[wait] restormer-aug: 1625/7200
+[wait] wavelet: 8514/31680
+[wait] restormer: 1629/7200
+[wait] restormer-aug: 1631/7200
+[wait] wavelet: 8577/31680
+[wait] restormer: 1634/7200
+[wait] restormer-aug: 1639/7200
+[wait] wavelet: 8641/31680
+[wait] restormer: 1644/7200
+[wait] restormer-aug: 1646/7200
+[wait] wavelet: 8668/31680
+[wait] restormer: 1649/7200
+[wait] restormer-aug: 1651/7200
+[wait] wavelet: 8694/31680
+[wait] restormer: 1657/7200
+[wait] restormer-aug: 1660/7200
+[wait] wavelet: 8719/31680
+[wait] restormer: 1664/7200
+[wait] restormer-aug: 1666/7200
+[wait] wavelet: 8744/31680
+[wait] restormer: 1670/7200
+[wait] restormer-aug: 1673/7200
+[wait] wavelet: 8773/31680
+[wait] restormer: 1679/7200
+[wait] restormer-aug: 1681/7200
+[wait] wavelet: 8796/31680
+[wait] restormer: 1685/7200
+[wait] restormer-aug: 1687/7200
+[wait] wavelet: 8825/31680
+[wait] restormer: 1693/7200
+[wait] restormer-aug: 1696/7200
+[wait] wavelet: 8850/31680
+[wait] restormer: 1700/7200
+[wait] restormer-aug: 1702/7200
+[wait] wavelet: 8876/31680
+[wait] restormer: 1705/7200
+[wait] restormer-aug: 1709/7200
+[wait] wavelet: 8902/31680
+[wait] restormer: 1715/7200
+[wait] restormer-aug: 1717/7200
+[wait] wavelet: 8928/31680
+[wait] restormer: 1720/7200
+[wait] restormer-aug: 1723/7200
+[wait] wavelet: 8953/31680
+[wait] restormer: 1728/7200
+[wait] restormer-aug: 1732/7200
+[wait] wavelet: 8979/31680
+[wait] restormer: 1735/7200
+[wait] restormer-aug: 1737/7200
+[wait] wavelet: 9006/31680
+[wait] restormer: 1741/7200
+[wait] restormer-aug: 1744/7200
+[wait] wavelet: 9030/31680
+[wait] restormer: 1750/7200
+[wait] restormer-aug: 1753/7200
+[wait] wavelet: 9059/31680
+[wait] restormer: 1756/7200
+[wait] restormer-aug: 1758/7200
+[wait] wavelet: 9083/31680
+[wait] restormer: 1763/7200
+[wait] restormer-aug: 1767/7200
+[wait] wavelet: 9110/31680
+[wait] restormer: 1771/7200
+[wait] restormer-aug: 1773/7200
+[wait] wavelet: 9136/31680
+[wait] restormer: 1776/7200
+[wait] restormer-aug: 1779/7200
+[wait] wavelet: 9159/31680
+[wait] restormer: 1786/7200
+[wait] restormer-aug: 1789/7200
+[wait] wavelet: 9187/31680
+[wait] restormer: 1792/7200
+[wait] restormer-aug: 1794/7200
+[wait] wavelet: 9212/31680
+[wait] restormer: 1798/7200
+[wait] restormer-aug: 1802/7200
+[wait] wavelet: 9239/31680
+[wait] restormer: 1807/7200
+[wait] restormer-aug: 1809/7200
+[wait] wavelet: 9263/31680
+[wait] restormer: 1812/7200
+[wait] restormer-aug: 1814/7200
+[wait] wavelet: 9288/31680
+[wait] restormer: 1821/7200
+[wait] restormer-aug: 1824/7200
+[wait] wavelet: 9314/31680
+[wait] restormer: 1827/7200
+[wait] restormer-aug: 1829/7200
+[wait] wavelet: 9339/31680
+[wait] restormer: 1833/7200
+[wait] restormer-aug: 1838/7200
+[wait] wavelet: 9366/31680
+[wait] restormer: 1842/7200
+[wait] restormer-aug: 1845/7200
+[wait] wavelet: 9390/31680
+[wait] restormer: 1848/7200
+[wait] restormer-aug: 1850/7200
+[wait] wavelet: 9418/31680
+[wait] restormer: 1857/7200
+[wait] restormer-aug: 1860/7200
+[wait] wavelet: 5393/31680
+[wait] restormer: 1863/7200
+[wait] restormer-aug: 1865/7200
+[wait] wavelet: 9465/31680
+[wait] restormer: 1869/7200
+[wait] restormer-aug: 1873/7200
+[wait] wavelet: 9493/31680
+[wait] restormer: 1878/7200
+[wait] restormer-aug: 1880/7200
+[wait] wavelet: 9516/31680
+[wait] restormer: 1883/7200
+[wait] restormer-aug: 1885/7200
+[wait] wavelet: 9544/31680
+[wait] restormer: 1891/7200
+[wait] restormer-aug: 1895/7200
+[wait] wavelet: 9568/31680
+[wait] restormer: 1898/7200
+[wait] restormer-aug: 1901/7200
+[wait] wavelet: 9590/31680
+[wait] restormer: 1904/7200
+[wait] restormer-aug: 1908/7200
+[wait] wavelet: 9618/31680
+[wait] restormer: 1913/7200
+[wait] restormer-aug: 1916/7200
+[wait] wavelet: 9642/31680
+[wait] restormer: 1919/7200
+[wait] restormer-aug: 1921/7200
+[wait] wavelet: 9668/31680
+[wait] restormer: 1927/7200
+[wait] restormer-aug: 1931/7200
+[wait] wavelet: 9693/31680
+[wait] restormer: 1934/7200
+[wait] restormer-aug: 1936/7200
+[wait] wavelet: 2680/31680
+[wait] restormer: 1939/7200
+[wait] restormer-aug: 1944/7200
+[wait] wavelet: 9743/31680
+[wait] restormer: 1948/7200
+[wait] restormer-aug: 1951/7200
+[wait] wavelet: 9767/31680
+[wait] restormer: 1954/7200
+[wait] restormer-aug: 1956/7200
+[wait] wavelet: 9792/31680
+[wait] restormer: 1961/7200
+[wait] restormer-aug: 1966/7200
+[wait] wavelet: 9817/31680
+[wait] restormer: 1969/7200
+[wait] restormer-aug: 1972/7200
+[wait] wavelet: 9841/31680
+[wait] restormer: 1975/7200
+[wait] restormer-aug: 1978/7200
+[wait] wavelet: 9867/31680
+[wait] restormer: 1984/7200
+[wait] restormer-aug: 1987/7200
+[wait] wavelet: 9891/31680
+[wait] restormer: 1990/7200
+[wait] restormer-aug: 1992/7200
+[wait] wavelet: 9915/31680
+[wait] restormer: 1997/7200
+[wait] restormer-aug: 2002/7200
+[wait] wavelet: 9941/31680
+[wait] restormer: 2005/7200
+[wait] restormer-aug: 2007/7200
+[wait] wavelet: 9965/31680
+[wait] restormer: 2010/7200
+[wait] restormer-aug: 2014/7200
+[wait] wavelet: 9989/31680
+[wait] restormer: 2019/7200
+[wait] restormer-aug: 2022/7200
+[wait] wavelet: 10014/31680
+[wait] restormer: 2025/7200
+[wait] restormer-aug: 2028/7200
+[wait] wavelet: 10037/31680
+[wait] restormer: 2031/7200
+[wait] restormer-aug: 2037/7200
+[wait] wavelet: 10064/31680
+[wait] restormer: 2040/7200
+[wait] restormer-aug: 2043/7200
+[wait] wavelet: 10087/31680
+[wait] restormer: 2046/7200
+[wait] restormer-aug: 2049/7200
+[wait] wavelet: 10110/31680
+[wait] restormer: 2055/7200
+[wait] restormer-aug: 2058/7200
+[wait] wavelet: 10138/31680
+[wait] restormer: 2061/7200
+[wait] restormer-aug: 2063/7200
+[wait] wavelet: 10159/31680
+[wait] restormer: 2067/7200
+[wait] restormer-aug: 2072/7200
+[wait] wavelet: 10183/31680
+[wait] restormer: 2076/7200
+[wait] restormer-aug: 2078/7200
+[wait] wavelet: 10211/31680
+[wait] restormer: 2081/7200
+[wait] restormer-aug: 2084/7200
+[wait] wavelet: 10233/31680
+[wait] restormer: 2090/7200
+[wait] restormer-aug: 2093/7200
+[wait] wavelet: 10256/31680
+[wait] restormer: 2096/7200
+[wait] restormer-aug: 2099/7200
+[wait] wavelet: 10283/31680
+[wait] restormer: 2102/7200
+[wait] restormer-aug: 2106/7200
+[wait] wavelet: 10305/31680
+[wait] restormer: 2111/7200
+[wait] restormer-aug: 2114/7200
+[wait] wavelet: 10329/31680
+[wait] restormer: 2117/7200
+[wait] restormer-aug: 2119/7200
+[wait] wavelet: 10356/31680
+[wait] restormer: 2125/7200
+[wait] restormer-aug: 2129/7200
+[wait] wavelet: 10377/31680
+[wait] restormer: 2132/7200
+[wait] restormer-aug: 2134/7200
+[wait] wavelet: 10400/31680
+[wait] restormer: 2137/7200
+[wait] restormer-aug: 2142/7200
+[wait] wavelet: 10427/31680
+[wait] restormer: 2147/7200
+[wait] restormer-aug: 2150/7200
+[wait] wavelet: 10449/31680
+[wait] restormer: 2152/7200
+[wait] restormer-aug: 2155/7200
+[wait] wavelet: 10472/31680
+[wait] restormer: 2160/7200
+[wait] restormer-aug: 2164/7200
+[wait] wavelet: 10499/31680
+[wait] restormer: 2167/7200
+[wait] restormer-aug: 2170/7200
+[wait] wavelet: 10520/31680
+[wait] restormer: 2173/7200
+[wait] restormer-aug: 2176/7200
+[wait] wavelet: 10544/31680
+[wait] restormer: 2182/7200
+[wait] restormer-aug: 2185/7200
+[wait] wavelet: 10571/31680
+[wait] restormer: 2188/7200
+[wait] restormer-aug: 2190/7200
+[wait] wavelet: 10592/31680
+[wait] restormer: 2194/7200
+[wait] restormer-aug: 2200/7200
+[wait] wavelet: 10615/31680
+[wait] restormer: 2203/7200
+[wait] restormer-aug: 2205/7200
+[wait] wavelet: 10642/31680
+[wait] restormer: 2208/7200
+[wait] restormer-aug: 2211/7200
+[wait] wavelet: 10664/31680
+[wait] restormer: 2218/7200
+[wait] restormer-aug: 2220/7200
+[wait] wavelet: 10687/31680
+[wait] restormer: 2223/7200
+[wait] restormer-aug: 2226/7200
+[wait] wavelet: 10713/31680
+[wait] restormer: 2229/7200
+[wait] restormer-aug: 2234/7200
+[wait] wavelet: 10735/31680
+[wait] restormer: 2238/7200
+[wait] restormer-aug: 2241/7200
+[wait] wavelet: 10758/31680
+[wait] restormer: 2243/7200
+[wait] restormer-aug: 2246/7200
+[wait] wavelet: 10783/31680
+[wait] restormer: 2252/7200
+[wait] restormer-aug: 2256/7200
+[wait] wavelet: 10806/31680
+[wait] restormer: 2259/7200
+[wait] restormer-aug: 2261/7200
+[wait] wavelet: 10829/31680
+[wait] restormer: 2264/7200
+[wait] restormer-aug: 2270/7200
+[wait] wavelet: 10852/31680
+[wait] restormer: 2274/7200
+[wait] restormer-aug: 2276/7200
+[wait] wavelet: 10876/31680
+[wait] restormer: 2279/7200
+[wait] restormer-aug: 2282/7200
+[wait] wavelet: 10899/31680
+[wait] restormer: 2287/7200
+[wait] restormer-aug: 2291/7200
+[wait] wavelet: 10922/31680
+[wait] restormer: 2294/7200
+[wait] restormer-aug: 2297/7200
+[wait] wavelet: 10946/31680
+[wait] restormer: 2300/7200
+[wait] restormer-aug: 2304/7200
+[wait] wavelet: 10969/31680
+[wait] restormer: 2309/7200
+[wait] restormer-aug: 2312/7200
+[wait] wavelet: 10992/31680
+[wait] restormer: 2314/7200
+[wait] restormer-aug: 2317/7200
+[wait] wavelet: 11016/31680
+[wait] restormer: 2321/7200
+[wait] restormer-aug: 2326/7200
+[wait] wavelet: 11040/31680
+[wait] restormer: 2329/7200
+[wait] restormer-aug: 2332/7200
+[wait] wavelet: 11063/31680
+[wait] restormer: 2335/7200
+[wait] restormer-aug: 2339/7200
+[wait] wavelet: 11086/31680
+[wait] restormer: 2344/7200
+[wait] restormer-aug: 2347/7200
+[wait] wavelet: 11110/31680
+[wait] restormer: 2350/7200
+[wait] restormer-aug: 2352/7200
+[wait] wavelet: 11132/31680
+[wait] restormer: 2356/7200
+[wait] restormer-aug: 2362/7200
+[wait] wavelet: 11155/31680
+[wait] restormer: 2365/7200
+[wait] restormer-aug: 2368/7200
+[wait] wavelet: 11178/31680
+[wait] restormer: 2370/7200
+[wait] restormer-aug: 2374/7200
+[wait] wavelet: 11202/31680
+[wait] restormer: 2379/7200
+[wait] restormer-aug: 2382/7200
+[wait] wavelet: 11225/31680
+[wait] restormer: 2385/7200
+[wait] restormer-aug: 2388/7200
+[wait] wavelet: 11246/31680
+[wait] restormer: 2391/7200
+[wait] restormer-aug: 2397/7200
+[wait] wavelet: 11272/31680
+[wait] restormer: 2400/7200
+[wait] restormer-aug: 2403/7200
+[wait] wavelet: 11294/31680
+[wait] restormer: 2405/7200
+[wait] restormer-aug: 2409/7200
+[wait] wavelet: 11315/31680
+[wait] restormer: 2414/7200
+[wait] restormer-aug: 2418/7200
+[wait] wavelet: 11339/31680
+[wait] restormer: 2421/7200
+[wait] restormer-aug: 2423/7200
+[wait] wavelet: 11364/31680
+[wait] restormer: 2426/7200
+[wait] restormer-aug: 2432/7200
+[wait] wavelet: 11384/31680
+[wait] restormer: 2436/7200
+[wait] restormer-aug: 2438/7200
+[wait] wavelet: 11407/31680
+[wait] restormer: 2441/7200
+[wait] restormer-aug: 2444/7200
+[wait] wavelet: 11432/31680
+[wait] restormer: 2448/7200
+[wait] restormer-aug: 2453/7200
+[wait] wavelet: 11453/31680
+[wait] restormer: 2456/7200
+[wait] restormer-aug: 2458/7200
+[wait] wavelet: 11476/31680
+[wait] restormer: 2461/7200
+[wait] restormer-aug: 2466/7200
+[wait] wavelet: 11498/31680
+[wait] restormer: 2471/7200
+[wait] restormer-aug: 2474/7200
+[wait] wavelet: 11521/31680
+[wait] restormer: 2476/7200
+[wait] restormer-aug: 2479/7200
+[wait] wavelet: 11545/31680
+[wait] restormer: 2483/7200
+[wait] restormer-aug: 2488/7200
+[wait] wavelet: 11567/31680
+[wait] restormer: 2491/7200
+[wait] restormer-aug: 2494/7200
+[wait] wavelet: 11589/31680
+[wait] restormer: 2497/7200
+[wait] restormer-aug: 2501/7200
+[wait] wavelet: 11613/31680
+[wait] restormer: 2506/7200
+[wait] restormer-aug: 2509/7200
+[wait] wavelet: 11635/31680
+[wait] restormer: 2512/7200
+[wait] restormer-aug: 2514/7200
+[wait] wavelet: 11658/31680
+[wait] restormer: 2518/7200
+[wait] restormer-aug: 2523/7200
+[wait] wavelet: 11679/31680
+[wait] restormer: 2526/7200
+[wait] restormer-aug: 2529/7200
+[wait] wavelet: 11704/31680
+[wait] restormer: 2532/7200
+[wait] restormer-aug: 2535/7200
+[wait] wavelet: 11726/31680
+[wait] restormer: 2541/7200
+[wait] restormer-aug: 2544/7200
+[wait] wavelet: 11747/31680
+[wait] restormer: 2547/7200
+[wait] restormer-aug: 2550/7200
+[wait] wavelet: 11769/31680
+[wait] restormer: 2553/7200
+[wait] restormer-aug: 2559/7200
+[wait] wavelet: 11795/31680
+[wait] restormer: 2562/7200
+[wait] restormer-aug: 2565/7200
+[wait] wavelet: 11815/31680
+[wait] restormer: 2567/7200
+[wait] restormer-aug: 2571/7200
+[wait] wavelet: 11837/31680
+[wait] restormer: 2576/7200
+[wait] restormer-aug: 2580/7200
+[wait] wavelet: 11859/31680
+[wait] restormer: 2582/7200
+[wait] restormer-aug: 2585/7200
+[wait] wavelet: 11882/31680
+[wait] restormer: 2588/7200
+[wait] restormer-aug: 2593/7200
+[wait] wavelet: 11905/31680
+[wait] restormer: 2597/7200
+[wait] restormer-aug: 2600/7200
+[wait] wavelet: 11927/31680
+[wait] restormer: 2602/7200
+[wait] restormer-aug: 2605/7200
+[wait] wavelet: 11948/31680
+[wait] restormer: 2610/7200
+[wait] restormer-aug: 2615/7200
+[wait] wavelet: 11971/31680
+[wait] restormer: 2617/7200
+[wait] restormer-aug: 2620/7200
+[wait] wavelet: 11994/31680
+[wait] restormer: 2623/7200
+[wait] restormer-aug: 2628/7200
+[wait] wavelet: 12016/31680
+[wait] restormer: 2632/7200
+[wait] restormer-aug: 2635/7200
+[wait] wavelet: 12036/31680
+[wait] restormer: 2638/7200
+[wait] restormer-aug: 2641/7200
+[wait] wavelet: 12058/31680
+[wait] restormer: 2644/7200
+[wait] restormer-aug: 2650/7200
+[wait] wavelet: 12083/31680
+[wait] restormer: 2653/7200
+[wait] restormer-aug: 2656/7200
+[wait] wavelet: 12103/31680
+[wait] restormer: 2658/7200
+[wait] restormer-aug: 2662/7200
+[wait] wavelet: 12125/31680
+[wait] restormer: 2667/7200
+[wait] restormer-aug: 2671/7200
+[wait] wavelet: 12146/31680
+[wait] restormer: 2673/7200
+[wait] restormer-aug: 2676/7200
+[wait] wavelet: 12168/31680
+[wait] restormer: 2679/7200
+[wait] restormer-aug: 2685/7200
+[wait] wavelet: 12191/31680
+[wait] restormer: 2688/7200
+[wait] restormer-aug: 2691/7200
+[wait] wavelet: 12213/31680
+[wait] restormer: 2693/7200
+[wait] restormer-aug: 2697/7200
+[wait] wavelet: 12235/31680
+[wait] restormer: 2702/7200
+[wait] restormer-aug: 2706/7200
+[wait] wavelet: 12255/31680
+[wait] restormer: 2708/7200
+[wait] restormer-aug: 2711/7200
+[wait] wavelet: 8086/31680
+[wait] restormer: 2714/7200
+[wait] restormer-aug: 2720/7200
+[wait] wavelet: 12301/31680
+[wait] restormer: 2723/7200
+[wait] restormer-aug: 2726/7200
+[wait] wavelet: 12321/31680
+[wait] restormer: 2729/7200
+[wait] restormer-aug: 2732/7200
+[wait] wavelet: 12342/31680
+[wait] restormer: 2736/7200
+[wait] restormer-aug: 2741/7200
+[wait] wavelet: 12365/31680
+[wait] restormer: 2743/7200
+[wait] restormer-aug: 2746/7200
+[wait] wavelet: 12387/31680
+[wait] restormer: 2749/7200
+[wait] restormer-aug: 2754/7200
+[wait] wavelet: 12409/31680
+[wait] restormer: 2758/7200
+[wait] restormer-aug: 2761/7200
+[wait] wavelet: 12430/31680
+[wait] restormer: 2764/7200
+[wait] restormer-aug: 2767/7200
+[wait] wavelet: 12451/31680
+[wait] restormer: 2770/7200
+[wait] restormer-aug: 2776/7200
+[wait] wavelet: 12472/31680
+[wait] restormer: 2779/7200
+[wait] restormer-aug: 2782/7200
+[wait] wavelet: 12496/31680
+[wait] restormer: 2784/7200
+[wait] restormer-aug: 2788/7200
+[wait] wavelet: 12517/31680
+[wait] restormer: 2793/7200
+[wait] restormer-aug: 2797/7200
+[wait] wavelet: 12538/31680
+[wait] restormer: 2799/7200
+[wait] restormer-aug: 2802/7200
+[wait] wavelet: 12559/31680
+[wait] restormer: 2805/7200
+[wait] restormer-aug: 2811/7200
+[wait] wavelet: 12582/31680
+[wait] restormer: 2814/7200
+[wait] restormer-aug: 2817/7200
+[wait] wavelet: 12603/31680
+[wait] restormer: 2819/7200
+[wait] restormer-aug: 2823/7200
+[wait] wavelet: 12625/31680
+[wait] restormer: 2828/7200
+[wait] restormer-aug: 2832/7200
+[wait] wavelet: 12646/31680
+[wait] restormer: 2834/7200
+[wait] restormer-aug: 2837/7200
+[wait] wavelet: 12667/31680
+[wait] restormer: 2840/7200
+[wait] restormer-aug: 2846/7200
+[wait] wavelet: 12687/31680
+[wait] restormer: 2849/7200
+[wait] restormer-aug: 2852/7200
+[wait] wavelet: 12711/31680
+[wait] restormer: 2855/7200
+[wait] restormer-aug: 2858/7200
+[wait] wavelet: 12732/31680
+[wait] restormer: 2863/7200
+[wait] restormer-aug: 2867/7200
+[wait] wavelet: 12752/31680
+[wait] restormer: 2870/7200
+[wait] restormer-aug: 2873/7200
+[wait] wavelet: 12773/31680
+[wait] restormer: 2875/7200
+[wait] restormer-aug: 2880/7200
+[wait] wavelet: 12794/31680
+[wait] restormer: 2884/7200
+[wait] restormer-aug: 2887/7200
+[wait] wavelet: 12816/31680
+[wait] restormer: 2890/7200
+[wait] restormer-aug: 2893/7200
+[wait] wavelet: 12838/31680
+[wait] restormer: 2896/7200
+[wait] restormer-aug: 2902/7200
+[wait] wavelet: 12859/31680
+[wait] restormer: 2905/7200
+[wait] restormer-aug: 2908/7200
+[wait] wavelet: 12880/31680
+[wait] restormer: 2910/7200
+[wait] restormer-aug: 2914/7200
+[wait] wavelet: 12899/31680
+[wait] restormer: 2919/7200
+[wait] restormer-aug: 2923/7200
+[wait] wavelet: 12920/31680
+[wait] restormer: 2925/7200
+[wait] restormer-aug: 2928/7200
+[wait] wavelet: 12942/31680
+[wait] restormer: 2931/7200
+[wait] restormer-aug: 2937/7200
+[wait] wavelet: 12963/31680
+[wait] restormer: 2940/7200
+[wait] restormer-aug: 2943/7200
+[wait] wavelet: 12984/31680
+[wait] restormer: 2945/7200
+[wait] restormer-aug: 2949/7200
+[wait] wavelet: 13004/31680
+[wait] restormer: 2953/7200
+[wait] restormer-aug: 2958/7200
+[wait] wavelet: 13025/31680
+[wait] restormer: 2960/7200
+[wait] restormer-aug: 2963/7200
+[wait] wavelet: 13044/31680
+[wait] restormer: 2965/7200
+[wait] restormer-aug: 2971/7200
+[wait] wavelet: 13065/31680
+[wait] restormer: 2975/7200
+[wait] restormer-aug: 2978/7200
+[wait] wavelet: 13088/31680
+[wait] restormer: 2980/7200
+[wait] restormer-aug: 2983/7200
+[wait] wavelet: 13108/31680
+[wait] restormer: 2988/7200
+[wait] restormer-aug: 2993/7200
+[wait] wavelet: 13128/31680
+[wait] restormer: 2995/7200
+[wait] restormer-aug: 2998/7200
+[wait] wavelet: 13148/31680
+[wait] restormer: 3001/7200
+[wait] restormer-aug: 3005/7200
+[wait] wavelet: 13169/31680
+[wait] restormer: 3010/7200
+[wait] restormer-aug: 3013/7200
+[wait] wavelet: 13188/31680
+[wait] restormer: 3016/7200
+[wait] restormer-aug: 3019/7200
+[wait] wavelet: 13208/31680
+[wait] restormer: 3022/7200
+[wait] restormer-aug: 3027/7200
+[wait] wavelet: 13231/31680
+[wait] restormer: 3030/7200
+[wait] restormer-aug: 3033/7200
+[wait] wavelet: 13251/31680
+[wait] restormer: 3036/7200
+[wait] restormer-aug: 3039/7200
+[wait] wavelet: 13272/31680
+[wait] restormer: 3044/7200
+[wait] restormer-aug: 3048/7200
+[wait] wavelet: 13292/31680
+[wait] restormer: 3051/7200
+[wait] restormer-aug: 3053/7200
+[wait] wavelet: 13313/31680
+[wait] restormer: 3056/7200
+[wait] restormer-aug: 3062/7200
+[wait] wavelet: 13331/31680
+[wait] restormer: 3066/7200
+[wait] restormer-aug: 3068/7200
+[wait] wavelet: 13352/31680
+[wait] restormer: 3071/7200
+[wait] restormer-aug: 3074/7200
+[wait] wavelet: 13373/31680
+[wait] restormer: 3079/7200
+[wait] restormer-aug: 3083/7200
+[wait] wavelet: 13393/31680
+[wait] restormer: 3086/7200
+[wait] restormer-aug: 3089/7200
+[wait] wavelet: 13415/31680
+[wait] restormer: 3091/7200
+[wait] restormer-aug: 3096/7200
+[wait] wavelet: 13435/31680
+[wait] restormer: 3100/7200
+[wait] restormer-aug: 3103/7200
+[wait] wavelet: 13455/31680
+[wait] restormer: 3106/7200
+[wait] restormer-aug: 3109/7200
+[wait] wavelet: 13474/31680
+[wait] restormer: 3112/7200
+[wait] restormer-aug: 3118/7200
+[wait] wavelet: 13494/31680
+[wait] restormer: 3121/7200
+[wait] restormer-aug: 3124/7200
+[wait] wavelet: 13514/31680
+[wait] restormer: 3126/7200
+[wait] restormer-aug: 3130/7200
+[wait] wavelet: 13536/31680
+[wait] restormer: 3135/7200
+[wait] restormer-aug: 3139/7200
+[wait] wavelet: 13555/31680
+[wait] restormer: 3141/7200
+[wait] restormer-aug: 3144/7200
+[wait] wavelet: 13576/31680
+[wait] restormer: 3147/7200
+[wait] restormer-aug: 3153/7200
+[wait] wavelet: 13596/31680
+[wait] restormer: 3156/7200
+[wait] restormer-aug: 3159/7200
+[wait] wavelet: 13615/31680
+[wait] restormer: 3161/7200
+[wait] restormer-aug: 3165/7200
+[wait] wavelet: 13635/31680
+[wait] restormer: 3169/7200
+[wait] restormer-aug: 3173/7200
+[wait] wavelet: 13655/31680
+[wait] restormer: 3176/7200
+[wait] restormer-aug: 3179/7200
+[wait] wavelet: 13675/31680
+[wait] restormer: 3181/7200
+[wait] restormer-aug: 3186/7200
+[wait] wavelet: 13693/31680
+[wait] restormer: 3191/7200
+[wait] restormer-aug: 3194/7200
+[wait] wavelet: 13714/31680
+[wait] restormer: 3196/7200
+[wait] restormer-aug: 3199/7200
+[wait] wavelet: 13736/31680
+[wait] restormer: 3203/7200
+[wait] restormer-aug: 3208/7200
+[wait] wavelet: 13755/31680
+[wait] restormer: 3211/7200
+[wait] restormer-aug: 3214/7200
+[wait] wavelet: 13775/31680
+[wait] restormer: 3216/7200
+[wait] restormer-aug: 3220/7200
+[wait] wavelet: 13795/31680
+[wait] restormer: 3226/7200
+[wait] restormer-aug: 3229/7200
+[wait] wavelet: 13815/31680
+[wait] restormer: 3231/7200
+[wait] restormer-aug: 3234/7200
+[wait] wavelet: 13834/31680
+[wait] restormer: 3238/7200
+[wait] restormer-aug: 3243/7200
+[wait] wavelet: 13854/31680
+[wait] restormer: 3246/7200
+[wait] restormer-aug: 3249/7200
+[wait] wavelet: 13874/31680
+[wait] restormer: 3251/7200
+[wait] restormer-aug: 3254/7200
+[wait] wavelet: 13894/31680
+[wait] restormer: 3260/7200
+[wait] restormer-aug: 3264/7200
+[wait] wavelet: 13913/31680
+[wait] restormer: 3266/7200
+[wait] restormer-aug: 3269/7200
+[wait] wavelet: 13935/31680
+[wait] restormer: 3272/7200
+[wait] restormer-aug: 3277/7200
+[wait] wavelet: 13955/31680
+[wait] restormer: 3281/7200
+[wait] restormer-aug: 3284/7200
+[wait] wavelet: 13974/31680
+[wait] restormer: 3286/7200
+[wait] restormer-aug: 3289/7200
+[wait] wavelet: 13993/31680
+[wait] restormer: 3294/7200
+[wait] restormer-aug: 3299/7200
+[wait] wavelet: 14013/31680
+[wait] restormer: 3301/7200
+[wait] restormer-aug: 3304/7200
+[wait] wavelet: 14033/31680
+[wait] restormer: 3307/7200
+[wait] restormer-aug: 3311/7200
+[wait] wavelet: 14051/31680
+[wait] restormer: 3316/7200
+[wait] restormer-aug: 3319/7200
+[wait] wavelet: 14071/31680
+[wait] restormer: 3321/7200
+[wait] restormer-aug: 3324/7200
+[wait] wavelet: 14091/31680
+[wait] restormer: 3327/7200
+[wait] restormer-aug: 3333/7200
+[wait] wavelet: 14112/31680
+[wait] restormer: 3336/7200
+[wait] restormer-aug: 3339/7200
+[wait] wavelet: 14131/31680
+[wait] restormer: 3342/7200
+[wait] restormer-aug: 3345/7200
+[wait] wavelet: 14152/31680
+[wait] restormer: 3350/7200
+[wait] restormer-aug: 3354/7200
+[wait] wavelet: 14171/31680
+[wait] restormer: 3357/7200
+[wait] restormer-aug: 3359/7200
+[wait] wavelet: 14190/31680
+[wait] restormer: 3362/7200
+[wait] restormer-aug: 3367/7200
+[wait] wavelet: 14209/31680
+[wait] restormer: 3371/7200
+[wait] restormer-aug: 3374/7200
+[wait] wavelet: 14229/31680
+[wait] restormer: 3377/7200
+[wait] restormer-aug: 3380/7200
+[wait] wavelet: 14249/31680
+[wait] restormer: 3384/7200
+[wait] restormer-aug: 3388/7200
+[wait] wavelet: 14267/31680
+[wait] restormer: 3391/7200
+[wait] restormer-aug: 3394/7200
+[wait] wavelet: 14286/31680
+[wait] restormer: 3397/7200
+[wait] restormer-aug: 3400/7200
+[wait] wavelet: 14305/31680
+[wait] restormer: 3406/7200
+[wait] restormer-aug: 3409/7200
+[wait] wavelet: 14325/31680
+[wait] restormer: 3412/7200
+[wait] restormer-aug: 3414/7200
+[wait] wavelet: 14343/31680
+[wait] restormer: 3418/7200
+[wait] restormer-aug: 3423/7200
+[wait] wavelet: 14364/31680
+[wait] restormer: 3427/7200
+[wait] restormer-aug: 3429/7200
+[wait] wavelet: 14385/31680
+[wait] restormer: 3432/7200
+[wait] restormer-aug: 3435/7200
+[wait] wavelet: 14403/31680
+[wait] restormer: 3441/7200
+[wait] restormer-aug: 3444/7200
+[wait] wavelet: 14423/31680
+[wait] restormer: 3447/7200
+[wait] restormer-aug: 3449/7200
+[wait] wavelet: 14442/31680
+[wait] restormer: 3453/7200
+[wait] restormer-aug: 3457/7200
+[wait] wavelet: 14461/31680
+[wait] restormer: 3461/7200
+[wait] restormer-aug: 3464/7200
+[wait] wavelet: 14479/31680
+[wait] restormer: 3467/7200
+[wait] restormer-aug: 3469/7200
+[wait] wavelet: 14499/31680
+[wait] restormer: 3474/7200
+[wait] restormer-aug: 3479/7200
+[wait] wavelet: 14519/31680
+[wait] restormer: 3482/7200
+[wait] restormer-aug: 3484/7200
+[wait] wavelet: 14538/31680
+[wait] restormer: 3487/7200
+[wait] restormer-aug: 3491/7200
+[wait] wavelet: 14556/31680
+[wait] restormer: 3496/7200
+[wait] restormer-aug: 3499/7200
+[wait] wavelet: 14575/31680
+[wait] restormer: 3502/7200
+[wait] restormer-aug: 3504/7200
+[wait] wavelet: 14595/31680
+[wait] restormer: 3508/7200
+[wait] restormer-aug: 3513/7200
+[wait] wavelet: 14615/31680
+[wait] restormer: 3517/7200
+[wait] restormer-aug: 3519/7200
+[wait] wavelet: 14633/31680
+[wait] restormer: 3522/7200
+[wait] restormer-aug: 3525/7200
+[wait] wavelet: 14654/31680
+[wait] restormer: 3530/7200
+[wait] restormer-aug: 3534/7200
+[wait] wavelet: 14674/31680
+[wait] restormer: 3537/7200
+[wait] restormer-aug: 3539/7200
+[wait] wavelet: 14692/31680
+[wait] restormer: 3542/7200
+[wait] restormer-aug: 3547/7200
+[wait] wavelet: 14711/31680
+[wait] restormer: 3552/7200
+[wait] restormer-aug: 3554/7200
+[wait] wavelet: 14730/31680
+[wait] restormer: 3557/7200
+[wait] restormer-aug: 3559/7200
+[wait] wavelet: 14749/31680
+[wait] restormer: 3565/7200
+[wait] restormer-aug: 3569/7200
+[wait] wavelet: 14767/31680
+[wait] restormer: 3572/7200
+[wait] restormer-aug: 3574/7200
+[wait] wavelet: 14786/31680
+[wait] restormer: 3577/7200
+[wait] restormer-aug: 3581/7200
+[wait] wavelet: 14806/31680
+[wait] restormer: 3587/7200
+[wait] restormer-aug: 3589/7200
+[wait] wavelet: 14825/31680
+[wait] restormer: 3592/7200
+[wait] restormer-aug: 3594/7200
+[wait] wavelet: 14843/31680
+[wait] restormer: 3599/7200
+[wait] restormer-aug: 3603/7200
+[wait] wavelet: 14862/31680
+[wait] restormer: 3607/7200
+[wait] restormer-aug: 3609/7200
+[wait] wavelet: 14881/31680
+[wait] restormer: 3612/7200
+[wait] restormer-aug: 3614/7200
+[wait] wavelet: 14900/31680
+[wait] restormer: 3621/7200
+[wait] restormer-aug: 3624/7200
+[wait] wavelet: 14918/31680
+[wait] restormer: 3627/7200
+[wait] restormer-aug: 3629/7200
+[wait] wavelet: 14937/31680
+[wait] restormer: 3632/7200
+[wait] restormer-aug: 3637/7200
+[wait] wavelet: 14957/31680
+[wait] restormer: 3642/7200
+[wait] restormer-aug: 3644/7200
+[wait] wavelet: 14976/31680
+[wait] restormer: 3647/7200
+[wait] restormer-aug: 3649/7200
+[wait] wavelet: 14995/31680
+[wait] restormer: 3655/7200
+[wait] restormer-aug: 3658/7200
+[wait] wavelet: 15015/31680
+[wait] restormer: 3662/7200
+[wait] restormer-aug: 3664/7200
+[wait] wavelet: 15034/31680
+[wait] restormer: 3667/7200
+[wait] restormer-aug: 3670/7200
+[wait] wavelet: 15052/31680
+[wait] restormer: 3676/7200
+[wait] restormer-aug: 3678/7200
+[wait] wavelet: 15071/31680
+[wait] restormer: 3682/7200
+[wait] restormer-aug: 3684/7200
+[wait] wavelet: 15090/31680
+[wait] restormer: 3688/7200
+[wait] restormer-aug: 3692/7200
+[wait] wavelet: 15109/31680
+[wait] restormer: 3697/7200
+[wait] restormer-aug: 3699/7200
+[wait] wavelet: 15126/31680
+[wait] restormer: 3702/7200
+[wait] restormer-aug: 3704/7200
+[wait] wavelet: 15145/31680
+[wait] restormer: 3711/7200
+[wait] restormer-aug: 3713/7200
+[wait] wavelet: 15164/31680
+[wait] restormer: 3717/7200
+[wait] restormer-aug: 3719/7200
+[wait] wavelet: 15183/31680
+[wait] restormer: 3722/7200
+[wait] restormer-aug: 3726/7200
+[wait] wavelet: 15200/31680
+[wait] restormer: 3732/7200
+[wait] restormer-aug: 3734/7200
+[wait] wavelet: 15220/31680
+[wait] restormer: 3737/7200
+[wait] restormer-aug: 3739/7200
+[wait] wavelet: 10802/31680
+[wait] restormer: 3744/7200
+[wait] restormer-aug: 3748/7200
+[wait] wavelet: 15257/31680
+[wait] restormer: 3751/7200
+[wait] restormer-aug: 3753/7200
+[wait] wavelet: 15275/31680
+[wait] restormer: 3757/7200
+[wait] restormer-aug: 3759/7200
+[wait] wavelet: 15293/31680
+[wait] restormer: 3766/7200
+[wait] restormer-aug: 3768/7200
+[wait] wavelet: 15312/31680
+[wait] restormer: 3772/7200
+[wait] restormer-aug: 3773/7200
+[wait] wavelet: 15331/31680
+[wait] restormer: 3778/7200
+[wait] restormer-aug: 3782/7200
+[wait] wavelet: 15348/31680
+[wait] restormer: 3786/7200
+[wait] restormer-aug: 3788/7200
+[wait] wavelet: 15367/31680
+[wait] restormer: 3792/7200
+[wait] restormer-aug: 3794/7200
+[wait] wavelet: 15386/31680
+[wait] restormer: 3800/7200
+[wait] restormer-aug: 3803/7200
+[wait] wavelet: 15405/31680
+[wait] restormer: 3807/7200
+[wait] restormer-aug: 3808/7200
+[wait] wavelet: 15422/31680
+[wait] restormer: 3812/7200
+[wait] restormer-aug: 3815/7200
+[wait] wavelet: 15441/31680
+[wait] restormer: 3821/7200
+[wait] restormer-aug: 3823/7200
+[wait] wavelet: 15460/31680
+[wait] restormer: 3826/7200
+[wait] restormer-aug: 3828/7200
+[wait] wavelet: 15479/31680
+[wait] restormer: 3833/7200
+[wait] restormer-aug: 3837/7200
+[wait] wavelet: 15496/31680
+[wait] restormer: 3841/7200
+[wait] restormer-aug: 3843/7200
+[wait] wavelet: 15516/31680
+[wait] restormer: 3847/7200
+[wait] restormer-aug: 3849/7200
+[wait] wavelet: 15535/31680
+[wait] restormer: 3856/7200
+[wait] restormer-aug: 3858/7200
+[wait] wavelet: 15552/31680
+[wait] restormer: 3861/7200
+[wait] restormer-aug: 3863/7200
+[wait] wavelet: 15571/31680
+[wait] restormer: 3867/7200
+[wait] restormer-aug: 3871/7200
+[wait] wavelet: 15590/31680
+[wait] restormer: 3876/7200
+[wait] restormer-aug: 3878/7200
+[wait] wavelet: 15608/31680
+[wait] restormer: 3881/7200
+[wait] restormer-aug: 3883/7200
+[wait] wavelet: 15625/31680
+[wait] restormer: 3889/7200
+[wait] restormer-aug: 3892/7200
+[wait] wavelet: 15644/31680
+[wait] restormer: 3896/7200
+[wait] restormer-aug: 3897/7200
+[wait] wavelet: 15663/31680
+[wait] restormer: 3901/7200
+[wait] restormer-aug: 3904/7200
+[wait] wavelet: 15682/31680
+[wait] restormer: 3911/7200
+[wait] restormer-aug: 3912/7200
+[wait] wavelet: 15699/31680
+[wait] restormer: 3916/7200
+[wait] restormer-aug: 3918/7200
+[wait] wavelet: 15718/31680
+[wait] restormer: 3923/7200
+[wait] restormer-aug: 3926/7200
+[wait] wavelet: 15736/31680
+[wait] restormer: 3931/7200
+[wait] restormer-aug: 3932/7200
+[wait] wavelet: 15755/31680
+[wait] restormer: 3936/7200
+[wait] restormer-aug: 3938/7200
+[wait] wavelet: 15772/31680
+[wait] restormer: 3945/7200
+[wait] restormer-aug: 3947/7200
+[wait] wavelet: 15791/31680
+[wait] restormer: 3951/7200
+[wait] restormer-aug: 3953/7200
+[wait] wavelet: 15809/31680
+[wait] restormer: 3957/7200
+[wait] restormer-aug: 3960/7200
+[wait] wavelet: 15828/31680
+[wait] restormer: 3966/7200
+[wait] restormer-aug: 3967/7200
+[wait] wavelet: 15845/31680
+[wait] restormer: 3971/7200
+[wait] restormer-aug: 3972/7200
+[wait] wavelet: 15863/31680
+[wait] restormer: 3979/7200
+[wait] restormer-aug: 3981/7200
+[wait] wavelet: 15882/31680
+[wait] restormer: 3986/7200
+[wait] restormer-aug: 3987/7200
+[wait] wavelet: 15900/31680
+[wait] restormer: 3991/7200
+[wait] restormer-aug: 3993/7200
+[wait] wavelet: 15917/31680
+[wait] restormer: 4000/7200
+[wait] restormer-aug: 4002/7200
+[wait] wavelet: 15936/31680
+[wait] restormer: 4006/7200
+[wait] restormer-aug: 4007/7200
+[wait] wavelet: 15954/31680
+[wait] restormer: 4012/7200
+[wait] restormer-aug: 4015/7200
+[wait] wavelet: 15973/31680
+[wait] restormer: 4021/7200
+[wait] restormer-aug: 4022/7200
+[wait] wavelet: 15990/31680
+[wait] restormer: 4026/7200
+[wait] restormer-aug: 4027/7200
+[wait] wavelet: 16008/31680
+[wait] restormer: 4034/7200
+[wait] restormer-aug: 4036/7200
+[wait] wavelet: 16026/31680
+[wait] restormer: 4040/7200
+[wait] restormer-aug: 4042/7200
+[wait] wavelet: 16044/31680
+[wait] restormer: 4046/7200
+[wait] restormer-aug: 4048/7200
+[wait] wavelet: 16062/31680
+[wait] restormer: 4055/7200
+[wait] restormer-aug: 4056/7200
+[wait] wavelet: 16080/31680
+[wait] restormer: 4060/7200
+[wait] restormer-aug: 4062/7200
+[wait] wavelet: 16098/31680
+[wait] restormer: 4068/7200
+[wait] restormer-aug: 4070/7200
+[wait] wavelet: 16116/31680
+[wait] restormer: 4075/7200
+[wait] restormer-aug: 4076/7200
+[wait] wavelet: 16134/31680
+[wait] restormer: 4081/7200
+[wait] restormer-aug: 4082/7200
+[wait] wavelet: 16152/31680
+[wait] restormer: 4090/7200
+[wait] restormer-aug: 4091/7200
+[wait] wavelet: 16170/31680
+[wait] restormer: 4095/7200
+[wait] restormer-aug: 4097/7200
+[wait] wavelet: 16188/31680
+[wait] restormer: 4102/7200
+[wait] restormer-aug: 4104/7200
+[wait] wavelet: 16205/31680
+[wait] restormer: 4110/7200
+[wait] restormer-aug: 4111/7200
+[wait] wavelet: 16224/31680
+[wait] restormer: 4115/7200
+[wait] restormer-aug: 4116/7200
+[wait] wavelet: 16242/31680
+[wait] restormer: 4123/7200
+[wait] restormer-aug: 4125/7200
+[wait] wavelet: 16260/31680
+[wait] restormer: 4130/7200
+[wait] restormer-aug: 4131/7200
+[wait] wavelet: 16277/31680
+[wait] restormer: 4135/7200
+[wait] restormer-aug: 4137/7200
+[wait] wavelet: 16295/31680
+[wait] restormer: 4145/7200
+[wait] restormer-aug: 4146/7200
+[wait] wavelet: 16313/31680
+[wait] restormer: 4150/7200
+[wait] restormer-aug: 4151/7200
+[wait] wavelet: 16331/31680
+[wait] restormer: 4157/7200
+[wait] restormer-aug: 4159/7200
+[wait] wavelet: 16348/31680
+[wait] restormer: 4165/7200
+[wait] restormer-aug: 4166/7200
+[wait] wavelet: 16366/31680
+[wait] restormer: 4170/7200
+[wait] restormer-aug: 4171/7200
+[wait] wavelet: 16384/31680
+[wait] restormer: 4179/7200
+[wait] restormer-aug: 4180/7200
+[wait] wavelet: 16402/31680
+[wait] restormer: 4185/7200
+[wait] restormer-aug: 4185/7200
+[wait] wavelet: 16419/31680
+[wait] restormer: 4190/7200
+[wait] restormer-aug: 4192/7200
+[wait] wavelet: 16437/31680
+[wait] restormer: 4199/7200
+[wait] restormer-aug: 4200/7200
+[wait] wavelet: 16454/31680
+[wait] restormer: 4205/7200
+[wait] restormer-aug: 4205/7200
+[wait] wavelet: 16472/31680
+[wait] restormer: 4212/7200
+[wait] restormer-aug: 4214/7200
+[wait] wavelet: 16488/31680
+[wait] restormer: 4219/7200
+[wait] restormer-aug: 4220/7200
+[wait] wavelet: 16506/31680
+[wait] restormer: 4225/7200
+[wait] restormer-aug: 4226/7200
+[wait] wavelet: 16524/31680
+[wait] restormer: 4234/7200
+[wait] restormer-aug: 4235/7200
+[wait] wavelet: 16542/31680
+[wait] restormer: 4239/7200
+[wait] restormer-aug: 4240/7200
+[wait] wavelet: 16560/31680
+[wait] restormer: 4246/7200
+[wait] restormer-aug: 4247/7200
+[wait] wavelet: 16575/31680
+[wait] restormer: 4254/7200
+[wait] restormer-aug: 4255/7200
+[wait] wavelet: 16593/31680
+[wait] restormer: 4259/7200
+[wait] restormer-aug: 4260/7200
+[wait] wavelet: 16611/31680
+[wait] restormer: 4267/7200
+[wait] restormer-aug: 4269/7200
+[wait] wavelet: 16629/31680
+[wait] restormer: 4274/7200
+[wait] restormer-aug: 4275/7200
+[wait] wavelet: 16645/31680
+[wait] restormer: 4279/7200
+[wait] restormer-aug: 4280/7200
+[wait] wavelet: 16663/31680
+[wait] restormer: 4289/7200
+[wait] restormer-aug: 4289/7200
+[wait] wavelet: 16681/31680
+[wait] restormer: 4294/7200
+[wait] restormer-aug: 4295/7200
+[wait] wavelet: 16699/31680
+[wait] restormer: 4301/7200
+[wait] restormer-aug: 4302/7200
+[wait] wavelet: 16716/31680
+[wait] restormer: 4309/7200
+[wait] restormer-aug: 4309/7200
+[wait] wavelet: 16733/31680
+[wait] restormer: 4314/7200
+[wait] restormer-aug: 4315/7200
+[wait] wavelet: 16751/31680
+[wait] restormer: 4322/7200
+[wait] restormer-aug: 4323/7200
+[wait] wavelet: 16769/31680
+[wait] restormer: 4329/7200
+[wait] restormer-aug: 4330/7200
+[wait] wavelet: 16786/31680
+[wait] restormer: 4337/7200
+[wait] restormer-aug: 4338/7200
+[wait] wavelet: 16804/31680
+[wait] restormer: 4346/7200
+[wait] restormer-aug: 4346/7200
+[wait] wavelet: 16822/31680
+[wait] restormer: 4352/7200
+[wait] restormer-aug: 4353/7200
+[wait] wavelet: 16840/31680
+[wait] restormer: 4362/7200
+[wait] restormer-aug: 4363/7200
+[wait] wavelet: 16856/31680
+[wait] restormer: 4368/7200
+[wait] restormer-aug: 4369/7200
+[wait] wavelet: 16874/31680
+[wait] restormer: 4378/7200
+[wait] restormer-aug: 4379/7200
+[wait] wavelet: 16891/31680
+[wait] restormer: 4384/7200
+[wait] restormer-aug: 4385/7200
+[wait] wavelet: 16909/31680
+[wait] restormer: 4392/7200
+[wait] restormer-aug: 4394/7200
+[wait] wavelet: 16926/31680
+[wait] restormer: 4400/7200
+[wait] restormer-aug: 4401/7200
+[wait] wavelet: 16944/31680
+[wait] restormer: 4407/7200
+[wait] restormer-aug: 4408/7200
+[wait] wavelet: 16962/31680
+[wait] restormer: 4417/7200
+[wait] restormer-aug: 4417/7200
+[wait] wavelet: 16979/31680
+[wait] restormer: 4423/7200
+[wait] restormer-aug: 4424/7200
+[wait] wavelet: 16996/31680
+[wait] restormer: 4433/7200
+[wait] restormer-aug: 4434/7200
+[wait] wavelet: 17013/31680
+[wait] restormer: 4439/7200
+[wait] restormer-aug: 4440/7200
+[wait] wavelet: 17031/31680
+[wait] restormer: 4448/7200
+[wait] restormer-aug: 4449/7200
+[wait] wavelet: 17048/31680
+[wait] restormer: 4455/7200
+[wait] restormer-aug: 4456/7200
+[wait] wavelet: 17064/31680
+[wait] restormer: 4463/7200
+[wait] restormer-aug: 4464/7200
+[wait] wavelet: 17081/31680
+[wait] restormer: 4471/7200
+[wait] restormer-aug: 4472/7200
+[wait] wavelet: 17099/31680
+[wait] restormer: 4477/7200
+[wait] restormer-aug: 4478/7200
+[wait] wavelet: 17116/31680
+[wait] restormer: 4487/7200
+[wait] restormer-aug: 4488/7200
+[wait] wavelet: 17133/31680
+[wait] restormer: 4493/7200
+[wait] restormer-aug: 4494/7200
+[wait] wavelet: 17149/31680
+[wait] restormer: 4503/7200
+[wait] restormer-aug: 4504/7200
+[wait] wavelet: 17167/31680
+[wait] restormer: 4510/7200
+[wait] restormer-aug: 4510/7200
+[wait] wavelet: 17184/31680
+[wait] restormer: 4518/7200
+[wait] restormer-aug: 4520/7200
+[wait] wavelet: 17202/31680
+[wait] restormer: 4526/7200
+[wait] restormer-aug: 4527/7200
+[wait] wavelet: 17219/31680
+[wait] restormer: 4532/7200
+[wait] restormer-aug: 4534/7200
+[wait] wavelet: 17236/31680
+[wait] restormer: 4542/7200
+[wait] restormer-aug: 4543/7200
+[wait] wavelet: 17254/31680
+[wait] restormer: 4548/7200
+[wait] restormer-aug: 4549/7200
+[wait] wavelet: 17272/31680
+[wait] restormer: 4558/7200
+[wait] restormer-aug: 4559/7200
+[wait] wavelet: 17287/31680
+[wait] restormer: 4564/7200
+[wait] restormer-aug: 4565/7200
+[wait] wavelet: 17305/31680
+[wait] restormer: 4572/7200
+[wait] restormer-aug: 4574/7200
+[wait] wavelet: 17323/31680
+[wait] restormer: 4580/7200
+[wait] restormer-aug: 4581/7200
+[wait] wavelet: 17340/31680
+[wait] restormer: 4587/7200
+[wait] restormer-aug: 4589/7200
+[wait] wavelet: 17357/31680
+[wait] restormer: 4597/7200
+[wait] restormer-aug: 4598/7200
+[wait] wavelet: 17374/31680
+[wait] restormer: 4603/7200
+[wait] restormer-aug: 4604/7200
+[wait] wavelet: 17392/31680
+[wait] restormer: 4612/7200
+[wait] restormer-aug: 4613/7200
+[wait] wavelet: 17409/31680
+[wait] restormer: 4618/7200
+[wait] restormer-aug: 4619/7200
+[wait] wavelet: 17424/31680
+[wait] restormer: 4627/7200
+[wait] restormer-aug: 4629/7200
+[wait] wavelet: 17441/31680
+[wait] restormer: 4635/7200
+[wait] restormer-aug: 4636/7200
+[wait] wavelet: 17458/31680
+[wait] restormer: 4642/7200
+[wait] restormer-aug: 4644/7200
+[wait] wavelet: 17475/31680
+[wait] restormer: 4651/7200
+[wait] restormer-aug: 4652/7200
+[wait] wavelet: 17492/31680
+[wait] restormer: 4657/7200
+[wait] restormer-aug: 4659/7200
+[wait] wavelet: 17509/31680
+[wait] restormer: 4667/7200
+[wait] restormer-aug: 4668/7200
+[wait] wavelet: 17526/31680
+[wait] restormer: 4673/7200
+[wait] restormer-aug: 4674/7200
+[wait] wavelet: 17544/31680
+[wait] restormer: 4682/7200
+[wait] restormer-aug: 4684/7200
+[wait] wavelet: 17561/31680
+[wait] restormer: 4689/7200
+[wait] restormer-aug: 4690/7200
+[wait] wavelet: 17577/31680
+[wait] restormer: 4696/7200
+[wait] restormer-aug: 4698/7200
+[wait] wavelet: 17594/31680
+[wait] restormer: 4705/7200
+[wait] restormer-aug: 4706/7200
+[wait] wavelet: 17612/31680
+[wait] restormer: 4711/7200
+[wait] restormer-aug: 4713/7200
+[wait] wavelet: 17629/31680
+[wait] restormer: 4721/7200
+[wait] restormer-aug: 4723/7200
+[wait] wavelet: 17645/31680
+[wait] restormer: 4727/7200
+[wait] restormer-aug: 4729/7200
+[wait] wavelet: 17662/31680
+[wait] restormer: 4737/7200
+[wait] restormer-aug: 4739/7200
+[wait] wavelet: 17680/31680
+[wait] restormer: 4744/7200
+[wait] restormer-aug: 4745/7200
+[wait] wavelet: 17697/31680
+[wait] restormer: 4752/7200
+[wait] restormer-aug: 4753/7200
+[wait] wavelet: 17712/31680
+[wait] restormer: 4760/7200
+[wait] restormer-aug: 4761/7200
+[wait] wavelet: 17728/31680
+[wait] restormer: 4766/7200
+[wait] restormer-aug: 4768/7200
+[wait] wavelet: 17745/31680
+[wait] restormer: 4776/7200
+[wait] restormer-aug: 4777/7200
+[wait] wavelet: 17762/31680
+[wait] restormer: 4782/7200
+[wait] restormer-aug: 4783/7200
+[wait] wavelet: 17779/31680
+[wait] restormer: 2681/7200
+[wait] restormer-aug: 4793/7200
+[wait] wavelet: 17795/31680
+[wait] restormer: 4798/7200
+[wait] restormer-aug: 4799/7200
+[wait] wavelet: 17813/31680
+[wait] restormer: 4806/7200
+[wait] restormer-aug: 4808/7200
+[wait] wavelet: 17830/31680
+[wait] restormer: 4814/7200
+[wait] restormer-aug: 4815/7200
+[wait] wavelet: 17847/31680
+[wait] restormer: 4821/7200
+[wait] restormer-aug: 4823/7200
+[wait] wavelet: 17863/31680
+[wait] restormer: 4830/7200
+[wait] restormer-aug: 4831/7200
+[wait] wavelet: 17880/31680
+[wait] restormer: 4836/7200
+[wait] restormer-aug: 4837/7200
+[wait] wavelet: 17898/31680
+[wait] restormer: 4846/7200
+[wait] restormer-aug: 4847/7200
+[wait] wavelet: 17915/31680
+[wait] restormer: 4852/7200
+[wait] restormer-aug: 4853/7200
+[wait] wavelet: 17930/31680
+[wait] restormer: 4861/7200
+[wait] restormer-aug: 4863/7200
+[wait] wavelet: 17947/31680
+[wait] restormer: 4869/7200
+[wait] restormer-aug: 4870/7200
+[wait] wavelet: 17963/31680
+[wait] restormer: 4875/7200
+[wait] restormer-aug: 4877/7200
+[wait] wavelet: 17980/31680
+[wait] restormer: 4885/7200
+[wait] restormer-aug: 4886/7200
+[wait] wavelet: 17997/31680
+[wait] restormer: 4891/7200
+[wait] restormer-aug: 4892/7200
+[wait] wavelet: 18013/31680
+[wait] restormer: 4900/7200
+[wait] restormer-aug: 4902/7200
+[wait] wavelet: 18030/31680
+[wait] restormer: 4906/7200
+[wait] restormer-aug: 4907/7200
+[wait] wavelet: 18047/31680
+[wait] restormer: 4915/7200
+[wait] restormer-aug: 4917/7200
+[wait] wavelet: 18064/31680
+[wait] restormer: 4923/7200
+[wait] restormer-aug: 4924/7200
+[wait] wavelet: 18080/31680
+[wait] restormer: 4930/7200
+[wait] restormer-aug: 4932/7200
+[wait] wavelet: 18097/31680
+[wait] restormer: 4939/7200
+[wait] restormer-aug: 4940/7200
+[wait] wavelet: 18114/31680
+[wait] restormer: 4945/7200
+[wait] restormer-aug: 4946/7200
+[wait] wavelet: 18131/31680
+[wait] restormer: 4955/7200
+[wait] restormer-aug: 4956/7200
+[wait] wavelet: 18147/31680
+[wait] restormer: 4961/7200
+[wait] restormer-aug: 4962/7200
+[wait] wavelet: 18163/31680
+[wait] restormer: 4969/7200
+[wait] restormer-aug: 4971/7200
+[wait] wavelet: 18179/31680
+[wait] restormer: 4977/7200
+[wait] restormer-aug: 4978/7200
+[wait] wavelet: 18196/31680
+[wait] restormer: 4984/7200
+[wait] restormer-aug: 4986/7200
+[wait] wavelet: 18212/31680
+[wait] restormer: 4993/7200
+[wait] restormer-aug: 4994/7200
+[wait] wavelet: 18228/31680
+[wait] restormer: 4999/7200
+[wait] restormer-aug: 5001/7200
+[wait] wavelet: 18245/31680
+[wait] restormer: 5009/7200
+[wait] restormer-aug: 5010/7200
+[wait] wavelet: 18263/31680
+[wait] restormer: 5015/7200
+[wait] restormer-aug: 5016/7200
+[wait] wavelet: 18279/31680
+[wait] restormer: 5025/7200
+[wait] restormer-aug: 5026/7200
+[wait] wavelet: 18295/31680
+[wait] restormer: 5031/7200
+[wait] restormer-aug: 5032/7200
+[wait] wavelet: 18312/31680
+[wait] restormer: 5039/7200
+[wait] restormer-aug: 5040/7200
+[wait] wavelet: 18329/31680
+[wait] restormer: 5047/7200
+[wait] restormer-aug: 5048/7200
+[wait] wavelet: 18346/31680
+[wait] restormer: 5053/7200
+[wait] restormer-aug: 5055/7200
+[wait] wavelet: 18361/31680
+[wait] restormer: 5063/7200
+[wait] restormer-aug: 5064/7200
+[wait] wavelet: 18377/31680
+[wait] restormer: 5069/7200
+[wait] restormer-aug: 5070/7200
+[wait] wavelet: 18393/31680
+[wait] restormer: 5079/7200
+[wait] restormer-aug: 5080/7200
+[wait] wavelet: 18410/31680
+[wait] restormer: 5085/7200
+[wait] restormer-aug: 5086/7200
+[wait] wavelet: 18427/31680
+[wait] restormer: 5093/7200
+[wait] restormer-aug: 5095/7200
+[wait] wavelet: 18443/31680
+[wait] restormer: 5102/7200
+[wait] restormer-aug: 5103/7200
+[wait] wavelet: 18460/31680
+[wait] restormer: 5108/7200
+[wait] restormer-aug: 5109/7200
+[wait] wavelet: 18476/31680
+[wait] restormer: 5117/7200
+[wait] restormer-aug: 5118/7200
+[wait] wavelet: 18493/31680
+[wait] restormer: 5123/7200
+[wait] restormer-aug: 5124/7200
+[wait] wavelet: 18509/31680
+[wait] restormer: 5133/7200
+[wait] restormer-aug: 5134/7200
+[wait] wavelet: 18525/31680
+[wait] restormer: 5139/7200
+[wait] restormer-aug: 5140/7200
+[wait] wavelet: 18542/31680
+[wait] restormer: 5147/7200
+[wait] restormer-aug: 5149/7200
+[wait] wavelet: 18557/31680
+[wait] restormer: 5156/7200
+[wait] restormer-aug: 5157/7200
+[wait] wavelet: 18573/31680
+[wait] restormer: 5162/7200
+[wait] restormer-aug: 5163/7200
+[wait] wavelet: 18589/31680
+[wait] restormer: 5172/7200
+[wait] restormer-aug: 5173/7200
+[wait] wavelet: 18605/31680
+[wait] restormer: 5178/7200
+[wait] restormer-aug: 5179/7200
+[wait] wavelet: 18622/31680
+[wait] restormer: 5187/7200
+[wait] restormer-aug: 5188/7200
+[wait] wavelet: 18639/31680
+[wait] restormer: 5193/7200
+[wait] restormer-aug: 5194/7200
+[wait] wavelet: 18654/31680
+[wait] restormer: 5201/7200
+[wait] restormer-aug: 5203/7200
+[wait] wavelet: 18671/31680
+[wait] restormer: 5210/7200
+[wait] restormer-aug: 5211/7200
+[wait] wavelet: 18688/31680
+[wait] restormer: 5216/7200
+[wait] restormer-aug: 5217/7200
+[wait] wavelet: 18704/31680
+[wait] restormer: 5226/7200
+[wait] restormer-aug: 5227/7200
+[wait] wavelet: 18720/31680
+[wait] restormer: 5232/7200
+[wait] restormer-aug: 5233/7200
+[wait] wavelet: 18734/31680
+[wait] restormer: 5241/7200
+[wait] restormer-aug: 5243/7200
+[wait] wavelet: 18751/31680
+[wait] restormer: 5248/7200
+[wait] restormer-aug: 5249/7200
+[wait] wavelet: 18768/31680
+[wait] restormer: 5256/7200
+[wait] restormer-aug: 5257/7200
+[wait] wavelet: 18785/31680
+[wait] restormer: 5264/7200
+[wait] restormer-aug: 5264/7200
+[wait] wavelet: 18800/31680
+[wait] restormer: 5270/7200
+[wait] restormer-aug: 5271/7200
+[wait] wavelet: 18817/31680
+[wait] restormer: 5280/7200
+[wait] restormer-aug: 5281/7200
+[wait] wavelet: 18833/31680
+[wait] restormer: 5286/7200
+[wait] restormer-aug: 5287/7200
+[wait] wavelet: 18850/31680
+[wait] restormer: 5295/7200
+[wait] restormer-aug: 5296/7200
+Traceback (most recent call last):
+  File "scripts/finish_downstream_solver_sweep.py", line 273, in <module>
+    main()
+  File "scripts/finish_downstream_solver_sweep.py", line 259, in main
+    sweep_df = wait_for_sweeps()
+  File "scripts/finish_downstream_solver_sweep.py", line 91, in wait_for_sweeps
+    df = _read_final(path)
+  File "scripts/finish_downstream_solver_sweep.py", line 74, in _read_final
+    return pd.read_csv(csv)
+  File "/home/yuqi/anaconda3/envs/restormer37/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yuqi/anaconda3/envs/restormer37/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yuqi/anaconda3/envs/restormer37/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yuqi/anaconda3/envs/restormer37/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/yuqi/anaconda3/envs/restormer37/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/yuqi/anaconda3/envs/restormer37/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 69, in __init__
+    self._reader = parsers.TextReader(self.handles.handle, **kwds)
+  File "pandas/_libs/parsers.pyx", line 549, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[finish] waiting for aligned parameter sweeps
+[wait] wavelet: 23084/31680
+[wait] restormer: 6955/7200
+[wait] restormer-aug: 6959/7200
+[wait] wavelet: 23104/31680
+[wait] restormer: 6961/7200
+[wait] restormer-aug: 6967/7200
+[wait] wavelet: 23123/31680
+[wait] restormer: 6971/7200
+[wait] restormer-aug: 6975/7200
+[wait] wavelet: 23143/31680
+[wait] restormer: 6977/7200
+[wait] restormer-aug: 6981/7200
+[wait] wavelet: 23164/31680
+[wait] restormer: 6985/7200
+[wait] restormer-aug: 6990/7200
+[wait] wavelet: 23184/31680
+[wait] restormer: 6992/7200
+[wait] restormer-aug: 6996/7200
+[wait] wavelet: 23204/31680
+[wait] restormer: 6999/7200
+[wait] restormer-aug: 7005/7200
+[wait] wavelet: 23224/31680
+[wait] restormer: 7008/7200
+[wait] restormer-aug: 7012/7200
+[wait] wavelet: 23245/31680
+[wait] restormer: 7014/7200
+[wait] restormer-aug: 7019/7200
+[wait] wavelet: 5393/31680
+[wait] restormer: 7023/7200
+[wait] restormer-aug: 7028/7200
+[wait] wavelet: 23284/31680
+[wait] restormer: 7030/7200
+[wait] restormer-aug: 7034/7200
+[wait] wavelet: 23304/31680
+[wait] restormer: 7037/7200
+[wait] restormer-aug: 7043/7200
+[wait] wavelet: 23325/31680
+[wait] restormer: 7046/7200
+[wait] restormer-aug: 7049/7200
+[wait] wavelet: 23344/31680
+[wait] restormer: 7052/7200
+[wait] restormer-aug: 7057/7200
+[wait] wavelet: 23364/31680
+[wait] restormer: 7061/7200
+[wait] restormer-aug: 7065/7200
+[wait] wavelet: 23385/31680
+[wait] restormer: 7067/7200
+[wait] restormer-aug: 7071/7200
+[wait] wavelet: 23403/31680
+[wait] restormer: 7076/7200
+[wait] restormer-aug: 3671/7200
+[wait] wavelet: 23424/31680
+[wait] restormer: 7083/7200
+[wait] restormer-aug: 7086/7200
+[wait] wavelet: 23444/31680
+[wait] restormer: 7089/7200
+[wait] restormer-aug: 7096/7200
+[wait] wavelet: 23464/31680
+[wait] restormer: 7098/7200
+[wait] restormer-aug: 7102/7200
+[wait] wavelet: 23482/31680
+[wait] restormer: 7104/7200
+[wait] restormer-aug: 7110/7200
+[wait] wavelet: 23503/31680
+[wait] restormer: 7114/7200
+[wait] restormer-aug: 7118/7200
+[wait] wavelet: 23523/31680
+[wait] restormer: 7120/7200
+[wait] restormer-aug: 7124/7200
+[wait] wavelet: 23543/31680
+[wait] restormer: 7128/7200
+[wait] restormer-aug: 7133/7200
+[wait] wavelet: 23561/31680
+[wait] restormer: 7135/7200
+[wait] restormer-aug: 7139/7200
+[wait] wavelet: 23582/31680
+[wait] restormer: 7141/7200
+[wait] restormer-aug: 7148/7200
+[wait] wavelet: 23602/31680
+[wait] restormer: 7151/7200
+[wait] restormer-aug: 7155/7200
+[wait] wavelet: 23621/31680
+[wait] restormer: 7157/7200
+[wait] restormer-aug: 7162/7200
+[wait] wavelet: 23641/31680
+[wait] restormer: 7166/7200
+[wait] restormer-aug: 7171/7200
+[wait] wavelet: 23661/31680
+[wait] restormer: 7173/7200
+[wait] restormer-aug: 7177/7200
+[wait] wavelet: 23681/31680
+[wait] restormer: 7179/7200
+[wait] restormer-aug: 7186/7200
+[wait] wavelet: 23699/31680
+[wait] restormer: 2681/7200
+[wait] restormer-aug: 7192/7200
+[wait] wavelet: 23719/31680
+[wait] restormer: 7194/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23739/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23760/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23778/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23798/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23819/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23837/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23857/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23877/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23897/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23916/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23936/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23956/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23976/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 23995/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24015/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24035/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24053/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24073/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24093/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24112/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24130/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24150/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24170/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24190/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24208/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24228/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24248/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24266/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24286/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24306/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24325/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 0/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24363/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24382/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24402/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24420/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24440/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24459/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24479/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24497/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24516/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24536/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24554/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24573/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24593/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24612/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24630/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24650/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24669/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24688/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24706/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24726/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24745/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24765/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24782/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24802/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24821/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24840/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24859/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24878/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24898/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24915/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24935/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24954/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24973/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24991/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25010/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25029/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25048/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25066/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25085/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25104/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25123/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25140/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25160/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25179/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25198/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25216/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25235/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25254/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25272/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25291/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25310/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25329/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 5393/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25365/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25384/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25403/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25421/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25440/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25459/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25478/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25495/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25514/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 10802/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25551/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25569/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25587/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25606/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25625/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25642/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25661/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25679/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25698/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25715/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25734/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25753/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25771/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25788/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25807/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25825/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25844/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25861/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25880/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25898/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25917/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25934/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25953/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25971/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 25990/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26007/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26025/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26044/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26062/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26079/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26097/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26116/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26134/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26151/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26169/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26187/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26206/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26223/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26241/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26259/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26278/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26294/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26313/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26331/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26349/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26366/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26384/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26402/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26421/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26437/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26455/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26474/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26492/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26509/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26527/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26545/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26563/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26580/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26598/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26616/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26634/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26651/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26669/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26686/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26704/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26721/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26739/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26757/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26775/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26791/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26809/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26827/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 1539/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26861/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26879/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26896/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26914/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+scripts/finish_downstream_solver_sweep.py:95: DtypeWarning: Columns (34) have mixed types.Specify dtype option on import or set low_memory=False.
+  df = _read_final(path)
+[wait] wavelet: 16929/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26948/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26966/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 26983/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27000/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27017/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27035/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27052/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27070/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27086/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27104/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27121/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27139/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27155/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27172/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27190/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27207/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27224/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27241/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27259/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27276/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27292/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27310/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27328/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27345/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27361/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27379/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27396/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27414/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27431/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27447/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27464/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27482/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27499/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27515/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 2680/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27550/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27567/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27583/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27600/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27617/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27635/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27651/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27668/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27685/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27702/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27719/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27735/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27752/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27769/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27786/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27802/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27819/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27837/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27854/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27870/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27887/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27904/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27921/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27937/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27954/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27971/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 27987/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28004/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28020/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28037/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28054/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28071/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28087/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28104/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28121/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28137/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28153/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28170/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28187/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28203/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28220/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28236/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28253/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28270/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28286/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28302/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28319/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28336/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28353/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28368/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28385/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28401/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28418/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28435/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28450/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28467/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28484/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28501/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28516/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28533/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28550/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28566/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28583/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28598/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28615/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28632/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28649/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28664/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28681/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28698/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28714/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28729/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28746/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28762/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28779/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28795/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28811/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28827/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28844/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28860/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28876/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28892/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28909/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28925/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28942/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28957/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28973/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 28990/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29006/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29022/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29038/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29055/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29071/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29087/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29102/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29118/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29135/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29151/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29166/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29183/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29199/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29216/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29232/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29247/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29263/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29279/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29296/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29311/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29327/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29344/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29360/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29376/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29391/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29407/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29423/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29440/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29455/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29471/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29487/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29503/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29519/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29534/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29550/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29566/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29582/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29597/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29613/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29629/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29645/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29661/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29676/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29692/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29708/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29724/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29739/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29755/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29771/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29787/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29803/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29818/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29834/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29850/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29866/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29880/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29896/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29912/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29928/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29944/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29959/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29975/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 29990/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30006/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30022/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30036/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30052/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30068/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30084/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30098/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30114/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30130/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30145/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30161/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30176/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30191/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30207/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30223/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30238/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30253/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 24300/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30284/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30300/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30315/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30330/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30346/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30362/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30377/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30392/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30408/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30423/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30439/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30454/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30469/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30484/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30500/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30516/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30530/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30545/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30561/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30576/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30592/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30606/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30622/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30637/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30653/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30668/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30682/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30698/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30713/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30729/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30744/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30758/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30774/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30789/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30805/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30819/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30834/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30850/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30865/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30880/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30895/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30910/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30925/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 1539/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30956/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30970/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 30985/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31001/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31016/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31031/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31045/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31061/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31076/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31092/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31106/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31121/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31136/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31151/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31167/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31181/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31196/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31211/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31226/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31241/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31256/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31271/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31286/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31301/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31316/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31330/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31346/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31361/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31376/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31391/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31405/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31420/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31435/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31450/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31464/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31479/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31494/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31509/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31524/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31538/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31553/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31568/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31583/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31598/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31612/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31627/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31642/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31657/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31672/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[wait] wavelet: 31680/31680
+[wait] restormer: 7200/7200
+[wait] restormer-aug: 7200/7200
+[finish] selecting parameters
+     denoiser problem algorithm           schedule  rho  step  red_input_sigma  lambda  mean_final_psnr  mean_gap_psnr  fail_rate   n
+    restormer    blur   pnp_hqs          fixed15p0  1.6   0.5              0.0    0.15        23.746924       3.637057        0.0 144
+    restormer    blur    red_gd          fixed15p0  0.8   8.0             15.0    0.02        22.589528       2.479662        0.0 144
+    restormer inpaint   pnp_hqs          fixed15p0  0.1   0.5              0.0    0.15        26.772017      18.596539        0.0 144
+    restormer inpaint    red_gd          fixed15p0  0.8   4.0             15.0    0.02        25.042630      16.867152        0.0 144
+restormer-aug    blur   pnp_hqs          fixed15p0  1.6   0.5              0.0    0.15        23.166586       3.056720        0.0 144
+restormer-aug    blur    red_gd          fixed15p0  0.8   8.0             15.0    0.02        23.107848       2.997982        0.0 144
+restormer-aug inpaint   pnp_hqs          fixed15p0  0.1   0.5              0.0    0.15        26.543795      18.368317        0.0 144
+restormer-aug inpaint    red_gd          fixed15p0  0.8   2.0             15.0    0.02        24.439405      16.263927        0.0 144
+      wavelet    blur   pnp_hqs          fixed10p0  0.4   0.5              0.0    0.15        21.599682       1.489816        0.0 144
+      wavelet    blur    red_gd          fixed10p0  0.8   1.0             15.0    0.02        21.989301       1.879435        0.0 144
+      wavelet inpaint   pnp_hqs linear25p0_to_10p0  0.1   0.5              0.0    0.15        23.314189      15.138711        0.0 144
+      wavelet inpaint    red_gd          fixed10p0  0.8   1.0             15.0    0.02        24.165184      15.989706        0.0 144
+[finish] running selected vanilla+G16 experiments
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_rectangle_angles5_sigma15/selected_final/restormer/blur/pnp_hqs --denoisers restormer --dataset val_images --eval-mask none --problems blur --algorithms pnp_hqs --modes vanilla G16_fixed --max-images 2 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 0 --rotation-angles 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 180 185 190 195 200 205 210 215 220 225 230 235 240 245 250 255 260 265 270 275 280 285 290 295 300 305 310 315 320 325 330 335 340 345 350 355 --input-poses all --exclude-upright --pnp-num-iter 20 --red-num-iter 40 --pnp-restormer-rhos 1.6
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot0_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot0_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot5_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot5_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot10_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot10_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot15_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot15_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot20_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot20_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot25_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot25_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot35_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot35_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot40_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot40_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot50_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot50_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot55_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot55_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot65_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot65_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot70_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot70_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot75_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot75_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot80_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot80_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot85_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot85_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot90_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot90_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot95_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot95_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot100_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot100_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot105_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot105_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot110_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot110_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot115_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot115_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot120_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot120_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot125_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot125_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot130_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot130_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot135_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot135_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot140_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot140_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot145_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot145_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot150_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot150_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot155_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot155_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot160_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot160_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot165_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot165_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot170_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot170_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot175_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot175_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot180_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot180_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot185_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot185_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot190_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot190_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot195_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot195_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot200_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot200_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot205_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot205_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot210_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot210_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot215_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot215_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot220_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot220_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot225_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot225_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot230_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot230_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot235_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot235_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot240_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot240_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot245_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot245_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot250_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot250_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot255_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot255_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot260_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot260_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot265_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot265_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot270_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot270_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot275_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot275_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot280_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot280_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot285_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot285_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot290_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot290_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot295_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot295_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot300_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot300_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot305_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot305_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot310_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot310_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot315_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot315_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot320_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot320_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot325_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot325_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot330_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot330_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot335_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot335_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot340_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot340_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot345_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot345_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot350_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot350_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot355_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test001.png input=rot355_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot0_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot0_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot5_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot5_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot10_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot10_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot15_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot15_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot20_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot20_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot25_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot25_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot35_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot35_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot40_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot40_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot50_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot50_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot55_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot55_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot65_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot65_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot70_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot70_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot75_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot75_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot80_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot80_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot85_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot85_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot90_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot90_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot95_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot95_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot100_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot100_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot105_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot105_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot110_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot110_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot115_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot115_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot120_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot120_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot125_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot125_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot130_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot130_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot135_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot135_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot140_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot140_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot145_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot145_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot150_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot150_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot155_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot155_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot160_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot160_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot165_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot165_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot170_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot170_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot175_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot175_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot180_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot180_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot185_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot185_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot190_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot190_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot195_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot195_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot200_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot200_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot205_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot205_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot210_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot210_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot215_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot215_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot220_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot220_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot225_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot225_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot230_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot230_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot235_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot235_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot240_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot240_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot245_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot245_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot250_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot250_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot255_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot255_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot260_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot260_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot265_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot265_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot270_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot270_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot275_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot275_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot280_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot280_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot285_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot285_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot290_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot290_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot295_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot295_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot300_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot300_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot305_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot305_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot310_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot310_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot315_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot315_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot320_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot320_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot325_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot325_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot330_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot330_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot335_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot335_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot340_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot340_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot345_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot345_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot350_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot350_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot355_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=pnp_hqs schedule=fixed15p0 rho=1.6 step=0.5 lam=0.15 image=test002.png input=rot355_padded mode=G16_fixed
+wrote /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_rectangle_angles5_sigma15/selected_final/restormer/blur/pnp_hqs/downstream_solver_sweep_summary.csv
++ /home/yuqi/anaconda3/envs/restormer37/bin/python -u /home/yuqi/Documents/inference_group_averaging/scripts/run_downstream_solver_sweep.py --save-dir /home/yuqi/Documents/inference_group_averaging/results/downstream/solver_sweep_rectangle_angles5_sigma15/selected_final/restormer/blur/red_gd --denoisers restormer --dataset val_images --eval-mask none --problems blur --algorithms red_gd --modes vanilla G16_fixed --max-images 2 --num-iter 20 --save-image-count 1 --measurement-sigma 15.0 --input-pad 0 --rotation-angles 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 180 185 190 195 200 205 210 215 220 225 230 235 240 245 250 255 260 265 270 275 280 285 290 295 300 305 310 315 320 325 330 335 340 345 350 355 --input-poses all --exclude-upright --pnp-num-iter 20 --red-num-iter 40 --red-lambdas 0.02 --red-input-sigma 15.0 --red-steps 8.0
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot0_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot0_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot5_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot5_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot10_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot10_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot15_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot15_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot20_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot20_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot25_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot25_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot30_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot30_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot35_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot35_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot40_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot40_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot45_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot45_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot50_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot50_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot55_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot55_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot60_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot60_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot65_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot65_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot70_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot70_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot75_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot75_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot80_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot80_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot85_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot85_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot90_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot90_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot95_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot95_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot100_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot100_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot105_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot105_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot110_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot110_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot115_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot115_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot120_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot120_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot125_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot125_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot130_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot130_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot135_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot135_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot140_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot140_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot145_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot145_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot150_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot150_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot155_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot155_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot160_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot160_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot165_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot165_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot170_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot170_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot175_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot175_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot180_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot180_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot185_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot185_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot190_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot190_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot195_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot195_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot200_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot200_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot205_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot205_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot210_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot210_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot215_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot215_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot220_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot220_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot225_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot225_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot230_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot230_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot235_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot235_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot240_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot240_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot245_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot245_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot250_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot250_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot255_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot255_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot260_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot260_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot265_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot265_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot270_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot270_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot275_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot275_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot280_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot280_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot285_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot285_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot290_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot290_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot295_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot295_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot300_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot300_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot305_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot305_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot310_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot310_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot315_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot315_padded mode=G16_fixed
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot320_padded mode=vanilla
+[solver-sweep] denoiser=restormer problem=blur algorithm=red_gd schedule=fixed15p0 rho=0.8 step=8 lam=0.02 image=test001.png input=rot320_padded mode=G16_fixed

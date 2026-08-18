@@ -62,11 +62,13 @@ def _angle_tag(angle):
 
 
 def _input_variants(clean, group_name, eval_mask_mode, input_rotate_expand=True,
-                    input_pad=0, rotation_angles=(45.0,)):
+                    input_pad=0, rotation_angles=(45.0,), include_upright=True):
     clean = np.asarray(clean, dtype=np.float32)
     base_clean = _pad_image(clean, input_pad)
     base_mask = _pad_image(build_mask(clean, clean_ref=clean, mask_mode=eval_mask_mode), input_pad)
-    variants = [("upright", 0.0, base_clean, base_mask)]
+    variants = []
+    if include_upright:
+        variants.append(("upright", 0.0, base_clean, base_mask))
     for angle in rotation_angles:
         rot_group = make_group(group_name, K=1, angles=[float(angle)], expand=input_rotate_expand)
         rot_clean = rot_group.forward(base_clean)[0].astype(np.float32)
@@ -289,7 +291,8 @@ def main():
                     help="RED input noise sigma on the 0-255 scale, matching Google RED.")
     ap.add_argument("--modes", nargs="+", default=["vanilla", "G16_fixed"], choices=["vanilla", "G16_fixed"])
     ap.add_argument("--input-poses", nargs="+", default=["upright", "rot45_padded"],
-                    help="Input poses to include, e.g. upright rot30_padded rot45_padded.")
+                    help="Input poses to include, e.g. all or upright rot30_padded rot45_padded.")
+    ap.add_argument("--exclude-upright", action="store_true")
     ap.add_argument("--no-input-rotate-expand", action="store_true",
                     help="Rotate the 45-degree input on the original canvas.")
     ap.add_argument("--input-pad", type=int, default=0)
@@ -356,8 +359,9 @@ def main():
                                         input_rotate_expand=not args.no_input_rotate_expand,
                                         input_pad=args.input_pad,
                                         rotation_angles=args.rotation_angles,
+                                        include_upright=not args.exclude_upright,
                                     ):
-                                        if input_pose not in args.input_poses:
+                                        if "all" not in args.input_poses and input_pose not in args.input_poses:
                                             continue
                                         problem_seed = args.seed + image_index * 1000003
                                         if input_pose != "upright":
