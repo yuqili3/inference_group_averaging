@@ -1,0 +1,11 @@
+The following paths are ignored by one of your .gitignore files:
+results
+Use -f if you really want to add them.
+Traceback (most recent call last):
+  File "scripts/run_presubmission_diagnostics.py", line 536, in <module>
+    main()
+  File "scripts/run_presubmission_diagnostics.py", line 528, in main
+    subprocess.run(["git", "add", "scripts/run_presubmission_diagnostics.py", str(repo_dir)], check=True)
+  File "/home/yuqi/anaconda3/envs/restormer37/lib/python3.7/subprocess.py", line 512, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', 'add', 'scripts/run_presubmission_diagnostics.py', 'results/presubmission_diagnostics']' returned non-zero exit status 1.
