@@ -73,11 +73,16 @@ predict-then-verify check.
 - `src/groupavg/denoisers/gsdrunet.py` loads the public checkpoint without
   Lightning during inference and implements the GSPnP denoising rule
   `x - Dg(x)`.
-- `gsdrunet` is registered in `make_denoiser`, and the Q1, Q2, and downstream
-  sweep scripts can construct it.
-- CPU smoke test passed for downstream blur/PnP with `vanilla` and
-  `G1_random`; GS-DRUNet Q1/Q2 diagnostics have been launched on GPU through
-  tmux.
+- Deepinv grayscale DRUNet and DnCNN weights are downloaded at
+  `/data2/yuqi/inference_group_averaging/sota_downstream/weights/`.
+- `src/groupavg/denoisers/deepinv_models.py` provides lightweight DRUNet and
+  DnCNN wrappers using the inspected deepinv 0.3.2 architectures without
+  installing the full deepinv dependency tree.
+- `gsdrunet`, `drunet`, and `dncnn` are registered in `make_denoiser`, and the
+  Q1, Q2, and downstream sweep scripts can construct them.
+- CPU and CUDA smoke tests passed for the three SOTA wrappers. GS-DRUNet Q1/Q2
+  diagnostics have been launched on GPU through tmux; DRUNet/DnCNN diagnostics
+  should be queued after those finish.
 
 ## Storage Policy
 

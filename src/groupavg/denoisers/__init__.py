@@ -46,6 +46,12 @@ def make_denoiser(name, **kwargs):
     if name == "gsdrunet":
         from .gsdrunet import GSDRUNet
         return GSDRUNet(**kwargs)
+    if name == "drunet":
+        from .deepinv_models import DeepInvDRUNet
+        return DeepInvDRUNet(**kwargs)
+    if name == "dncnn":
+        from .deepinv_models import DeepInvDnCNN
+        return DeepInvDnCNN(**kwargs)
     if name == "dummy":
         return _make_dummy()
     if name not in DENOISERS:

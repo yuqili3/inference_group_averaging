@@ -61,6 +61,8 @@ def _make_model(label, base, device):
         )
     if label == "gsdrunet":
         return make_denoiser("gsdrunet", device=device)
+    if label in {"drunet", "dncnn"}:
+        return make_denoiser(label, device=device)
     return make_denoiser(label)
 
 

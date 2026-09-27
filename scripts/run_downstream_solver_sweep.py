@@ -50,6 +50,8 @@ def _make_model(label, base, device, sigma):
         return make_denoiser("restormer", weights=RESTORMER_AUG_WEIGHTS, color=False, device=device)
     if label == "gsdrunet":
         return make_denoiser("gsdrunet", device=device)
+    if label in {"drunet", "dncnn"}:
+        return make_denoiser(label, device=device)
     return make_denoiser(label)
 
 
