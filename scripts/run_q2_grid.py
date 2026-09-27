@@ -27,6 +27,7 @@ SIGMAS = [15.0]
 MODELS = [
     "restormer",
     "restormer-rotated-noise-retrained",
+    "gsdrunet",
     "wavelet",
     "tv",
     "nlm",
@@ -58,6 +59,8 @@ def _make_model(label, base, device):
             color=False,
             device=device,
         )
+    if label == "gsdrunet":
+        return make_denoiser("gsdrunet", device=device)
     return make_denoiser(label)
 
 
@@ -92,6 +95,7 @@ def main():
     ap.add_argument("--num-noise", type=int, default=2)
     ap.add_argument("--noise-sigma", type=float, default=None)
     ap.add_argument("--sigmas", type=float, nargs="+", default=None)
+    ap.add_argument("--models", nargs="+", default=MODELS)
     ap.add_argument("--include-retrained-all-sigmas", action="store_true")
     ap.add_argument("--no-skip-complete", action="store_true")
     ap.add_argument("--group-name", default="fourier_rotation")
@@ -111,7 +115,7 @@ def main():
     sigmas = args.sigmas or ([args.noise_sigma] if args.noise_sigma is not None else SIGMAS)
 
     for sigma in sigmas:
-        for model_label in MODELS:
+        for model_label in args.models:
             if (
                 model_label == "restormer-rotated-noise-retrained"
                 and sigma != 15.0

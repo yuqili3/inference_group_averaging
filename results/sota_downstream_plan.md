@@ -27,6 +27,10 @@ predict-then-verify check.
   model weights.
 - Some old DnCNN-looking files under `~/Documents/equivariant_PGD` appear to be
   downloaded GitHub HTML pages, not reliable PyTorch checkpoints.
+- GPU visibility depends on execution permissions: inside the restricted
+  sandbox Python reports `torch.cuda.is_available() == False`, while escalated
+  experiment commands see both RTX A6000 GPUs. Launch GPU runs through tmux with
+  escalated execution.
 
 ## Implementation Tasks
 
@@ -59,6 +63,21 @@ predict-then-verify check.
 - `G1_random` samples one angle from the C16 base grid on every denoiser call,
   then applies `T_g -> D -> T_g^{-1}`. This matches the EPnP/ERED single-random
   group-element estimator at the denoiser-call level.
+- The GSPnP repository is cloned at
+  `/data2/yuqi/inference_group_averaging/external/GSPnP`.
+- The official grayscale GS-DRUNet checkpoint is downloaded at
+  `/data2/yuqi/inference_group_averaging/sota_downstream/weights/GSDRUNet_gray.ckpt`.
+- A Lightning-free extracted state dict is stored at
+  `/data2/yuqi/inference_group_averaging/sota_downstream/weights/GSDRUNet_gray_state.pth`
+  and is the default wrapper weight file.
+- `src/groupavg/denoisers/gsdrunet.py` loads the public checkpoint without
+  Lightning during inference and implements the GSPnP denoising rule
+  `x - Dg(x)`.
+- `gsdrunet` is registered in `make_denoiser`, and the Q1, Q2, and downstream
+  sweep scripts can construct it.
+- CPU smoke test passed for downstream blur/PnP with `vanilla` and
+  `G1_random`; GS-DRUNet Q1/Q2 diagnostics have been launched on GPU through
+  tmux.
 
 ## Storage Policy
 

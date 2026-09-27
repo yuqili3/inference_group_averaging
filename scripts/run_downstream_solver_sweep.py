@@ -48,6 +48,8 @@ def _make_model(label, base, device, sigma):
         if not os.path.exists(RESTORMER_AUG_WEIGHTS):
             raise FileNotFoundError(RESTORMER_AUG_WEIGHTS)
         return make_denoiser("restormer", weights=RESTORMER_AUG_WEIGHTS, color=False, device=device)
+    if label == "gsdrunet":
+        return make_denoiser("gsdrunet", device=device)
     return make_denoiser(label)
 
 

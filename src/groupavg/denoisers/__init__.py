@@ -43,6 +43,9 @@ def make_denoiser(name, **kwargs):
     if name == "restormer":
         from .restormer import Restormer
         return Restormer(**kwargs)
+    if name == "gsdrunet":
+        from .gsdrunet import GSDRUNet
+        return GSDRUNet(**kwargs)
     if name == "dummy":
         return _make_dummy()
     if name not in DENOISERS:
@@ -51,4 +54,4 @@ def make_denoiser(name, **kwargs):
 
 
 def list_denoisers():
-    return sorted(list(DENOISERS) + ["restormer"])
+    return sorted(list(DENOISERS) + ["restormer", "gsdrunet"])

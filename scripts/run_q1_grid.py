@@ -25,6 +25,7 @@ DATASETS = [
 MODELS = [
     "restormer",
     "restormer-rotated-noise-retrained",
+    "gsdrunet",
     "wavelet",
     "tv",
     "nlm",
@@ -57,6 +58,8 @@ def _make_model(label, base, device, sigma):
             color=False,
             device=device,
         )
+    if label == "gsdrunet":
+        return make_denoiser("gsdrunet", device=device)
     return make_denoiser(label)
 
 
@@ -83,6 +86,7 @@ def main():
     ap.add_argument("--max-images", type=int, default=10)
     ap.add_argument("--num-noise", type=int, default=4)
     ap.add_argument("--sigmas", type=float, nargs="+", default=SIGMAS)
+    ap.add_argument("--models", nargs="+", default=MODELS)
     ap.add_argument("--averaging", type=int, default=64)
     ap.add_argument("--group-name", default="fourier_rotation")
     ap.add_argument("--upsample", type=float, default=1.0)
@@ -104,7 +108,7 @@ def main():
     failures_path = os.path.join(args.save_dir, "q1_equivariance_grid_failures.csv")
 
     for sigma in args.sigmas:
-        for model_label in MODELS:
+        for model_label in args.models:
             if model_label == "bm3d" and args.skip_bm3d:
                 print(f"\n[Q1 grid] skip model={model_label} sigma={sigma}: skipped by request")
                 continue
