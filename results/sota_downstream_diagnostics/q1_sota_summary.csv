@@ -1,0 +1,7 @@
+experiment,model,sigma,dataset,averaging,num_noise,mean_rel_err,mean_max_elem_rel_err,mean_e1,save_dir
+Q1_rho,dncnn,2.0,val_images,16,4,6.855637304081633e-05,9.987395527528536e-05,8.658433801759848e-06,/data2/yuqi/inference_group_averaging/sota_downstream/diagnostics/q1_dncnn/sigma2/val_images/dncnn
+Q1_rho,dncnn,2.0,val_images_circle,16,4,5.974727062648815e-05,8.947809382501159e-05,7.715115468596627e-06,/data2/yuqi/inference_group_averaging/sota_downstream/diagnostics/q1_dncnn/sigma2/val_images_circle/dncnn
+Q1_rho,drunet,15.0,val_images,16,4,0.0002764675824525,0.0003975291495931,2.6930635784441493e-05,/data2/yuqi/inference_group_averaging/sota_downstream/diagnostics/q1_drunet/sigma15/val_images/drunet
+Q1_rho,drunet,15.0,val_images_circle,16,4,0.0002566636455855,0.0003849077501579,2.672168333471385e-05,/data2/yuqi/inference_group_averaging/sota_downstream/diagnostics/q1_drunet/sigma15/val_images_circle/drunet
+Q1_rho,gsdrunet,15.0,val_images,16,4,0.0002748178707198,0.0003881964035552,2.723041280162445e-05,/data2/yuqi/inference_group_averaging/sota_downstream/diagnostics/q1_gsdrunet/sigma15/val_images/gsdrunet
+Q1_rho,gsdrunet,15.0,val_images_circle,16,4,0.0002517817177775,0.0003746549871742,2.695061282252868e-05,/data2/yuqi/inference_group_averaging/sota_downstream/diagnostics/q1_gsdrunet/sigma15/val_images_circle/gsdrunet
