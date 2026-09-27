@@ -110,7 +110,8 @@ def _parse_schedule(text):
 
 class ScheduledDenoiser:
     def __init__(self, denoiser, mode, denoiser_name, train_sigma, schedule,
-                 group_name, group_size, group_expand, num_iter, clip=False):
+                 group_name, group_size, group_expand, num_iter, clip=False,
+                 seed=0):
         self.denoiser = denoiser
         self.mode = mode
         self.denoiser_name = denoiser_name
@@ -125,11 +126,15 @@ class ScheduledDenoiser:
         self.last_effective_sigma = float(train_sigma)
         self.last_angles = ["none"]
         self.group = None
+        self.base_angles = np.arange(self.group_size, dtype=np.float32) * (360.0 / float(self.group_size))
+        self.rng = np.random.default_rng(seed)
         if mode == "G16_fixed":
-            self.angles = np.arange(self.group_size, dtype=np.float32) * (360.0 / float(self.group_size))
+            self.angles = self.base_angles
             self.group = make_group(
                 self.group_name, K=self.group_size, angles=list(self.angles), expand=self.group_expand
             )
+        elif mode == "G1_random":
+            self.angles = np.array([], dtype=np.float32)
         else:
             self.angles = np.array([], dtype=np.float32)
 
@@ -154,6 +159,13 @@ class ScheduledDenoiser:
                 estimates.append(self.group.invert(idx, d).astype(np.float32))
             out = np.mean(np.stack(estimates, axis=0), axis=0).astype(np.float32)
             self.last_angles = [float(a) for a in self.angles]
+        elif self.mode == "G1_random":
+            angle = float(self.rng.choice(self.base_angles))
+            group = make_group(self.group_name, K=1, angles=[angle], expand=self.group_expand)
+            tg_x = group.forward(x)[0]
+            d = denoise_one(tg_x, self.denoiser, sigma)
+            out = group.invert(0, d).astype(np.float32)
+            self.last_angles = [angle]
         else:
             raise ValueError(f"Unknown mode: {self.mode}")
         self.call_count += 1
@@ -289,7 +301,8 @@ def main():
     ap.add_argument("--red-steps", type=float, nargs="+", default=None)
     ap.add_argument("--red-input-sigma", type=float, default=2 ** 0.5,
                     help="RED input noise sigma on the 0-255 scale, matching Google RED.")
-    ap.add_argument("--modes", nargs="+", default=["vanilla", "G16_fixed"], choices=["vanilla", "G16_fixed"])
+    ap.add_argument("--modes", nargs="+", default=["vanilla", "G16_fixed"],
+                    choices=["vanilla", "G1_random", "G16_fixed"])
     ap.add_argument("--input-poses", nargs="+", default=["upright", "rot45_padded"],
                     help="Input poses to include, e.g. all or upright rot30_padded rot45_padded.")
     ap.add_argument("--exclude-upright", action="store_true")
@@ -372,6 +385,7 @@ def main():
                                             runner = ScheduledDenoiser(
                                                 denoiser, mode, denoiser_name, args.train_sigma, schedule,
                                                 args.group_name, args.group_size, group_expand, num_iter,
+                                                seed=args.seed + image_index * 1000003 + int(round(input_angle)) * 997,
                                             )
                                             step_value = _red_step_value(step, lam, args.red_input_sigma) if algorithm == "red_gd" else float(step)
                                             print(
@@ -421,7 +435,7 @@ def main():
                                                 "lambda": float(lam),
                                                 "mode": mode,
                                                 "group_expand": group_expand,
-                                                "base_group_size": args.group_size if mode == "G16_fixed" else 0,
+                                                "base_group_size": args.group_size if mode in {"G1_random", "G16_fixed"} else 0,
                                                 "num_iter": num_iter,
                                                 "init_method": args.inpaint_init if problem_name == "inpaint" else "adjoint",
                                                 "degraded_se": res["degraded_se"],
