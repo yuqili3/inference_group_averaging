@@ -22,7 +22,7 @@ DATASETS = [
     ("val_images", "none", "none"),
     ("val_images_circle", "circle", "circle"),
 ]
-MODELS = ["restormer", "restormer-rotated-noise-retrained", "wavelet", "tv", "nlm"]
+MODELS = ["restormer", "restormer-rotated-noise-retrained", "gsdrunet", "drunet", "wavelet", "tv", "nlm"]
 SIGMAS = [15.0, 25.0, 50.0]
 
 
@@ -50,6 +50,10 @@ def _make_model(label, base, device, sigma):
             color=False,
             device=device,
         )
+    if label == "gsdrunet":
+        return make_denoiser("gsdrunet", device=device)
+    if label in {"drunet", "dncnn"}:
+        return make_denoiser(label, device=device)
     return make_denoiser(label)
 
 
