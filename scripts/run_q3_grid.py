@@ -18,6 +18,7 @@ GROUPS = ["fourier_rotation", "rotation"]
 AVERAGINGS = [2, 4, 8, 16]
 NOISE_MASKS = ["circle"]
 SIGMAS = [15.0]
+MODELS = ["restormer"]
 
 
 def _require_cuda(device):
@@ -29,13 +30,17 @@ def _require_cuda(device):
         raise RuntimeError(f"CUDA is required for this grid, but device is {device!r}.")
 
 
-def _make_restormer(base, device, sigma):
-    return make_denoiser(
-        "restormer",
-        weights=restormer_weights(base, sigma=sigma, color=False),
-        color=False,
-        device=device,
-    )
+def _make_model(label, base, device, sigma):
+    if label == "restormer":
+        return make_denoiser(
+            "restormer",
+            weights=restormer_weights(base, sigma=sigma, color=False),
+            color=False,
+            device=device,
+        )
+    if label in {"gsdrunet", "drunet", "dncnn"}:
+        return make_denoiser(label, device=device)
+    return make_denoiser(label)
 
 
 def _combo_complete(path):
@@ -50,6 +55,7 @@ def main():
     ap.add_argument("--max-images", type=int, default=10)
     ap.add_argument("--num-noise", type=int, default=4)
     ap.add_argument("--sigmas", type=float, nargs="+", default=SIGMAS)
+    ap.add_argument("--models", nargs="+", default=MODELS)
     ap.add_argument("--averagings", type=int, nargs="+", default=AVERAGINGS)
     ap.add_argument("--upsample", type=float, default=1.0)
     ap.add_argument("--seed", type=int, default=0)
@@ -71,47 +77,53 @@ def main():
     datasets = {name: dataset_path(base, name) for name in DATASETS}
 
     for sigma in args.sigmas:
-        out_csv = os.path.join(args.save_dir, f"sigma{int(sigma)}", f"q3_degradation_denoiser-restormer_sigma-{sigma}.csv")
-        if not args.no_skip_complete and _combo_complete(out_csv):
-            print(f"\n[Q3 grid] sigma={sigma} complete; skipping")
-            df = pd.read_csv(out_csv)
-        else:
-            print(f"\n[Q3 grid] sigma={sigma}")
-            combo_dir = os.path.dirname(out_csv)
-            os.makedirs(combo_dir, exist_ok=True)
-            try:
-                df = q3_degradation.run(
-                    datasets=datasets,
-                    denoiser=_make_restormer(base, device, sigma),
-                    denoiser_name="restormer",
-                    groups=GROUPS,
-                    averagings=args.averagings,
-                    noise_sigma=sigma,
-                    num_noise=args.num_noise,
-                    noise_masks=NOISE_MASKS,
-                    se_mask="content",
-                    upsample=args.upsample,
-                    max_images=args.max_images,
-                    seed=args.seed,
-                    save_dir=combo_dir,
-                    save_csv=True,
-                    verbose=True,
-                )
-            except Exception as exc:
-                failures.append({
-                    "sigma": sigma,
-                    "error_type": type(exc).__name__,
-                    "error": str(exc),
-                })
-                pd.DataFrame(failures).to_csv(failures_path, index=False)
-                print(f"[Q3 grid] FAILED: {type(exc).__name__}: {exc}")
-                raise
-        df = df.copy()
-        if "denoiser" not in df.columns:
-            df.insert(0, "denoiser", "restormer")
-        df["sigma"] = sigma
-        rows.extend(df.to_dict("records"))
-        pd.DataFrame(rows).to_csv(summary_path, index=False)
+        for model_label in args.models:
+            out_csv = os.path.join(
+                args.save_dir,
+                f"sigma{int(sigma)}",
+                f"q3_degradation_denoiser-{model_label}_sigma-{sigma}.csv",
+            )
+            if not args.no_skip_complete and _combo_complete(out_csv):
+                print(f"\n[Q3 grid] sigma={sigma} model={model_label} complete; skipping")
+                df = pd.read_csv(out_csv)
+            else:
+                print(f"\n[Q3 grid] sigma={sigma} model={model_label}")
+                combo_dir = os.path.dirname(out_csv)
+                os.makedirs(combo_dir, exist_ok=True)
+                try:
+                    df = q3_degradation.run(
+                        datasets=datasets,
+                        denoiser=_make_model(model_label, base, device, sigma),
+                        denoiser_name=model_label,
+                        groups=GROUPS,
+                        averagings=args.averagings,
+                        noise_sigma=sigma,
+                        num_noise=args.num_noise,
+                        noise_masks=NOISE_MASKS,
+                        se_mask="content",
+                        upsample=args.upsample,
+                        max_images=args.max_images,
+                        seed=args.seed,
+                        save_dir=combo_dir,
+                        save_csv=True,
+                        verbose=True,
+                    )
+                except Exception as exc:
+                    failures.append({
+                        "sigma": sigma,
+                        "model": model_label,
+                        "error_type": type(exc).__name__,
+                        "error": str(exc),
+                    })
+                    pd.DataFrame(failures).to_csv(failures_path, index=False)
+                    print(f"[Q3 grid] FAILED: {type(exc).__name__}: {exc}")
+                    raise
+            df = df.copy()
+            if "denoiser" not in df.columns:
+                df.insert(0, "denoiser", model_label)
+            df["sigma"] = sigma
+            rows.extend(df.to_dict("records"))
+            pd.DataFrame(rows).to_csv(summary_path, index=False)
 
     pd.DataFrame(rows).to_csv(summary_path, index=False)
     if failures:

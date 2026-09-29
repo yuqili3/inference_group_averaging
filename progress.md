@@ -203,3 +203,36 @@ Checked deepinv's `transform` API as a design reference for the downstream work
 - CSV schema intentionally matches the original `group_avg_improvement_*` files
   (`EhSE_hx`, `SEavg_x`, `e1`, `EhSE_minus_SEavg`, PSNR cols).
 - `_psnr` test helper caps at 99.0 (sentinel) → keep round-trip thresholds < 99.
+
+## SOTA denoiser Q2/Q3 extension (2026-09-29)
+Added GS-DRUNet and DRUNet to the Q2 orbit-averaging and Q3 degradation grids
+(DnCNN remains excluded because its native sigma is not comparable to the
+sigma15/25/50 panels).
+
+- Q2 command: `run_q2_grid.py --sigmas 15 25 50 --models gsdrunet drunet
+  --num-noise 2 --max-images 10`.
+- Q2 outputs: 36 new cells / 108 CSVs under
+  `results/q2_orbit_averaging_grid/sigma{15,25,50}/.../{gsdrunet,drunet}/`;
+  `q2_orbit_averaging_grid_summary_sota.csv` has the 36 new rows, and the main
+  summary was merged to 132 rows.
+- Q2 validation: all per-image files have 10 rows and all detail files have
+  `10 * 2 * G` rows. At sigma15, `E_x_e1` is about `2.8e-5` to `3.2e-5` for
+  both new models. PSNR gains are small, roughly `0.15` to `0.37` dB, unlike
+  the large Restormer off-axis jump.
+- Q2 preflight note: the one-image DRUNet sigma25 scratch run correctly wrote
+  `noise_sigma=25.0` and `denoiser=drunet`; `test001.png` PSNR was about
+  `26.0` dB on `val_images` and `26.6` dB on `val_images_circle`, below the
+  rough 27-29 dB expectation but with the sigma map verified.
+
+- Q3 script change: `scripts/run_q3_grid.py` now accepts `--models` and uses a
+  generic `_make_model`, while preserving the Restormer default.
+- Q3 command: `run_q3_grid.py --sigmas 15 25 50 --models restormer gsdrunet
+  drunet --averagings 2 4 8 16 32 --num-noise 4 --max-images 10`.
+- Q3 outputs: 6 new model/sigma CSVs for GS-DRUNet and DRUNet; each has 40 rows.
+  The grid summary was rebuilt from all Restormer/GS-DRUNet/DRUNet files and has
+  360 rows.
+- Q3 readout: `fourier_rotation` gains for the new models are small, consistent
+  with their small Q1/Q2 diagnostics. A notable violation-axis effect appears
+  for the lossy `rotation` operator: for example GS-DRUNet at sigma15 on
+  `square_val_images` has about `-1.9` dB gain for `rotation` at small G, while
+  `fourier_rotation` remains a small positive gain.
